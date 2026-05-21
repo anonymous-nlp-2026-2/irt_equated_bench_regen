@@ -1,25 +1,24 @@
-\documentclass{article}
-\usepackage{iclr2026_conference,times}
-\input{math_commands.tex}
+\documentclass[11pt]{article}
+\usepackage[review]{acl}
 
-\usepackage{hyperref}
-\usepackage{url}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{xcolor}
-\usepackage{microtype}
 \usepackage{multirow}
 \usepackage{subcaption}
+
+\input{math_commands.tex}
+
 \usepackage{cleveref}
 
 \graphicspath{{../figures/paper/}}
 
 \title{Psychometric Instability of LLM Benchmarks:\\Differential Item Functioning Reveals 31\% of MMLU Items\\Behave Differently Across Model Generations}
-
-%\iclrfinalcopy
-
-\newcommand{\fix}{\marginpar{FIX}}
-\newcommand{\new}{\marginpar{NEW}}
 
 \begin{document}
 
@@ -33,7 +32,6 @@
 \input{sections/discussion}
 
 \bibliography{references}
-\bibliographystyle{iclr2026_conference}
 
 \appendix
 \input{sections/appendix}

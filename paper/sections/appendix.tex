@@ -33,16 +33,17 @@ The temporal FPR reflects genuine item-level instability that persists regardles
 \caption{Structural approaches to reducing temporal DIF. None reduces baseline FPR below 31\%, indicating that the observed instability is not an artifact of ability matching. Subscript $\pm$ values denote standard deviations across 5 injection seeds (baseline row only).}
 \label{tab:structural_comparison}
 \small
+\resizebox{\columnwidth}{!}{%
 \begin{tabular}{lcccc}
 \toprule
-Approach & Mechanism & Temporal FPR & TPR ($p{=}0.5$) & Outcome \\
+Approach & Mechanism & Temp.\ FPR & TPR ($p{=}0.5$) & Outcome \\
 \midrule
-Baseline (external) & Cross-benchmark total score & $0.314_{\pm.009}$ & $0.834_{\pm.027}$ & Reference \\
-Matched-ability & Within-quintile temporal DIF & ${\sim}$0.31 & -- & Enrich.\ 0.94--1.04 \\
-$\theta$-conditioning & $\theta$ replaces total score & 0.312 & 0.876 & $r(\theta,\mathrm{total}) {=} 0.9986$ \\
+Baseline (ext.) & Cross-bench.\ total score & $0.314_{\pm.009}$ & $0.834_{\pm.027}$ & Reference \\
+Matched-ability & Within-quintile temp.\ DIF & ${\sim}$0.31 & -- & Enrich.\ 0.94--1.04 \\
+$\theta$-cond. & $\theta$ replaces total score & 0.312 & 0.876 & $r(\theta,\mathrm{total}) {=} 0.9986$ \\
 Within-subject & Per-subject DIF & -- & -- & C\% $= 38.1\%$ ($>$25\%) \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \end{table}
 
 \section{Additional Figures}
