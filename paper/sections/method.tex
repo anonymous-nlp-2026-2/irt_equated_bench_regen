@@ -47,10 +47,9 @@ To evaluate whether MH-DIF can detect differential contamination when it is pres
 
 \paragraph{Cross-subject matching.} The choice of matching variable is critical for valid semi-synthetic evaluation. When contamination is injected into items within subject $X$, the total score on subject $X$ absorbs part of the injection signal. Using this contaminated total score as the MH matching variable violates the conditional independence assumption and inflates FPR. Cross-subject matching resolves this by computing the matching variable from all subjects \emph{other than} the one being tested.
 
-\begin{proposition}[Zero FPR under single-subject cross-subject matching]
+\paragraph{Remark (Zero FPR under single-subject matching).}
 \label{prop:fpr}
 Let $M_i^{(-s)} = \sum_{j \notin s} Y_{ij}$ be the matching variable for examinee $i$ on focal subject $s$. Under single-subject injection (contamination confined to subject $s$), the tested item belongs to $s$ and does not contribute to $M_i^{(-s)}$; injecting contamination into $s$ leaves $M_i^{(-s)}$ unchanged. Therefore $\Delta\mathrm{FPR} = 0$ by construction.
-\end{proposition}
 
 When contamination spans multiple subjects simultaneously, $M_i^{(-s)}$ may absorb signal from other contaminated subjects, potentially inflating FPR. Empirically, this guarantee extends to multi-domain contamination affecting $\leq$9\% of subjects ($k \leq 5$), with graceful degradation beyond this boundary (\Cref{sec:semisynthetic}).
 

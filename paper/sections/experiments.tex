@@ -8,7 +8,7 @@ We apply MH-DIF to the METABENCH response matrix~\citep{kipnis2024metabench} (5,
 
 A Monte Carlo power analysis (1,000 replications per condition) using empirical 2PL parameters from PSN-IRT~\citep{zhou2026psnirt} ($\bar{a} = 1.2$, $\bar{b} = -0.84$; 14,042 MMLU items) confirms that at $N \geq 80$ per cohort, ETS~C achieves TPR of 0.68--0.80, FPR of 0.036--0.042, and AUC of 0.93--0.94 for items with $|\Delta_{\mathrm{MH}}| \geq 1.4$ (details in \Cref{app:method_details}). Our temporal cohorts ($N_{\mathrm{ref}} = 1{,}080$, $N_{\mathrm{focal}} = 807$) far exceed this threshold.
 
-\subsection{Temporal Comparability: 31\% Measurement Drift}
+\subsection{Temporal Comparability: 31\% Measurement Instability}
 \label{sec:temporal}
 
 We compare 2023 ($N = 1{,}080$) against 2024 ($N = 807$) models; 31.3\% of items receive ETS~C classification ($|\Delta_{\mathrm{MH}}| \geq 1.5$; 95\% bootstrap CI: [29.4\%, 38.1\%], $B = 1{,}000$ model-level resamples). The rightward CI asymmetry reflects a heavy-tailed C\% distribution across resamples, driven by subjects with C\% exceeding 40\%. Benjamini-Hochberg FDR correction at $q = 0.05$ removes only 3 items (31.32\% $\to$ 31.30\%), because the dual ETS threshold on effect size and significance already provides implicit multiple-testing protection.
@@ -55,13 +55,13 @@ Three structural controls fail to reduce temporal C\% below 31\% (\Cref{tab:stru
 
 \begin{table}[t]
 \centering
-\caption{Structural approaches to reducing temporal DIF. None reduces baseline FPR below 31\%, indicating that the observed instability is not an artifact of ability matching.}
+\caption{Structural approaches to reducing temporal DIF. None reduces temporal C\% below 31\%, indicating that the observed instability is not an artifact of ability matching.}
 \label{tab:structural_comparison}
 \small
 \resizebox{\columnwidth}{!}{%
 \begin{tabular}{lcccc}
 \toprule
-Approach & Mechanism & Temp.\ FPR & TPR ($p{=}0.5$) & Outcome \\
+Approach & Mechanism & Temp.\ C\% & TPR ($p{=}0.5$) & Outcome \\
 \midrule
 Baseline (ext.) & Cross-bench.\ total score & $0.314_{\pm.009}$ & $0.834_{\pm.027}$ & Reference \\
 Matched-ability & Within-quintile temp.\ DIF & ${\sim}$0.31 & -- & Enrich.\ 0.94--1.04 \\
@@ -79,7 +79,7 @@ Cross-subject matching achieves $\Delta\mathrm{FPR} = 0.000$ across all five MML
 \subsection{Downstream Impact}
 \label{sec:downstream}
 
-Spearman correlation between full and stable-item rankings is $\rho \approx 0.997$: aggregate ordering is preserved despite 31\% measurement drift. DIF-flagged items nonetheless concentrate discriminative signal ($z = -8\sigma$ to $-49\sigma$ vs.\ random removal), though a circularity ablation confirms DIF-based removal is the \emph{least} disruptive non-random strategy. Model families show distinctive DIF profiles: Llama-3 derivatives gain ${+}53$ median rank positions, Mistral loses $35$ (\Cref{app:fig_downstream}). Removing C-flagged items disproportionately disadvantages 2024 models (cohort gap $= 96.2$ positions, $40\times$ larger than random removal; $p < 0.001$), confirming that DIF items carry concentrated inter-generational signal.
+Spearman correlation between full and stable-item rankings is $\rho \approx 0.997$: aggregate ordering is preserved despite 31\% measurement instability. DIF-flagged items nonetheless concentrate discriminative signal ($z = -8\sigma$ to $-49\sigma$ vs.\ random removal), though a circularity ablation confirms DIF-based removal is the \emph{least} disruptive non-random strategy. Model families show distinctive DIF profiles: Llama-3 derivatives gain ${+}53$ median rank positions, Mistral loses $35$ (\Cref{app:fig_downstream}). Removing C-flagged items disproportionately disadvantages 2024 models (cohort gap $= 96.2$ positions, $40\times$ larger than random removal; $p < 0.001$), confirming that DIF items carry concentrated inter-generational signal.
 
 \subsection{Cross-Benchmark Validation}
 \label{sec:gsm8k}
