@@ -23,6 +23,29 @@ Three diagnostic procedures complement the primary DIF analysis.
 
 \paragraph{Architecture heterogeneity.} The METABENCH MMLU population consists of 99.98\% decoder-only models (5,226 of 5,227). This near-complete architectural homogeneity eliminates architecture as a confound for DIF analysis. We verify this by excluding the single encoder-decoder model and confirming identical results.
 
+\paragraph{Power sensitivity to item discrimination.}
+\label{app:power_sensitivity}
+The Monte Carlo power analysis in \Cref{sec:validation} uses average 2PL parameters ($\bar{a} = 1.2$, $\bar{b} = -0.84$). \Cref{tab:power_sensitivity} reports TPR as a function of discrimination $a$ (other parameters at their means, $N = 80$ per cohort, $|\Delta_b| = 1.4$, 1,000 replications). TPR increases monotonically from 0.40 ($a = 0.5$) to 0.95 ($a = 2.0$); FPR remains below 0.04 throughout. The MMLU item pool shows substantial heterogeneity: $a$ ranges from 0.006 to 2.657 (SD $= 0.54$, IQR $= [0.75, 1.64]$). The aggregate TPR of 0.68 from Phase~2 reflects this full distribution, while TPR at mean $a \approx 1.2$ is 0.87---the gap is consistent with Jensen's inequality applied to the concave TPR($a$) function.
+
+\begin{table}[h]
+\centering
+\caption{Power sensitivity to item discrimination. TPR = true positive rate for ETS~C detection ($|\Delta_{\mathrm{MH}}| \geq 1.5$) at $N = 80$ per cohort, $|\Delta_b| = 1.4$, 1,000 replications.}
+\label{tab:power_sensitivity}
+\small
+\begin{tabular}{rccc}
+\toprule
+$a$ & TPR & 95\% CI & FPR \\
+\midrule
+0.5 & 0.398 & [0.20, 0.60] & 0.033 \\
+0.8 & 0.683 & [0.45, 0.90] & 0.036 \\
+1.0 & 0.808 & [0.60, 0.95] & 0.038 \\
+1.2 ($\approx \bar{a}$) & 0.874 & [0.70, 1.00] & 0.038 \\
+1.5 & 0.930 & [0.80, 1.00] & 0.038 \\
+2.0 & 0.949 & [0.80, 1.00] & 0.037 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 \paragraph{Logistic regression specification.} The Simpson's paradox analysis (\Cref{sec:temporal}) uses binary logistic regression with DIF-C classification as the dependent variable, domain-level accuracy change (2024 minus 2023 mean accuracy) as the primary predictor, and item difficulty (proportion correct) and IRT discrimination (point-biserial correlation) as controls. The interaction between domain accuracy change and item difficulty is included. Non-uniform DIF detection (\Cref{sec:structural}) uses logistic regression with a group $\times$ ability interaction term; a significant interaction ($p < 0.05$) indicates non-uniform DIF.
 
 \section{Structural Analysis Details}
