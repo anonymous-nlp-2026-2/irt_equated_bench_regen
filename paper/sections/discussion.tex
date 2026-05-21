@@ -4,7 +4,7 @@
 \subsection{Implications for Benchmark Temporal Comparability}
 \label{sec:disc_temporal}
 
-The 31\% ETS~C instability on MMLU is robust across thresholds and structural controls (\Cref{sec:structural}), and extends across all six METABENCH benchmarks (C\% $= 17.9$--$31.3\%$, 45--174$\times$ above random baselines; \Cref{tab:cross_benchmark}). Knowledge/reasoning benchmarks show higher instability (C\% $\geq 26.9\%$) than procedural ones (C\% $\leq 18.9\%$), and a Simpson's paradox in odds ratio regression ($\mathrm{OR}: 1.55 \to 0.73$ after controlling for item properties; LR $\chi^2 = 647$) confirms that item properties---not accuracy gains---drive DIF. This does not invalidate these benchmarks as ranking instruments ($\rho \approx 0.997$) but signals measurement drift across model generations.
+The 31\% ETS~C instability on MMLU is robust across thresholds and structural controls (\Cref{sec:structural}), and extends across all six METABENCH benchmarks (C\% $= 17.9$--$31.3\%$, 45--174$\times$ above random baselines; \Cref{tab:cross_benchmark}). Knowledge/reasoning benchmarks show higher instability (C\% $\geq 26.9\%$) than procedural ones (C\% $\leq 18.9\%$), and the Simpson's paradox in odds ratio regression (\Cref{sec:temporal}) confirms item properties---not accuracy gains---drive DIF. This does not invalidate these benchmarks as ranking instruments ($\rho \approx 0.997$) but signals measurement drift across model generations.
 
 \subsection{Ground Truth Meta-Critique}
 \label{sec:disc_groundtruth}
@@ -14,13 +14,14 @@ The near-independence between DIF flags and web-overlap labels (enrichment $= 0.
 \subsection{DIF as Diagnostic Lens}
 \label{sec:disc_diagnostic}
 
-The GSM1K correlation ($r = -0.478$, $p = 0.005$, $N = 33$; \Cref{sec:gsm8k}) provides exploratory evidence that DIF-flagged items capture behavioral change distinct from memorization; partial correlation ($r = -0.385$, $p = 0.027$) after controlling for accuracy confirms this is not an artifact of general model quality.
+The GSM1K correlation ($r = -0.478$, $p = 0.005$; partial $r = -0.385$ after controlling for accuracy; \Cref{sec:gsm8k}) provides exploratory evidence that DIF-flagged items capture behavioral change distinct from memorization. DIF-C items are harder ($d = -0.247$) and more discriminating ($d = 0.230$), with a difficulty $\times$ direction interaction ($\rho = -0.597$): capability gains concentrate on hard items (88.7\% focal-favoring) while easy items erode (96.2\% reference-favoring). Yen's Q3 confirms local dependence does not drive DIF ($r = 0.09$, $p = 0.50$).
 
-Item characterization reinforces this: DIF-C items are harder ($d = -0.247$) and more discriminating ($d = 0.230$), distributed uniformly across subjects ($\chi^2$ $p = 0.32$). A difficulty $\times$ direction interaction ($\rho = -0.597$, $p < 0.001$) shows capability gains concentrate on hard items (88.7\% focal-favoring in hardest decile) while easy items erode (96.2\% reference-favoring in easiest decile).
+\subsection{From Demographic Fairness to Temporal Measurement Invariance}
+\label{sec:disc_transplant}
 
-Yen's Q3 analysis confirms that local dependence does not drive DIF: extreme LD correlates negligibly with subject-level C\% ($r = 0.09$, $p = 0.50$), while reasoning-heavy domains with low LD show higher DIF ($r = -0.36$, $p = 0.006$).
+In educational testing, DIF compares demographic groups to detect biased items---a fairness diagnostic~\citep{holland1988mh,clauser1998dif}. Transplanting this to LLM evaluation redefines the grouping variable from demographic to temporal: a flagged item signals that its relationship to overall ability has shifted across model generations, not demographic bias. The statistical machinery transfers unchanged, requiring only a binary response matrix and cohort labels.
 
 \subsection{Recommended DIF Audit Protocol}
 \label{sec:disc_protocol}
 
-These findings motivate a concrete benchmark maintenance protocol requiring only a binary response matrix and temporal cohort labels. We recommend: (1)~quarterly MH-DIF audits (or whenever $N \geq 80$ new models appear), using cross-subject matching; (2)~benchmark-wide C\% $> 20\%$ triggers item review, with items flagged ETS~C in consecutive audits labeled ``unstable''; (3)~graduated responses: flag-and-annotate, item rotation, or weighted scoring.
+These findings motivate a benchmark maintenance protocol: (1)~MH-DIF audits whenever $\geq 500$ new models accumulate (or quarterly), using cross-subject matching (\Cref{sec:semisynthetic}); (2)~C\% $> 20\%$ triggers item review---consecutively flagged items are labeled ``unstable,'' while items that flip between flagged and unflagged across audits are tagged ``volatile'' (stochastic sensitivity, not systematic drift); (3)~graduated responses: flag-and-annotate, item rotation, or weighted scoring. MMLU's C\% $= 31.3\%$ already exceeds this threshold, with flagged items distributed uniformly across subjects ($\chi^2$ $p = 0.32$).
