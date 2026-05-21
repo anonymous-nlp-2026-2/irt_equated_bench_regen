@@ -56,7 +56,7 @@ Three structural controls fail to reduce temporal C\% below 31\%: matched-abilit
 \subsection{Semi-Synthetic Framework Validation}
 \label{sec:semisynthetic}
 
-The critical methodological finding is that the choice of matching strategy determines validity. Cross-subject matching computes the conditioning variable from subjects \emph{other than} the one being tested, achieving $\Delta\mathrm{FPR} = 0.000$ across all five MMLU subjects while four of five produce $\Delta\mathrm{TPR} > 0.3$ at $p = 0.5$. Within-subject matching inflates FPR by ${+}0.186$ on average because the matching variable absorbs part of the injection signal. We adopt cross-subject matching as the standard protocol (\Cref{app:fig_matching}).
+Cross-subject matching achieves $\Delta\mathrm{FPR} = 0.000$ across all five MMLU subjects (4/5 with $\Delta\mathrm{TPR} > 0.3$ at $p = 0.5$), while within-subject matching inflates FPR by ${+}0.186$ on average. Multi-subject injection ($k \in \{1, 3, 5, 10, 20\}$ subjects, 5 random draws each) confirms robustness: $\Delta\mathrm{FPR} < 0.007$ for $k \leq 5$ ($\leq$9\% of domains); at $k = 10$ (18\%), $\Delta\mathrm{FPR}$ rises to 0.026--0.069, marking the boundary of matching variable integrity (\Cref{app:method_details,app:fig_matching}).
 
 \subsection{Downstream Impact}
 \label{sec:downstream}
