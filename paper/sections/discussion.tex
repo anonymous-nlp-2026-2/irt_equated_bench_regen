@@ -4,12 +4,12 @@
 \subsection{Implications for Benchmark Temporal Comparability}
 \label{sec:disc_temporal}
 
-The 31\% ETS~C DIF rate extends across all six METABENCH benchmarks (C\% $= 17.9$--$31.3\%$, 45--174$\times$ above baselines; \Cref{tab:cross_benchmark}), with knowledge/reasoning benchmarks more affected (C\% $\geq 26.9\%$) than procedural ones (C\% $\leq 18.9\%$). The Simpson's paradox (\Cref{sec:temporal}) confirms item properties, not accuracy gains, drive DIF. This does not invalidate ranking ($\rho \approx 0.997$) but signals measurement drift across model generations. The statistical machinery of DIF---originally designed for demographic fairness testing~\citep{holland1988mh}---transfers to temporal cohort comparisons unchanged, requiring only a binary response matrix and cohort labels. A fundamental limitation is that MH-DIF cannot distinguish contamination-driven DIF from legitimate capability evolution: the observed 31\% rate represents an upper bound on measurement degradation and a lower bound on genuine construct change. Disentangling the two requires access to training data or controlled ablations rarely available for open-weight models.
+The 31\% ETS~C DIF rate extends across all six METABENCH benchmarks (C\% $= 17.9$--$31.3\%$, 45--174$\times$ above baselines; \Cref{tab:cross_benchmark}), with knowledge/reasoning benchmarks more affected (C\% $\geq 26.9\%$) than procedural ones (C\% $\leq 18.9\%$). The Simpson's paradox (\Cref{sec:temporal}) confirms item properties, not accuracy gains, drive DIF. This does not invalidate ranking ($\rho \approx 0.997$) but signals measurement drift across model generations. A fundamental limitation is that MH-DIF cannot distinguish contamination-driven DIF from legitimate capability evolution: the observed 31\% rate represents an upper bound on measurement degradation and a lower bound on genuine construct change. Disentangling the two requires access to training data or controlled ablations rarely available for open-weight models.
 
 \subsection{Ground Truth Meta-Critique}
 \label{sec:disc_groundtruth}
 
-The near-independence between DIF flags and web-overlap labels (enrichment $= 0.964$, Jaccard $= 0.206$, $\phi = 0.012$) exposes a category error: web-overlap labels measure global exposure shared by nearly all MMLU items, so evaluating a differential method against them conflates two phenomena.
+The near-independence between DIF flags and web-overlap labels (enrichment $= 0.964$, Jaccard $= 0.206$, $\phi = 0.012$) admits two interpretations: web-overlap labels may be the wrong ground truth for a differential method, or DIF may fail to detect contamination. The semi-synthetic dose-response ($\Delta\mathrm{TPR} = {+}0.508$ at $p = 0.5$) partially resolves this by confirming that MH-DIF \emph{can} detect differential item behavior when present; the near-independence therefore reflects a category error in the ground truth rather than a detection failure.
 
 \subsection{DIF as Diagnostic Lens}
 \label{sec:disc_diagnostic}
@@ -19,4 +19,4 @@ The GSM1K correlation ($r = -0.478$, partial $r = -0.385$; \Cref{sec:gsm8k}) pro
 \subsection{Recommended DIF Audit Protocol}
 \label{sec:disc_protocol}
 
-These findings motivate a benchmark maintenance protocol: (1)~MH-DIF audits whenever $\geq 500$ new models accumulate, using cross-subject matching; (2)~C\% $> 20\%$ triggers item review, with consecutively flagged items labeled ``unstable'' and flip-flopping items tagged ``volatile''; (3)~graduated responses from flag-and-annotate to item rotation. MMLU's C\% $= 31.3\%$ already exceeds this threshold ($\chi^2$ $p = 0.32$).
+These findings motivate a benchmark maintenance protocol triggered whenever $\geq 500$ new models accumulate, using cross-subject matching. We propose graduated thresholds: C\% $< 15\%$ $\to$ monitor (log and re-audit next cycle); $15\text{--}25\%$ $\to$ flag (label consecutively flagged items ``drift-prone,'' flip-flopping items ``volatile''); $> 25\%$ $\to$ act (item review, rotate or retire persistently flagged items). MMLU's C\% $= 31.3\%$ exceeds the action threshold, indicating that item-level review is warranted.
