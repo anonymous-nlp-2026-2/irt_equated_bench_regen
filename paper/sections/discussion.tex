@@ -9,7 +9,7 @@ The 31\% ETS~C instability rate is robust across thresholds (10--49\% at $|\Delt
 \subsection{Ground Truth Meta-Critique}
 \label{sec:disc_groundtruth}
 
-The near-independence between DIF flags and web-overlap labels (enrichment $= 0.964$, Jaccard $= 0.206$, $\phi = 0.012$; consistent across contamination subtypes) exposes a broader gap: all prior work validating contamination detectors against web-overlap labels conflates global exposure with differential functioning. Most MMLU items appear in web text, so web-overlap labels identify a condition shared by nearly all items. This near-independence is the expected outcome when a differential method is evaluated against a global-exposure reference. Item-level differential detectors require item-level differential ground truth.
+The near-independence between DIF flags and web-overlap labels (enrichment $= 0.964$, Jaccard $= 0.206$, $\phi = 0.012$; consistent across contamination subtypes) exposes a broader gap: the dominant validation practice of evaluating contamination detectors against web-overlap labels conflates global exposure with differential functioning. Most MMLU items appear in web text, so web-overlap labels identify a condition shared by nearly all items. This near-independence is the expected outcome when a differential method is evaluated against a global-exposure reference. Item-level differential detectors require item-level differential ground truth.
 
 \subsection{DIF as Diagnostic Lens}
 \label{sec:disc_diagnostic}
