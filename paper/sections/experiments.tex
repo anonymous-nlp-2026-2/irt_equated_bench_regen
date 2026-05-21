@@ -51,7 +51,25 @@ Direct comparison of DIF flags against the web-overlap labels of \citet{li2024co
 \subsection{Structural Analysis}
 \label{sec:structural}
 
-Three structural controls fail to reduce temporal C\% below 31\%: matched-ability quintiles, IRT $\theta$-conditioning ($r(\theta, \mathrm{total\ score}) = 0.9986$), and within-subject DIF (C\% $= 38.1\%$). Logistic regression DIF confirms 92.1\% concordance with MH and reveals additional non-uniform DIF (24.8\%), making 31\% conservative. Graduated de-duplication ($K{=}10$: 22.7\%; $K{=}20$: 29.1\%) confirms family structure does not inflate C\%. Ability-matched analysis reduces Llama-2 vs.\ Llama-3 C\% from 61.3\% to $28.3\%$ and temporal C\% from 31.3\% to $28.9\%$---consistent matched values ($\sim$28--29\%) despite vastly different unmatched rates, suggesting genuine item-level DIF accounts for $\sim$28--29\% of items. Six alternative explanations (ability confounding, family inflation, $\theta$-conditioning, within-subject effects, ranking impact, local dependence) were tested; none reduces C\% below $\sim$28\% (\Cref{app:structural}).
+Three structural controls fail to reduce temporal C\% below 31\% (\Cref{tab:structural_comparison}): matched-ability quintiles, IRT $\theta$-conditioning ($r(\theta, \mathrm{total\ score}) = 0.9986$), and within-subject DIF (C\% $= 38.1\%$). Logistic regression DIF confirms 92.1\% concordance with MH and reveals additional non-uniform DIF (24.8\%), making 31\% conservative. Graduated de-duplication ($K{=}10$: 22.7\%; $K{=}20$: 29.1\%) confirms family structure does not inflate C\%. Ability-matched analysis reduces Llama-2 vs.\ Llama-3 C\% from 61.3\% to $28.3\%$ and temporal C\% from 31.3\% to $28.9\%$---consistent matched values ($\sim$28--29\%) despite vastly different unmatched rates, suggesting genuine item-level DIF accounts for $\sim$28--29\% of items. Six alternative explanations (ability confounding, family inflation, $\theta$-conditioning, within-subject effects, ranking impact, local dependence) were tested; none reduces C\% below $\sim$28\% (\Cref{app:structural}).
+
+\begin{table}[t]
+\centering
+\caption{Structural approaches to reducing temporal DIF. None reduces baseline FPR below 31\%, indicating that the observed instability is not an artifact of ability matching.}
+\label{tab:structural_comparison}
+\small
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+Approach & Mechanism & Temp.\ FPR & TPR ($p{=}0.5$) & Outcome \\
+\midrule
+Baseline (ext.) & Cross-bench.\ total score & $0.314_{\pm.009}$ & $0.834_{\pm.027}$ & Reference \\
+Matched-ability & Within-quintile temp.\ DIF & ${\sim}$0.31 & -- & Enrich.\ 0.94--1.04 \\
+$\theta$-cond. & $\theta$ replaces total score & 0.312 & 0.876 & $r(\theta,\mathrm{total}) {=} 0.9986$ \\
+Within-subject & Per-subject DIF & -- & -- & C\% $= 38.1\%$ ($>$25\%) \\
+\bottomrule
+\end{tabular}}
+\end{table}
 
 \subsection{Semi-Synthetic Framework Validation}
 \label{sec:semisynthetic}
@@ -66,7 +84,7 @@ Spearman correlation between full and stable-item rankings is $\rho \approx 0.99
 \subsection{Cross-Benchmark Validation}
 \label{sec:gsm8k}
 
-Temporal DIF extends across all six METABENCH benchmarks (\Cref{tab:cross_benchmark}). C\% ranges from 17.9\% (HellaSwag) to 31.3\% (MMLU), each 45--174$\times$ above its random-split baseline---none attributable to sampling noise. A task-type dichotomy emerges: knowledge and reasoning benchmarks (MMLU, WinoGrande~\citep{sakaguchi2021winogrande}, TruthfulQA~\citep{lin2022truthfulqa}, ARC~\citep{clark2018arc}) show C\% $= 26.9$--$31.3\%$, while procedural benchmarks (GSM8K, HellaSwag~\citep{zellers2019hellaswag}) show C\% $= 17.9$--$18.9\%$, consistent with knowledge-intensive items being more sensitive to shifts in training data composition across model generations.
+Temporal DIF extends across all six METABENCH benchmarks (\Cref{tab:cross_benchmark}). C\% ranges from 17.9\% (HellaSwag~\citep{zellers2019hellaswag}) to 31.3\% (MMLU), each 45--174$\times$ above random baselines. Knowledge/reasoning benchmarks (WinoGrande~\citep{sakaguchi2021winogrande}, TruthfulQA~\citep{lin2022truthfulqa}, ARC~\citep{clark2018arc}) show C\% $= 26.9$--$31.3\%$ versus $17.9$--$18.9\%$ for procedural ones, consistent with knowledge-intensive items being more sensitive to training data composition shifts.
 
 \begin{table}[t]
 \centering

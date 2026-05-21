@@ -16,12 +16,12 @@ We apply classical MH-DIF with ETS classification to the full METABENCH response
 
 MMLU's 12,508 items provide sufficient measurement redundancy that removing nearly a third does not alter rank order ($\rho \approx 0.997$). DIF should therefore be understood as a diagnostic lens rather than a quality filter: DIF-flagged items concentrate discriminative signal ($z = -8\sigma$ to $-49\sigma$ vs.\ random removal), and model families show distinctive DIF profiles (Llama-3 gains ${+}53$ median rank positions, Mistral loses $35$).
 
-Our contributions are empirical and methodological, not algorithmic:
+Our contributions are methodological and empirical, not algorithmic:
 
 \begin{enumerate}
-\item \textbf{Temporal measurement drift at scale}: Approximately 31\% of MMLU items exhibit differential functioning across model generations under ETS~C classification; replication across all six METABENCH benchmarks yields C\% $= 17.9$--$31.3\%$ (45--174$\times$ above random baselines), with knowledge/reasoning benchmarks showing higher DIF rates than procedural ones. DIF-flagged items concentrate discriminative signal ($z = -8\sigma$ to $-49\sigma$ vs.\ random removal) and exhibit a difficulty--direction interaction ($\rho = -0.597$): gains on hard items, erosion on easy ones (\Cref{sec:temporal,sec:gsm8k,sec:downstream}).
+\item \textbf{Semi-synthetic validation framework}: Controlled injection with cross-subject matching achieves $\Delta\mathrm{FPR} = 0.000$ while preserving detection power ($\Delta\mathrm{TPR} = {+}0.508$ at $p = 0.5$); cross-benchmark replication on GSM8K confirms generality (\Cref{sec:semisynthetic,sec:gsm8k}).
 
 \item \textbf{Ground truth meta-critique}: Web-overlap contamination labels~\citep{li2024contamination} do not provide appropriate ground truth for item-level differential detectors. Direct empirical comparison on 9,229 items shows near-independence (enrichment $= 0.964$, Jaccard $= 0.206$, $\phi = 0.012$), exposing a validation methodology gap (\Cref{sec:groundtruth}).
 
-\item \textbf{Semi-synthetic validation framework}: Controlled injection with cross-subject matching achieves $\Delta\mathrm{FPR} = 0.000$ while preserving detection power ($\Delta\mathrm{TPR} = {+}0.508$ at $p = 0.5$); cross-benchmark replication on GSM8K confirms generality (\Cref{sec:semisynthetic,sec:gsm8k}).
+\item \textbf{Temporal measurement drift at scale}: Approximately 31\% of MMLU items exhibit differential functioning across model generations under ETS~C classification; replication across all six METABENCH benchmarks yields C\% $= 17.9$--$31.3\%$ (45--174$\times$ above random baselines), with knowledge/reasoning benchmarks showing higher DIF rates than procedural ones. DIF-flagged items concentrate discriminative signal ($z = -8\sigma$ to $-49\sigma$ vs.\ random removal) and exhibit a difficulty--direction interaction ($\rho = -0.597$): gains on hard items, erosion on easy ones (\Cref{sec:temporal,sec:gsm8k,sec:downstream}).
 \end{enumerate}
