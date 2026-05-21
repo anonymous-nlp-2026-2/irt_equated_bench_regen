@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.5.2)  21 MAY 2026 14:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.5.2)  21 MAY 2026 15:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -660,70 +660,46 @@ d on input line 10.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \hbox (badness 1297) in paragraph at lines 22--23
-\T1/ptm/m/n/10.95 (+20) 1): 31% of MMLU items are func-tion-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-[]\T1/ptm/b/n/10.95 (+20) Semi-synthetic val-i-da-tion frame-
- []
-
-
-Underfull \hbox (badness 5345) in paragraph at lines 26--27
-\T1/ptm/b/n/10.95 (+20) work \T1/ptm/m/n/10.95 (+20) (Claim 3): Con-trolled in-
-jec-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-\T1/ptm/m/n/10.95 (+20) with cross-subject match-ing achieves
- []
-
-
-Underfull \hbox (badness 3601) in paragraph at lines 26--27
-\T1/ptm/m/n/10.95 (+20) cross-benchmark repli-ca-tion on GSM8K
- []
-
-[2 <../figures/paper/fig_1_global_vs_differential.pdf>]
-Underfull \hbox (badness 1038) in paragraph at lines 28--29
-\T1/ptm/m/n/10.95 (+20) for-ma-tion ($\OML/cmm/m/it/10.95 z \OT1/cmr/m/n/10.95 
-= \OMS/cmsy/m/n/10.95 ^^@\OT1/cmr/m/n/10.95 8\OML/cmm/m/it/10.95 ^^[$ \T1/ptm/m
-/n/10.95 (+20) to $\OMS/cmsy/m/n/10.95 ^^@\OT1/cmr/m/n/10.95 49\OML/cmm/m/it/10
-.95 ^^[$ \T1/ptm/m/n/10.95 (+20) vs. ran-
- []
-
-) (./sections/related_work.tex [3]) (./sections/method.tex [4]
-Underfull \hbox (badness 2799) in paragraph at lines 53--54
+ [2 <../figures/paper/fig_1_global_vs_differential.pdf>]) (./sections/related_w
+ork.tex)
+(./sections/method.tex [3] [4]
+Underfull \hbox (badness 2799) in paragraph at lines 55--56
 []\T1/ptm/m/n/10.95 (+20) Empirically, $\OT1/cmr/m/n/10.95 ^^A[] = 0\OML/cmm/m/
 it/10.95 :\OT1/cmr/m/n/10.95 000$ \T1/ptm/m/n/10.95 (+20) across all
  []
 
 
-Underfull \hbox (badness 2368) in paragraph at lines 53--54
+Underfull \hbox (badness 2368) in paragraph at lines 55--56
 \T1/ptm/m/n/10.95 (+20) five MMLU do-mains (boot-strap 95% CI $\OT1/cmr/m/n/10.
 95 =
  []
 
-) (./sections/experiments.tex [5]
-<../figures/paper/fig_2_dose_response.pdf, id=408, 366.07333pt x 412.19664pt>
+) (./sections/experiments.tex
+Underfull \vbox (badness 2343) has occurred while \output is active []
+
+ [5]
+Underfull \vbox (badness 1418) has occurred while \output is active []
+
+<../figures/paper/fig_2_dose_response.pdf, id=402, 366.07333pt x 412.19664pt>
 File: ../figures/paper/fig_2_dose_response.pdf Graphic file (type pdf)
 <use ../figures/paper/fig_2_dose_response.pdf>
 Package pdftex.def Info: ../figures/paper/fig_2_dose_response.pdf  used on inpu
 t line 46.
 (pdftex.def)             Requested size: 219.08614pt x 246.69092pt.
  [6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Underfull \hbox (badness 1552) in paragraph at lines 69--70
 \T1/ptm/m/n/10.95 (+20) Wino-Grande ([][]Sak-aguchi et al.[][], [][]2020[][]), 
 Truth-
  []
 
 [7 <../figures/paper/fig_2_dose_response.pdf>]) (./sections/discussion.tex)
-(./sections/conclusion.tex) (./sections/limitations.tex [8]
+(./sections/conclusion.tex) (./sections/limitations.tex
+Underfull \hbox (badness 1107) in paragraph at lines 4--1
+\OMS/cmsy/m/n/10.95 ^^Y \OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/1
+0.95 96$\T1/ptm/m/n/10.95 (+20) ); our semi-synthetic frame-work val-i-
+ []
+
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 16--17
  []\T1/ptm/b/n/10.95 (+20) Benchmark scope.[] \T1/ptm/m/n/10.95 (+20) We an-a-l
 yze six
@@ -796,7 +772,7 @@ Underfull \hbox (badness 2253) in paragraph at lines 22--23
 \T1/ptm/m/n/10.95 (+20) This near-complete ar-chi-tec-tural ho-mo-gene-ity
  []
 
-<../figures/paper/fig_3_within_subject_matching.pdf, id=700, 520.91881pt x 336.
+<../figures/paper/fig_3_within_subject_matching.pdf, id=694, 520.91881pt x 336.
 04222pt>
 File: ../figures/paper/fig_3_within_subject_matching.pdf Graphic file (type pdf
 )
@@ -804,7 +780,7 @@ File: ../figures/paper/fig_3_within_subject_matching.pdf Graphic file (type pdf
 Package pdftex.def Info: ../figures/paper/fig_3_within_subject_matching.pdf  us
 ed on input line 54.
 (pdftex.def)             Requested size: 219.08614pt x 141.3316pt.
-<../figures/paper/fig_4_downstream_impact.pdf, id=701, 417.18108pt x 401.35634p
+<../figures/paper/fig_4_downstream_impact.pdf, id=695, 417.18108pt x 401.35634p
 t>
 File: ../figures/paper/fig_4_downstream_impact.pdf Graphic file (type pdf)
 <use ../figures/paper/fig_4_downstream_impact.pdf>
@@ -814,7 +790,7 @@ input line 61.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../figures/paper/fig_5_gsm1k_dif_correlation.pdf, id=702, 709.27222pt x 494.42
+<../figures/paper/fig_5_gsm1k_dif_correlation.pdf, id=696, 709.27222pt x 494.42
 302pt>
 File: ../figures/paper/fig_5_gsm1k_dif_correlation.pdf Graphic file (type pdf)
 <use ../figures/paper/fig_5_gsm1k_dif_correlation.pdf>
@@ -841,12 +817,12 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EF76B5EFDD87E80FF538D136A10C8A62;4531.
+(rerunfilecheck)             Checksum: CF78CA7DA4FB538CA7D92EC4EC9CAAC4;4536.
  ) 
 Here is how much of TeX's memory you used:
- 18066 strings out of 469438
- 294433 string characters out of 5468411
- 787215 words of memory out of 5000000
+ 18065 strings out of 469438
+ 294421 string characters out of 5468411
+ 788215 words of memory out of 5000000
  45917 multiletter control sequences out of 15000+600000
  704367 words of font info for 405 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
@@ -868,10 +844,10 @@ e/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (13 pages, 575882 bytes).
+Output written on main.pdf (13 pages, 575635 bytes).
 PDF statistics:
- 1024 PDF objects out of 1200 (max. 8388607)
- 726 compressed objects within 8 object streams
- 126 named destinations out of 1000 (max. 500000)
+ 1018 PDF objects out of 1200 (max. 8388607)
+ 720 compressed objects within 8 object streams
+ 125 named destinations out of 1000 (max. 500000)
  62194 words of extra memory for PDF output out of 74296 (max. 10000000)
 
