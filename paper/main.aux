@@ -89,6 +89,8 @@
 \newlabel{eq:mh@cref}{{[equation][1][]1}{[1][5][]5}{}{}{}}
 \newlabel{eq:delta}{{2}{5}{Mantel-Haenszel DIF and ETS Classification}{equation.2}{}}
 \newlabel{eq:delta@cref}{{[equation][2][]2}{[1][5][]5}{}{}{}}
+\citation{kipnis2024metabench}
+\citation{hendrycks2021mmlu}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Cohort Designs}{6}{subsection.3.3}\protected@file@percent }
 \newlabel{sec:cohorts}{{3.3}{6}{Cohort Designs}{subsection.3.3}{}}
 \newlabel{sec:cohorts@cref}{{[subsection][3][3]3.3}{[1][6][]6}{}{}{}}
@@ -102,101 +104,60 @@
 \newlabel{sec:injection@cref}{{[subsection][4][3]3.4}{[1][6][]6}{}{}{}}
 \@writefile{toc}{\contentsline {paragraph}{Procedure.}{6}{section*.12}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Cross-subject matching.}{6}{section*.13}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Diagnostics}{6}{subsection.3.5}\protected@file@percent }
-\newlabel{sec:diagnostics}{{3.5}{6}{Diagnostics}{subsection.3.5}{}}
-\newlabel{sec:diagnostics@cref}{{[subsection][5][3]3.5}{[1][6][]6}{}{}{}}
-\citation{kipnis2024metabench}
-\citation{hendrycks2021mmlu}
-\@writefile{toc}{\contentsline {paragraph}{Local independence (Yen's Q3).}{7}{section*.14}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Domain-specificity.}{7}{section*.15}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Instability decomposition.}{7}{section*.16}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Statistical Considerations}{7}{subsection.3.6}\protected@file@percent }
-\newlabel{sec:statistical}{{3.6}{7}{Statistical Considerations}{subsection.3.6}{}}
-\newlabel{sec:statistical@cref}{{[subsection][6][3]3.6}{[1][7][]7}{}{}{}}
-\@writefile{toc}{\contentsline {paragraph}{Multiple testing.}{7}{section*.17}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Threshold sensitivity.}{7}{section*.18}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Architecture heterogeneity.}{7}{section*.19}\protected@file@percent }
+\citation{holland1988mh}
+\citation{li2024contamination}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces DIF landscape across cohort definitions. ETS~C denotes the percentage of items with $|\Delta _{\mathrm  {MH}}| \geq 1.5$. FPR is measured against Li et al.\ web-overlap labels on the ``clean'' (non-overlapping) subset. Enrichment is the ratio of observed to expected overlap between DIF flags and web-overlap labels.}}{7}{table.caption.14}\protected@file@percent }
+\newlabel{tab:temporal_landscape}{{1}{7}{DIF landscape across cohort definitions. ETS~C denotes the percentage of items with $|\Delta _{\mathrm {MH}}| \geq 1.5$. FPR is measured against Li et al.\ web-overlap labels on the ``clean'' (non-overlapping) subset. Enrichment is the ratio of observed to expected overlap between DIF flags and web-overlap labels}{table.caption.14}{}}
+\newlabel{tab:temporal_landscape@cref}{{[table][1][]1}{[1][7][]7}{}{}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Experiments}{7}{section.4}\protected@file@percent }
 \newlabel{sec:experiments}{{4}{7}{Experiments}{section.4}{}}
-\newlabel{sec:experiments@cref}{{[section][4][]4}{[1][7][]7}{}{}{}}
+\newlabel{sec:experiments@cref}{{[section][4][]4}{[1][6][]7}{}{}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Validation: DIF Detection Power}{7}{subsection.4.1}\protected@file@percent }
 \newlabel{sec:validation}{{4.1}{7}{Validation: DIF Detection Power}{subsection.4.1}{}}
 \newlabel{sec:validation@cref}{{[subsection][1][4]4.1}{[1][7][]7}{}{}{}}
-\citation{holland1988mh}
-\citation{li2024contamination}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces DIF landscape across cohort definitions. ETS~C denotes the percentage of items with $|\Delta _{\mathrm  {MH}}| \geq 1.5$. FPR is measured against Li et al.\ web-overlap labels on the ``clean'' (non-overlapping) subset. Enrichment is the ratio of observed to expected overlap between DIF flags and web-overlap labels.}}{8}{table.caption.20}\protected@file@percent }
-\newlabel{tab:temporal_landscape}{{1}{8}{DIF landscape across cohort definitions. ETS~C denotes the percentage of items with $|\Delta _{\mathrm {MH}}| \geq 1.5$. FPR is measured against Li et al.\ web-overlap labels on the ``clean'' (non-overlapping) subset. Enrichment is the ratio of observed to expected overlap between DIF flags and web-overlap labels}{table.caption.20}{}}
-\newlabel{tab:temporal_landscape@cref}{{[table][1][]1}{[1][8][]8}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Temporal Comparability: 31\% Item Instability}{8}{subsection.4.2}\protected@file@percent }
-\newlabel{sec:temporal}{{4.2}{8}{Temporal Comparability: 31\% Item Instability}{subsection.4.2}{}}
-\newlabel{sec:temporal@cref}{{[subsection][2][4]4.2}{[1][7][]8}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Ground Truth Mismatch}{8}{subsection.4.3}\protected@file@percent }
-\newlabel{sec:groundtruth}{{4.3}{8}{Ground Truth Mismatch}{subsection.4.3}{}}
-\newlabel{sec:groundtruth@cref}{{[subsection][3][4]4.3}{[1][8][]8}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Structural approaches to reducing temporal DIF. None reduces baseline FPR below 31\%, indicating that the observed instability is not an artifact of ability matching. Subscript $\pm $ values denote standard deviations across 5 injection seeds (baseline row only).}}{9}{table.caption.22}\protected@file@percent }
-\newlabel{tab:structural_comparison}{{2}{9}{Structural approaches to reducing temporal DIF. None reduces baseline FPR below 31\%, indicating that the observed instability is not an artifact of ability matching. Subscript $\pm $ values denote standard deviations across 5 injection seeds (baseline row only)}{table.caption.22}{}}
-\newlabel{tab:structural_comparison@cref}{{[table][2][]2}{[1][9][]9}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Structural Analysis}{9}{subsection.4.4}\protected@file@percent }
-\newlabel{sec:structural}{{4.4}{9}{Structural Analysis}{subsection.4.4}{}}
-\newlabel{sec:structural@cref}{{[subsection][4][4]4.4}{[1][9][]9}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Temporal Comparability: 31\% Item Instability}{7}{subsection.4.2}\protected@file@percent }
+\newlabel{sec:temporal}{{4.2}{7}{Temporal Comparability: 31\% Item Instability}{subsection.4.2}{}}
+\newlabel{sec:temporal@cref}{{[subsection][2][4]4.2}{[1][7][]7}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Ground Truth Mismatch}{7}{subsection.4.3}\protected@file@percent }
+\newlabel{sec:groundtruth}{{4.3}{7}{Ground Truth Mismatch}{subsection.4.3}{}}
+\newlabel{sec:groundtruth@cref}{{[subsection][3][4]4.3}{[1][7][]7}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Semi-synthetic dose-response for DIF detection on MMLU. $\Delta \mathrm  {TPR}$ increases monotonically with exploitation rate $p$, confirming that MH-DIF detects differential contamination when present. Baseline (no injection) produces $\Delta \mathrm  {TPR} \approx 0$.}}{8}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:dose_response}{{2}{8}{Semi-synthetic dose-response for DIF detection on MMLU. $\Delta \mathrm {TPR}$ increases monotonically with exploitation rate $p$, confirming that MH-DIF detects differential contamination when present. Baseline (no injection) produces $\Delta \mathrm {TPR} \approx 0$}{figure.caption.15}{}}
+\newlabel{fig:dose_response@cref}{{[figure][2][]2}{[1][7][]8}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Structural Analysis}{8}{subsection.4.4}\protected@file@percent }
+\newlabel{sec:structural}{{4.4}{8}{Structural Analysis}{subsection.4.4}{}}
+\newlabel{sec:structural@cref}{{[subsection][4][4]4.4}{[1][7][]8}{}{}{}}
+\citation{zhang2024gsm1k}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Semi-Synthetic Framework Validation}{9}{subsection.4.5}\protected@file@percent }
 \newlabel{sec:semisynthetic}{{4.5}{9}{Semi-Synthetic Framework Validation}{subsection.4.5}{}}
-\newlabel{sec:semisynthetic@cref}{{[subsection][5][4]4.5}{[1][9][]9}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Semi-synthetic dose-response for DIF detection on MMLU. $\Delta \mathrm  {TPR}$ increases monotonically with exploitation rate $p$, confirming that MH-DIF detects differential contamination when present. Baseline (no injection) produces $\Delta \mathrm  {TPR} \approx 0$.}}{10}{figure.caption.21}\protected@file@percent }
-\newlabel{fig:dose_response}{{2}{10}{Semi-synthetic dose-response for DIF detection on MMLU. $\Delta \mathrm {TPR}$ increases monotonically with exploitation rate $p$, confirming that MH-DIF detects differential contamination when present. Baseline (no injection) produces $\Delta \mathrm {TPR} \approx 0$}{figure.caption.21}{}}
-\newlabel{fig:dose_response@cref}{{[figure][2][]2}{[1][9][]10}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Downstream Impact}{10}{subsection.4.6}\protected@file@percent }
-\newlabel{sec:downstream}{{4.6}{10}{Downstream Impact}{subsection.4.6}{}}
-\newlabel{sec:downstream@cref}{{[subsection][6][4]4.6}{[1][9][]10}{}{}{}}
-\@writefile{toc}{\contentsline {paragraph}{Layer 1: Benchmark redundancy.}{10}{section*.24}\protected@file@percent }
-\citation{zhang2024gsm1k}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Cross-subject vs.\ within-subject matching for semi-synthetic DIF detection. Cross-subject matching eliminates FPR inflation ($\Delta \mathrm  {FPR} = 0.000$) while preserving detection power ($\Delta \mathrm  {TPR} > 0.3$ for 4/5 subjects at $p = 0.5$). Within-subject matching inflates FPR by ${+}0.186$ on average.}}{11}{figure.caption.23}\protected@file@percent }
-\newlabel{fig:within_subject}{{3}{11}{Cross-subject vs.\ within-subject matching for semi-synthetic DIF detection. Cross-subject matching eliminates FPR inflation ($\Delta \mathrm {FPR} = 0.000$) while preserving detection power ($\Delta \mathrm {TPR} > 0.3$ for 4/5 subjects at $p = 0.5$). Within-subject matching inflates FPR by ${+}0.186$ on average}{figure.caption.23}{}}
-\newlabel{fig:within_subject@cref}{{[figure][3][]3}{[1][9][]11}{}{}{}}
-\@writefile{toc}{\contentsline {paragraph}{Layer 2: Signal concentration with circularity check.}{11}{section*.25}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Layer 3: Diagnostic lens.}{11}{section*.26}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Layer 4: Cross-benchmark signal.}{11}{section*.27}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Cross-Benchmark Validation: GSM8K}{11}{subsection.4.7}\protected@file@percent }
-\newlabel{sec:gsm8k}{{4.7}{11}{Cross-Benchmark Validation: GSM8K}{subsection.4.7}{}}
-\newlabel{sec:gsm8k@cref}{{[subsection][7][4]4.7}{[1][11][]11}{}{}{}}
-\citation{zhang2024gsm1k}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Downstream impact of DIF-based item filtering on model rankings. Despite $\rho \approx 0.997$ overall, individual model families show systematic rank shifts when evaluated on stable items only, with Phi-3 and Llama-3 gaining and Mistral merges losing rank positions.}}{12}{figure.caption.28}\protected@file@percent }
-\newlabel{fig:downstream}{{4}{12}{Downstream impact of DIF-based item filtering on model rankings. Despite $\rho \approx 0.997$ overall, individual model families show systematic rank shifts when evaluated on stable items only, with Phi-3 and Llama-3 gaining and Mistral merges losing rank positions}{figure.caption.28}{}}
-\newlabel{fig:downstream@cref}{{[figure][4][]4}{[1][11][]12}{}{}{}}
-\@writefile{toc}{\contentsline {paragraph}{Temporal DIF.}{12}{section*.29}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Semi-synthetic validation.}{12}{section*.30}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{GSM1K contamination gap.}{12}{section*.31}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces GSM1K contamination gap vs.\ DIF ranking advantage for $N = 33$ models. The negative correlation ($r = -0.478$, $p = 0.005$) indicates that models with larger contamination gaps benefit less from DIF-flagged items, contrary to the initial positive-correlation hypothesis.}}{13}{figure.caption.32}\protected@file@percent }
-\newlabel{fig:gsm1k}{{5}{13}{GSM1K contamination gap vs.\ DIF ranking advantage for $N = 33$ models. The negative correlation ($r = -0.478$, $p = 0.005$) indicates that models with larger contamination gaps benefit less from DIF-flagged items, contrary to the initial positive-correlation hypothesis}{figure.caption.32}{}}
-\newlabel{fig:gsm1k@cref}{{[figure][5][]5}{[1][13][]13}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Cross-benchmark comparison of DIF analysis on MMLU and GSM8K. Both benchmarks exhibit temporal item instability with validated semi-synthetic detection power. Standard and external matching use different exploitation rates ($p$) because each benchmark's optimal operating point differs; external matching results are compared at $p = 0.5$ for both. Subscript $\pm $ values denote standard deviations across 5 random injection seeds.}}{13}{table.caption.33}\protected@file@percent }
-\newlabel{tab:gsm8k_comparison}{{3}{13}{Cross-benchmark comparison of DIF analysis on MMLU and GSM8K. Both benchmarks exhibit temporal item instability with validated semi-synthetic detection power. Standard and external matching use different exploitation rates ($p$) because each benchmark's optimal operating point differs; external matching results are compared at $p = 0.5$ for both. Subscript $\pm $ values denote standard deviations across 5 random injection seeds}{table.caption.33}{}}
-\newlabel{tab:gsm8k_comparison@cref}{{[table][3][]3}{[1][13][]13}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{13}{section.5}\protected@file@percent }
-\newlabel{sec:discussion}{{5}{13}{Discussion}{section.5}{}}
-\newlabel{sec:discussion@cref}{{[section][5][]5}{[1][13][]13}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Implications for Benchmark Temporal Comparability}{13}{subsection.5.1}\protected@file@percent }
-\newlabel{sec:disc_temporal}{{5.1}{13}{Implications for Benchmark Temporal Comparability}{subsection.5.1}{}}
-\newlabel{sec:disc_temporal@cref}{{[subsection][1][5]5.1}{[1][13][]13}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Ground Truth Meta-Critique}{14}{subsection.5.2}\protected@file@percent }
-\newlabel{sec:disc_groundtruth}{{5.2}{14}{Ground Truth Meta-Critique}{subsection.5.2}{}}
-\newlabel{sec:disc_groundtruth@cref}{{[subsection][2][5]5.2}{[1][14][]14}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}DIF as Diagnostic Lens}{14}{subsection.5.3}\protected@file@percent }
-\newlabel{sec:disc_diagnostic}{{5.3}{14}{DIF as Diagnostic Lens}{subsection.5.3}{}}
-\newlabel{sec:disc_diagnostic@cref}{{[subsection][3][5]5.3}{[1][14][]14}{}{}{}}
-\@writefile{toc}{\contentsline {paragraph}{Capability diagnostic.}{14}{section*.34}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Structural constraints on DIF applicability.}{14}{section*.35}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Limitations}{15}{subsection.5.4}\protected@file@percent }
-\newlabel{sec:disc_limitations}{{5.4}{15}{Limitations}{subsection.5.4}{}}
-\newlabel{sec:disc_limitations@cref}{{[subsection][4][5]5.4}{[1][15][]15}{}{}{}}
-\@writefile{toc}{\contentsline {paragraph}{(a) Ecological vs.\ item-level decomposition.}{15}{section*.36}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{(b) Instability attribution.}{15}{section*.37}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{(c) Semi-synthetic injection fidelity.}{15}{section*.38}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{(d) Benchmark scope.}{15}{section*.39}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{(e) Cross-subject baseline false positive rate.}{15}{section*.40}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{(f) RL model robustness.}{15}{section*.41}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{(g) Model family coverage.}{15}{section*.42}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{(h) Future directions.}{15}{section*.43}\protected@file@percent }
+\newlabel{sec:semisynthetic@cref}{{[subsection][5][4]4.5}{[1][8][]9}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Downstream Impact}{9}{subsection.4.6}\protected@file@percent }
+\newlabel{sec:downstream}{{4.6}{9}{Downstream Impact}{subsection.4.6}{}}
+\newlabel{sec:downstream@cref}{{[subsection][6][4]4.6}{[1][9][]9}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Cross-Benchmark Validation: GSM8K}{9}{subsection.4.7}\protected@file@percent }
+\newlabel{sec:gsm8k}{{4.7}{9}{Cross-Benchmark Validation: GSM8K}{subsection.4.7}{}}
+\newlabel{sec:gsm8k@cref}{{[subsection][7][4]4.7}{[1][9][]9}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{9}{section.5}\protected@file@percent }
+\newlabel{sec:discussion}{{5}{9}{Discussion}{section.5}{}}
+\newlabel{sec:discussion@cref}{{[section][5][]5}{[1][9][]9}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Implications for Benchmark Temporal Comparability}{9}{subsection.5.1}\protected@file@percent }
+\newlabel{sec:disc_temporal}{{5.1}{9}{Implications for Benchmark Temporal Comparability}{subsection.5.1}{}}
+\newlabel{sec:disc_temporal@cref}{{[subsection][1][5]5.1}{[1][9][]9}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Ground Truth Meta-Critique}{9}{subsection.5.2}\protected@file@percent }
+\newlabel{sec:disc_groundtruth}{{5.2}{9}{Ground Truth Meta-Critique}{subsection.5.2}{}}
+\newlabel{sec:disc_groundtruth@cref}{{[subsection][2][5]5.2}{[1][9][]9}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces GSM1K contamination gap vs.\ DIF ranking advantage ($N = 33$). The negative correlation ($r = -0.478$, $p = 0.005$) indicates that models with larger contamination gaps benefit less from DIF-flagged items.}}{10}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:gsm1k}{{3}{10}{GSM1K contamination gap vs.\ DIF ranking advantage ($N = 33$). The negative correlation ($r = -0.478$, $p = 0.005$) indicates that models with larger contamination gaps benefit less from DIF-flagged items}{figure.caption.16}{}}
+\newlabel{fig:gsm1k@cref}{{[figure][3][]3}{[1][9][]10}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}DIF as Diagnostic Lens}{10}{subsection.5.3}\protected@file@percent }
+\newlabel{sec:disc_diagnostic}{{5.3}{10}{DIF as Diagnostic Lens}{subsection.5.3}{}}
+\newlabel{sec:disc_diagnostic@cref}{{[subsection][3][5]5.3}{[1][9][]10}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Limitations}{10}{subsection.5.4}\protected@file@percent }
+\newlabel{sec:disc_limitations}{{5.4}{10}{Limitations}{subsection.5.4}{}}
+\newlabel{sec:disc_limitations@cref}{{[subsection][4][5]5.4}{[1][10][]10}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Implications}{10}{subsection.5.5}\protected@file@percent }
+\newlabel{sec:disc_implications}{{5.5}{10}{Implications}{subsection.5.5}{}}
+\newlabel{sec:disc_implications@cref}{{[subsection][5][5]5.5}{[1][10][]10}{}{}{}}
 \bibdata{references}
 \bibcite{balloccu2024leak}{{1}{2024}{{Balloccu et~al.}}{{Balloccu, Schmidtova, Lango, and Dusek}}}
 \bibcite{belzak2020smallsample}{{2}{2020}{{Belzak}}{{}}}
@@ -204,9 +165,6 @@
 \bibcite{chang2024survey}{{4}{2024}{{Chang et~al.}}{{Chang, Wang, Wang, Wu, Zhu, Chen, Yang, Yi, Wang, Wang, Ye, Zhang, Chang, Yu, Yang, and Xie}}}
 \bibcite{chen2025irtnet}{{5}{2025}{{Chen et~al.}}{{Chen, Wang, Zhang, Ye, Bai, Hu, Qu, and Hu}}}
 \bibcite{chiang2024chatbot}{{6}{2024}{{Chiang et~al.}}{{Chiang, Zheng, Sheng, Angelopoulos, Li, Li, Zhang, Zhu, Jordan, Gonzalez, and Stoica}}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{16}{section.6}\protected@file@percent }
-\newlabel{sec:conclusion}{{6}{16}{Conclusion}{section.6}{}}
-\newlabel{sec:conclusion@cref}{{[section][6][]6}{[1][15][]16}{}{}{}}
 \bibcite{choi2026llmjudgeirt}{{7}{2026}{{Choi et~al.}}{{Choi, Park, Cho, Park, and Kim}}}
 \bibcite{clauser1998dif}{{8}{1998}{{Clauser \& Mazor}}{{Clauser and Mazor}}}
 \bibcite{dekoninck2024constat}{{9}{2024}{{Dekoninck et~al.}}{{Dekoninck, Mueller, and Vechev}}}
@@ -247,4 +205,51 @@
 \bibcite{zhou2026psnirt}{{44}{2026}{{Zhou et~al.}}{{Zhou, Huang, Zhao, Han, Wang, Chen, Yang, Bao, Dong, Xu, Zhu, Cao, and Zhao}}}
 \bibcite{zumbo1999handbook}{{45}{1999}{{Zumbo}}{{}}}
 \bibstyle{iclr2026_conference}
-\gdef \@abspage@last{19}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Method Details}{14}{appendix.A}\protected@file@percent }
+\newlabel{app:method_details}{{A}{14}{Method Details}{appendix.A}{}}
+\newlabel{app:method_details@cref}{{[section][1][]A}{[1][14][]14}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}Diagnostics}{14}{subsection.A.1}\protected@file@percent }
+\newlabel{app:diagnostics}{{A.1}{14}{Diagnostics}{subsection.A.1}{}}
+\newlabel{app:diagnostics@cref}{{[subsection][1][1]A.1}{[1][14][]14}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Local independence (Yen's Q3).}{14}{section*.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Domain-specificity.}{14}{section*.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Instability decomposition.}{14}{section*.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2}Statistical Considerations}{14}{subsection.A.2}\protected@file@percent }
+\newlabel{app:statistical}{{A.2}{14}{Statistical Considerations}{subsection.A.2}{}}
+\newlabel{app:statistical@cref}{{[subsection][2][1]A.2}{[1][14][]14}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Multiple testing.}{14}{section*.21}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Threshold sensitivity.}{15}{section*.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Architecture heterogeneity.}{15}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {B}Structural Analysis Details}{15}{appendix.B}\protected@file@percent }
+\newlabel{app:structural}{{B}{15}{Structural Analysis Details}{appendix.B}{}}
+\newlabel{app:structural@cref}{{[section][2][]B}{[1][15][]15}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Structural approaches to reducing temporal DIF. None reduces baseline FPR below 31\%, indicating that the observed instability is not an artifact of ability matching. Subscript $\pm $ values denote standard deviations across 5 injection seeds (baseline row only).}}{15}{table.caption.24}\protected@file@percent }
+\newlabel{tab:structural_comparison}{{2}{15}{Structural approaches to reducing temporal DIF. None reduces baseline FPR below 31\%, indicating that the observed instability is not an artifact of ability matching. Subscript $\pm $ values denote standard deviations across 5 injection seeds (baseline row only)}{table.caption.24}{}}
+\newlabel{tab:structural_comparison@cref}{{[table][2][]2}{[1][15][]15}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C}Additional Figures}{15}{appendix.C}\protected@file@percent }
+\newlabel{app:figures}{{C}{15}{Additional Figures}{appendix.C}{}}
+\newlabel{app:figures@cref}{{[section][3][]C}{[1][15][]15}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {D}Cross-Benchmark Comparison}{15}{appendix.D}\protected@file@percent }
+\newlabel{app:gsm8k_details}{{D}{15}{Cross-Benchmark Comparison}{appendix.D}{}}
+\newlabel{app:gsm8k_details@cref}{{[section][4][]D}{[1][15][]15}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {E}Limitations}{15}{appendix.E}\protected@file@percent }
+\newlabel{app:limitations}{{E}{15}{Limitations}{appendix.E}{}}
+\newlabel{app:limitations@cref}{{[section][5][]E}{[1][15][]15}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{(a) Ecological vs.\ item-level decomposition.}{15}{section*.28}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{(b) Instability attribution.}{15}{section*.29}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Cross-subject vs.\ within-subject matching for semi-synthetic DIF detection. Cross-subject matching eliminates FPR inflation ($\Delta \mathrm  {FPR} = 0.000$) while preserving detection power ($\Delta \mathrm  {TPR} > 0.3$ for 4/5 subjects at $p = 0.5$). Within-subject matching inflates FPR by ${+}0.186$ on average.}}{16}{figure.caption.25}\protected@file@percent }
+\newlabel{app:fig_matching}{{4}{16}{Cross-subject vs.\ within-subject matching for semi-synthetic DIF detection. Cross-subject matching eliminates FPR inflation ($\Delta \mathrm {FPR} = 0.000$) while preserving detection power ($\Delta \mathrm {TPR} > 0.3$ for 4/5 subjects at $p = 0.5$). Within-subject matching inflates FPR by ${+}0.186$ on average}{figure.caption.25}{}}
+\newlabel{app:fig_matching@cref}{{[figure][4][]4}{[1][15][]16}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Cross-benchmark comparison of DIF analysis on MMLU and GSM8K. Both benchmarks exhibit temporal item instability with validated semi-synthetic detection power. Standard and external matching use different exploitation rates ($p$) because each benchmark's optimal operating point differs; external matching results are compared at $p = 0.5$ for both. Subscript $\pm $ values denote standard deviations across 5 random injection seeds.}}{16}{table.caption.27}\protected@file@percent }
+\newlabel{tab:gsm8k_comparison}{{3}{16}{Cross-benchmark comparison of DIF analysis on MMLU and GSM8K. Both benchmarks exhibit temporal item instability with validated semi-synthetic detection power. Standard and external matching use different exploitation rates ($p$) because each benchmark's optimal operating point differs; external matching results are compared at $p = 0.5$ for both. Subscript $\pm $ values denote standard deviations across 5 random injection seeds}{table.caption.27}{}}
+\newlabel{tab:gsm8k_comparison@cref}{{[table][3][]3}{[1][15][]16}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{(c) Semi-synthetic injection fidelity.}{16}{section*.30}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{(d) Benchmark scope.}{16}{section*.31}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{(e) Cross-subject baseline false positive rate.}{16}{section*.32}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Downstream impact of DIF-based item filtering on model rankings. Despite $\rho \approx 0.997$ overall, individual model families show systematic rank shifts when evaluated on stable items only.}}{17}{figure.caption.26}\protected@file@percent }
+\newlabel{app:fig_downstream}{{5}{17}{Downstream impact of DIF-based item filtering on model rankings. Despite $\rho \approx 0.997$ overall, individual model families show systematic rank shifts when evaluated on stable items only}{figure.caption.26}{}}
+\newlabel{app:fig_downstream@cref}{{[figure][5][]5}{[1][15][]17}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{(f) RL model robustness.}{17}{section*.33}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{(g) Model family coverage.}{17}{section*.34}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{(h) Future directions.}{17}{section*.35}\protected@file@percent }
+\gdef \@abspage@last{17}

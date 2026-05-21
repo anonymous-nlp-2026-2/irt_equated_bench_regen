@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.5.2)  21 MAY 2026 05:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.5.2)  21 MAY 2026 05:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -527,7 +527,7 @@ map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/bas
 e/8r.enc}
 
 ]
-<../figures/paper/fig_1_global_vs_differential.pdf, id=130, 665.1961pt x 329.57
+<../figures/paper/fig_1_global_vs_differential.pdf, id=150, 665.1961pt x 329.57
 817pt>
 File: ../figures/paper/fig_1_global_vs_differential.pdf Graphic file (type pdf)
 
@@ -540,83 +540,88 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2 <../figures/paper/fig_1_global_vs_differential.pdf>]) (./sections/related_w
 ork.tex
-[3]) (./sections/method.tex [4] [5] [6]
-Underfull \hbox (badness 1997) in paragraph at lines 74--75
+[3]) (./sections/method.tex [4] [5]) (./sections/experiments.tex [6]
+<../figures/paper/fig_2_dose_response.pdf, id=390, 366.07333pt x 412.19664pt>
+File: ../figures/paper/fig_2_dose_response.pdf Graphic file (type pdf)
+<use ../figures/paper/fig_2_dose_response.pdf>
+Package pdftex.def Info: ../figures/paper/fig_2_dose_response.pdf  used on inpu
+t line 45.
+(pdftex.def)             Requested size: 397.48499pt x 447.57465pt.
+ [7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <../figures/paper/fig_2_dose_response.pdf>]
+<../figures/paper/fig_5_gsm1k_dif_correlation.pdf, id=478, 709.27222pt x 494.42
+302pt>
+File: ../figures/paper/fig_5_gsm1k_dif_correlation.pdf Graphic file (type pdf)
+<use ../figures/paper/fig_5_gsm1k_dif_correlation.pdf>
+Package pdftex.def Info: ../figures/paper/fig_5_gsm1k_dif_correlation.pdf  used
+ on input line 72.
+(pdftex.def)             Requested size: 397.48499pt x 277.08624pt.
+) (./sections/discussion.tex
+Underfull \vbox (badness 3039) has occurred while \output is active []
+
+ [9])
+[10 <../figures/paper/fig_5_gsm1k_dif_correlation.pdf>] (./main.bbl
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
+6.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [11] [12] [13])
+(./sections/appendix.tex
+Underfull \hbox (badness 1997) in paragraph at lines 20--21
  []\OT1/ptm/b/n/10 (+20) Threshold sen-si-tiv-ity.[] \OT1/ptm/m/n/10 (+20) We r
 e-port re-sults across a range of DIF thresh-olds ($\OMS/cmsy/m/n/10 j\OT1/cmr/
 m/n/10 ^^A[]\OMS/cmsy/m/n/10 j 2
  []
 
-) (./sections/experiments.tex [7] [8]
-<../figures/paper/fig_2_dose_response.pdf, id=387, 366.07333pt x 412.19664pt>
-File: ../figures/paper/fig_2_dose_response.pdf Graphic file (type pdf)
-<use ../figures/paper/fig_2_dose_response.pdf>
-Package pdftex.def Info: ../figures/paper/fig_2_dose_response.pdf  used on inpu
-t line 49.
-(pdftex.def)             Requested size: 397.48499pt x 447.57465pt.
-
-Overfull \hbox (19.37491pt too wide) in paragraph at lines 64--74
+[14]
+Overfull \hbox (19.37491pt too wide) in paragraph at lines 36--46
  [][] 
  []
 
-<../figures/paper/fig_3_within_subject_matching.pdf, id=390, 520.91881pt x 336.
+<../figures/paper/fig_3_within_subject_matching.pdf, id=654, 520.91881pt x 336.
 04222pt>
 File: ../figures/paper/fig_3_within_subject_matching.pdf Graphic file (type pdf
 )
 <use ../figures/paper/fig_3_within_subject_matching.pdf>
 Package pdftex.def Info: ../figures/paper/fig_3_within_subject_matching.pdf  us
-ed on input line 83.
+ed on input line 53.
 (pdftex.def)             Requested size: 397.48499pt x 256.42024pt.
-[9]
-Underfull \vbox (badness 5417) has occurred while \output is active []
 
- [10 <../figures/paper/fig_2_dose_response.pdf>]
-<../figures/paper/fig_4_downstream_impact.pdf, id=475, 417.18108pt x 401.35634p
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../figures/paper/fig_4_downstream_impact.pdf, id=655, 417.18108pt x 401.35634p
 t>
 File: ../figures/paper/fig_4_downstream_impact.pdf Graphic file (type pdf)
 <use ../figures/paper/fig_4_downstream_impact.pdf>
 Package pdftex.def Info: ../figures/paper/fig_4_downstream_impact.pdf  used on 
-input line 103.
+input line 60.
 (pdftex.def)             Requested size: 397.48499pt x 382.42545pt.
 
-Underfull \vbox (badness 2941) has occurred while \output is active []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- [11 <../figures/paper/fig_3_within_subject_matching.pdf>] [12 <../figures/pape
-r/fig_4_downstream_impact.pdf>]
-<../figures/paper/fig_5_gsm1k_dif_correlation.pdf, id=620, 709.27222pt x 494.42
-302pt>
-File: ../figures/paper/fig_5_gsm1k_dif_correlation.pdf Graphic file (type pdf)
-<use ../figures/paper/fig_5_gsm1k_dif_correlation.pdf>
-Package pdftex.def Info: ../figures/paper/fig_5_gsm1k_dif_correlation.pdf  used
- on input line 121.
-(pdftex.def)             Requested size: 397.48499pt x 277.08624pt.
-) (./sections/discussion.tex [13 <../figures/paper/fig_5_gsm1k_dif_correlation.
-pdf>] [14]) (./sections/conclusion.tex
-Underfull \vbox (badness 1215) has occurred while \output is active []
 
- [15])
-(./main.bbl
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-6.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [16]
-[17] [18]) (./sections/appendix.tex) [19] (./main.aux)
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15] [16 <../figures/paper/fig_3_within_subject_matching.pdf>]) [17 <../figures
+/paper/fig_4_downstream_impact.pdf>] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2B5A237DEEE5075719248031F6A0118C;3843.
+(rerunfilecheck)             Checksum: E6B3BE51619866A6206534B1A34F591C;4589.
  ) 
 Here is how much of TeX's memory you used:
- 16960 strings out of 469438
- 276685 string characters out of 5468411
+ 16952 strings out of 469438
+ 276615 string characters out of 5468411
  757422 words of memory out of 5000000
- 44936 multiletter control sequences out of 15000+600000
- 671400 words of font info for 301 fonts, out of 8000000 for 9000
+ 44946 multiletter control sequences out of 15000+600000
+ 671052 words of font info for 295 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 75i,12n,90p,1769b,647s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,90p,1769b,657s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texli
@@ -634,10 +639,10 @@ mf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on main.pdf (19 pages, 560783 bytes).
+Output written on main.pdf (17 pages, 550970 bytes).
 PDF statistics:
  914 PDF objects out of 1000 (max. 8388607)
- 613 compressed objects within 7 object streams
- 138 named destinations out of 1000 (max. 500000)
- 50898 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 615 compressed objects within 7 object streams
+ 132 named destinations out of 1000 (max. 500000)
+ 50938 words of extra memory for PDF output out of 51595 (max. 10000000)
 
