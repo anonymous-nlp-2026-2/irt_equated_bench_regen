@@ -52,6 +52,24 @@ The temporal FPR reflects genuine item-level instability that persists regardles
 \label{app:fig_gsm1k}
 \end{figure}
 
+\begin{table}[h]
+\centering
+\caption{Multi-subject injection robustness. $k$ = number of simultaneously contaminated subjects (out of 57); values are mean $\pm$ SD across 5 random subject draws at exploitation rate $p = 0.5$.}
+\label{tab:multi_subject_injection}
+\small
+\begin{tabular}{rcc}
+\toprule
+$k$ & $\Delta\mathrm{FPR}$ & $\Delta\mathrm{TPR}$ \\
+\midrule
+1 & $0.000_{\pm.000}$ & $0.371_{\pm.048}$ \\
+3 & $0.003_{\pm.002}$ & $0.385_{\pm.031}$ \\
+5 & $0.007_{\pm.003}$ & $0.392_{\pm.027}$ \\
+10 & $0.047_{\pm.022}$ & $0.401_{\pm.024}$ \\
+20 & $0.069_{\pm.018}$ & $0.410_{\pm.020}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 \section{Cross-Benchmark Comparison}
 \label{app:gsm8k_details}
 

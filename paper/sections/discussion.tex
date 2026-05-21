@@ -4,19 +4,15 @@
 \subsection{Implications for Benchmark Temporal Comparability}
 \label{sec:disc_temporal}
 
-The 31\% ETS~C DIF rate extends across all six METABENCH benchmarks (C\% $= 17.9$--$31.3\%$, 45--174$\times$ above baselines; \Cref{tab:cross_benchmark}), with knowledge/reasoning benchmarks more affected (C\% $\geq 26.9\%$) than procedural ones (C\% $\leq 18.9\%$). The Simpson's paradox (\Cref{sec:temporal}) confirms item properties, not accuracy gains, drive DIF. This does not invalidate ranking ($\rho \approx 0.997$) but signals measurement drift across model generations.
+The 31\% ETS~C DIF rate extends across all six METABENCH benchmarks (C\% $= 17.9$--$31.3\%$, 45--174$\times$ above baselines), with knowledge/reasoning benchmarks more affected than procedural ones. The Simpson's paradox (\Cref{sec:temporal}) confirms DIF is associated with item properties rather than accuracy gains; ranking is preserved ($\rho \approx 0.997$) but measurement properties drift across model generations.
 
 \subsection{Ground Truth Meta-Critique}
 \label{sec:disc_groundtruth}
 
-The near-independence between DIF flags and web-overlap labels (enrichment $= 0.964$, Jaccard $= 0.206$, $\phi = 0.012$) admits two interpretations: web-overlap labels may be the wrong ground truth for a differential method, or DIF may fail to detect contamination. The semi-synthetic dose-response ($\Delta\mathrm{TPR} = {+}0.508$ at $p = 0.5$) partially resolves this by confirming that MH-DIF \emph{can} detect differential item behavior when present; the near-independence therefore reflects a category error in the ground truth rather than a detection failure.
-
-\subsection{DIF as Diagnostic Lens}
-\label{sec:disc_diagnostic}
-
-The GSM1K correlation ($r = -0.478$, partial $r = -0.385$; \Cref{sec:gsm8k}) provides exploratory evidence that DIF captures behavioral change distinct from memorization. DIF-C items are harder ($d = -0.247$) and more discriminating ($d = 0.230$), with a difficulty--direction interaction ($\rho = -0.597$): gains on hard items, erosion on easy ones.
+The near-independence between DIF flags and web-overlap labels (enrichment $= 0.964$, Jaccard $= 0.206$, $\phi = 0.012$) reflects that the two methods measure different constructs---global exposure versus differential functioning---making web-overlap labels an inappropriate ground truth for a differential method. The semi-synthetic dose-response ($\Delta\mathrm{TPR} = {+}0.508$ at $p = 0.5$) confirms that MH-DIF detects differential behavior when present; the near-independence reflects a category error in the ground truth, not a detection failure.
 
 \subsection{Recommended DIF Audit Protocol}
 \label{sec:disc_protocol}
 
-These findings motivate a benchmark maintenance protocol triggered whenever $\geq 500$ new models accumulate, using cross-subject matching. We propose graduated thresholds: C\% $< 15\%$ $\to$ monitor; $15\text{--}25\%$ $\to$ flag (label drift-prone and volatile items); $> 25\%$ $\to$ act (rotate or retire flagged items). MMLU's C\% $= 31.3\%$ exceeds the action threshold.
+\looseness=-1
+We propose that benchmark maintainers run temporal MH-DIF analysis whenever $\geq 500$ new models accumulate, using cross-subject matching, with graduated action levels: (1)~\emph{Monitor} (C\% $< 15\%$); (2)~\emph{Flag} ($15\% \leq$ C\% $< 25\%$): report stable-item rankings alongside full rankings; (3)~\emph{Act} (C\% $\geq 25\%$): rotate or retire flagged items. MMLU's C\% exceeds the action threshold, aligning with ETS guidelines~\citep{clauser1998dif}. Temporal C\% complements static quality metrics~\citep{zhu2026bhi} as a ``temporal health'' dimension and identifies stable anchor items for equating frameworks~\citep{habba2026growingpains}; our open-source implementation runs in under 5 minutes on a single CPU core.
