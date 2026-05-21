@@ -1,4 +1,4 @@
-\begin{thebibliography}{48}
+\begin{thebibliography}{51}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Balloccu et~al.(2024)Balloccu, Schmidtova, Lango, and
@@ -156,6 +156,14 @@ John Lalor, Hao Wu, and Hong Yu. 2019.
   Natural Language Processing and the 9th International Joint Conference on
   Natural Language Processing (EMNLP-IJCNLP)}.
 
+\bibitem[{Li et~al.(2025)Li, Tang, Chen, Cheng, Metoyer, Hua, and
+  Chawla}]{li2025atlas}
+Peiyang Li, Xiaobo Tang, Sai Chen, Ying Cheng, Ronald Metoyer, Tianyi Hua, and
+  Nitesh~V. Chawla. 2025.
+\newblock \href {https://arxiv.org/abs/2511.04689} {{ATLAS}: Adaptive testing
+  for {LLM} evaluation: A psychometric alternative to static benchmarks}.
+\newblock \emph{Preprint}, arXiv:2511.04689.
+
 \bibitem[{Li et~al.(2024{\natexlab{a}})Li, Guerin, and Lin}]{li2024latesteval}
 Yucheng Li, Frank Guerin, and Chenghua Lin. 2024{\natexlab{a}}.
 \newblock \href {https://doi.org/10.48550/arXiv.2312.12343} {{LatestEval}:
@@ -184,17 +192,17 @@ Stephanie Lin, Jacob Hilton, and Owain Evans. 2022.
 \newblock In \emph{Proceedings of the 60th Annual Meeting of the Association
   for Computational Linguistics (ACL)}, pages 3214--3252.
 
-\bibitem[{Liu et~al.(2026)}]{liu2026bhi}
-Yifan Liu and 1 others. 2026.
-\newblock Benchmark health index: A systematic framework for benchmarking the
-  benchmarks of {LLMs}.
-\newblock \emph{arXiv preprint arXiv:2602.11674}.
-
 \bibitem[{Lord(1980)}]{lord1980irt}
 Frederic~M. Lord. 1980.
 \newblock \emph{Applications of Item Response Theory to Practical Testing
   Problems}.
 \newblock Lawrence Erlbaum Associates, Hillsdale, NJ.
+
+\bibitem[{Luo et~al.(2025)Luo, Wu, Frisch, and He}]{luo2025medirt}
+Zhimeng Luo, Lixin Wu, Adam Frisch, and Daqing He. 2025.
+\newblock \href {https://arxiv.org/abs/2509.24186} {Measuring competency, not
+  performance: Item-aware evaluation across medical benchmarks}.
+\newblock \emph{Preprint}, arXiv:2509.24186.
 
 \bibitem[{Maeda(2025)}]{maeda2025difllm}
 Hotaka Maeda. 2025.
@@ -228,6 +236,12 @@ Ratna Nandakumar. 1993.
 \newblock Simultaneous {DIF} amplification and cancellation: {Shealy}-{Stout}'s
   test for {DIF}.
 \newblock \emph{Journal of Educational Measurement}, 30(4):293--311.
+
+\bibitem[{Qian and Huang(2026)}]{qian2026benchmark2}
+Qi~Qian and Chengsong Huang. 2026.
+\newblock \href {https://arxiv.org/abs/2601.03986} {{Benchmark}$^2$: Systematic
+  evaluation of {LLM} benchmarks}.
+\newblock \emph{Preprint}, arXiv:2601.03986.
 
 \bibitem[{Raju(1988)}]{raju1988area}
 Nambury~S. Raju. 1988.
@@ -273,8 +287,10 @@ Hariharan Swaminathan and H.~Jane Rogers. 1990.
   differential item functioning using logistic regression procedures}.
 \newblock \emph{Journal of Educational Measurement}.
 
-\bibitem[{Tao(2026)}]{tao2026selfcritique}
-Yixin Tao. 2026.
+\bibitem[{Tao et~al.(2026)Tao, Wang, Dong, Liu, Zhang, Hu, and
+  Li}]{tao2026selfcritique}
+Yongding Tao, Tian Wang, Yihong Dong, Huanyu Liu, Kechi Zhang, Xiaolong Hu, and
+  Ge~Li. 2026.
 \newblock \href {https://arxiv.org/abs/2510.09259} {Detecting data
   contamination from reinforcement learning post-training for large language
   models}.
@@ -355,6 +371,12 @@ Hao Zhou, Heng Huang, Zhenheng Zhao, Lin Han, Haoyu Wang, Ke~Chen, Min Yang,
   rethinking large language model benchmarking with item response theory}.
 \newblock In \emph{Proceedings of the AAAI Conference on Artificial
   Intelligence (AAAI)}.
+
+\bibitem[{Zhu et~al.(2026)Zhu, Hua, Miao, and Zhao}]{zhu2026bhi}
+Longyuan Zhu, Hairan Hua, Linlin Miao, and Bing Zhao. 2026.
+\newblock Benchmark health index: A systematic framework for benchmarking the
+  benchmarks of {LLMs}.
+\newblock \emph{arXiv preprint arXiv:2602.11674}.
 
 \bibitem[{Zumbo(1999)}]{zumbo1999handbook}
 Bruno~D. Zumbo. 1999.
