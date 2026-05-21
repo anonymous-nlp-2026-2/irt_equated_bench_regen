@@ -14,9 +14,9 @@ The near-independence between DIF flags and web-overlap labels (enrichment $= 0.
 \subsection{DIF as Diagnostic Lens}
 \label{sec:disc_diagnostic}
 
-The GSM1K correlation ($r = -0.478$, partial $r = -0.385$; \Cref{sec:gsm8k}) provides exploratory evidence that DIF captures behavioral change distinct from memorization. DIF-C items are harder ($d = -0.247$) and more discriminating ($d = 0.230$), with a difficulty--direction interaction ($\rho = -0.597$): gains on hard items, erosion on easy ones. Yen's Q3 confirms local dependence does not drive DIF ($r = 0.09$, $p = 0.50$).
+The GSM1K correlation ($r = -0.478$, partial $r = -0.385$; \Cref{sec:gsm8k}) provides exploratory evidence that DIF captures behavioral change distinct from memorization. DIF-C items are harder ($d = -0.247$) and more discriminating ($d = 0.230$), with a difficulty--direction interaction ($\rho = -0.597$): gains on hard items, erosion on easy ones.
 
 \subsection{Recommended DIF Audit Protocol}
 \label{sec:disc_protocol}
 
-These findings motivate a benchmark maintenance protocol triggered whenever $\geq 500$ new models accumulate, using cross-subject matching. We propose graduated thresholds: C\% $< 15\%$ $\to$ monitor (log and re-audit next cycle); $15\text{--}25\%$ $\to$ flag (label consecutively flagged items ``drift-prone,'' flip-flopping items ``volatile''); $> 25\%$ $\to$ act (item review, rotate or retire persistently flagged items). MMLU's C\% $= 31.3\%$ exceeds the action threshold, indicating that item-level review is warranted.
+These findings motivate a benchmark maintenance protocol triggered whenever $\geq 500$ new models accumulate, using cross-subject matching. We propose graduated thresholds: C\% $< 15\%$ $\to$ monitor; $15\text{--}25\%$ $\to$ flag (label drift-prone and volatile items); $> 25\%$ $\to$ act (rotate or retire flagged items). MMLU's C\% $= 31.3\%$ exceeds the action threshold.
