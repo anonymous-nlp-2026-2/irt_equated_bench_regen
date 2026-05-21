@@ -25,12 +25,4 @@ Structural constraints and limitations are discussed in the Limitations section.
 \subsection{Recommended DIF Audit Protocol}
 \label{sec:disc_protocol}
 
-These findings motivate a concrete benchmark maintenance protocol. The minimum viable DIF audit requires only a binary response matrix and temporal cohort labels; no IRT model fitting is needed. We recommend the following:
-
-\paragraph{Monitoring frequency.} Run a full MH-DIF audit each quarter or whenever a new model cohort ($N \geq 80$) becomes available on public leaderboards. Cross-subject matching should be the default stratification protocol for multi-domain benchmarks.
-
-\paragraph{Decision rules.} A benchmark-wide C\% exceeding 20\% should trigger item-level review. Individual items flagged as ETS~C in two or more consecutive audits should be labeled ``unstable'' and tracked separately from stable items.
-
-\paragraph{Response options.} Three graduated responses address different operational needs: (a)~\emph{flag-and-annotate}: publish item-level stability labels (stable/drifting/unstable) alongside benchmark releases, enabling downstream users to compute both full and stable-item scores; (b)~\emph{item rotation}: replace persistently unstable items with new items of matched difficulty and discrimination, analogous to item banking in educational testing; (c)~\emph{weighted scoring}: reduce the weight of unstable items in aggregate scores, preserving the full item set while attenuating the influence of drifting items.
-
-DIF should be understood as a diagnostic lens, not a quality filter; LLM benchmarks need psychometric monitoring alongside score reporting.
+These findings motivate a concrete benchmark maintenance protocol. The minimum viable DIF audit requires only a binary response matrix and temporal cohort labels; no IRT model fitting is needed. We recommend: (1)~\emph{monitoring frequency}: run a full MH-DIF audit each quarter or whenever a new model cohort ($N \geq 80$) becomes available, using cross-subject matching as the default stratification; (2)~\emph{decision rules}: benchmark-wide C\% $> 20\%$ triggers item-level review; items flagged ETS~C in two consecutive audits are labeled ``unstable''; (3)~\emph{graduated responses}: (a)~flag-and-annotate (publish item stability labels alongside releases), (b)~item rotation (replace persistently unstable items with matched-difficulty alternatives), or (c)~weighted scoring (reduce unstable item weights in aggregate scores).
