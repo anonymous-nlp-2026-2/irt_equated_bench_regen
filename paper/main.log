@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.5.2)  22 MAY 2026 05:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.5.2)  22 MAY 2026 12:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -642,13 +642,7 @@ Underfull \hbox (badness 5288) in paragraph at lines 4--4
 science / r /
  []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
-dist/fonts/enc/dvips/base/8r.enc}
-
-
-
-]
-<../figures/paper/fig_1_global_vs_differential.pdf, id=156, 665.1961pt x 329.57
+<../figures/paper/fig_1_global_vs_differential.pdf, id=141, 665.1961pt x 329.57
 817pt>
 File: ../figures/paper/fig_1_global_vs_differential.pdf Graphic file (type pdf)
 
@@ -656,21 +650,39 @@ File: ../figures/paper/fig_1_global_vs_differential.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../figures/paper/fig_1_global_vs_differential.pdf  use
 d on input line 10.
 (pdftex.def)             Requested size: 219.08614pt x 108.54488pt.
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/base/8r.enc}
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2 <../figures/paper/fig_1_global_vs_differential.pdf>]) (./sections/related_w
-ork.tex
-[3]) (./sections/method.tex
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+[]\T1/ptm/b/n/10.95 (+20) Semi-synthetic val-i-da-tion frame-work\T1/ptm/m/n/10
+.95 (+20) :
+ []
+
+
+Underfull \hbox (badness 1496) in paragraph at lines 24--25
+\T1/ptm/m/n/10.95 (+20) con-tam-i-na-tion while pre-serv-ing de-tec-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+\T1/ptm/m/n/10.95 (+20) LLM non-independence; repli-cated on
+ []
+
+) (./sections/related_work.tex [2 <../figures/paper/fig_1_global_vs_differentia
+l.pdf>]) (./sections/method.tex
 Underfull \hbox (badness 3148) in paragraph at lines 14--1
 \T1/ptm/m/n/10.95 (+20) mark Health In-dex ([][]Zhu et al.[][], [][]2026[][]) a
 nd
  []
 
-[4]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5]
+ [3]
+[4]
 Underfull \hbox (badness 2799) in paragraph at lines 56--57
 []\T1/ptm/m/n/10.95 (+20) Empirically, $\OT1/cmr/m/n/10.95 ^^A[] = 0\OML/cmm/m/
 it/10.95 :\OT1/cmr/m/n/10.95 000$ \T1/ptm/m/n/10.95 (+20) across all
@@ -683,6 +695,9 @@ Underfull \hbox (badness 2368) in paragraph at lines 56--57
  []
 
 ) (./sections/experiments.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
 Underfull \hbox (badness 1360) in paragraph at lines 10--11
 \T1/ptm/m/n/10.95 (+20) As ap-prox-i-mate para-met-ric bounds, a Monte
  []
@@ -693,14 +708,26 @@ Underfull \hbox (badness 1895) in paragraph at lines 10--11
  []
 
 
-Underfull \vbox (badness 1097) has occurred while \output is active []
-
-
-Underfull \hbox (badness 1199) in paragraph at lines 16--17
-\T1/ptm/m/n/10.95 (+20) dual ETS thresh-old al-ready pro-vides im-plicit
+Underfull \hbox (badness 3302) in paragraph at lines 16--17
+\T1/ptm/m/n/10.95 (+20) lower bound (26.7%), fam-ily de-duplication
  []
 
-<../figures/paper/fig_2_dose_response.pdf, id=434, 366.07333pt x 412.19664pt>
+
+Underfull \hbox (badness 1308) in paragraph at lines 16--17
+\T1/ptm/m/n/10.95 (+20) (29.1%), and sim-ple design-effect ad-just-ment
+ []
+
+
+Underfull \hbox (badness 3199) in paragraph at lines 16--17
+\T1/ptm/m/n/10.95 (+20) a con-ser-va-tive weighted-DEFF bound yields
+ []
+
+
+Underfull \hbox (badness 4193) in paragraph at lines 22--23
+\T1/ptm/m/n/10.95 (+20) DIF is pre-dom-i-nantly an item-specific phe-
+ []
+
+<../figures/paper/fig_2_dose_response.pdf, id=470, 366.07333pt x 412.19664pt>
 File: ../figures/paper/fig_2_dose_response.pdf Graphic file (type pdf)
 <use ../figures/paper/fig_2_dose_response.pdf>
 Package pdftex.def Info: ../figures/paper/fig_2_dose_response.pdf  used on inpu
@@ -717,13 +744,13 @@ Underfull \hbox (badness 1584) in paragraph at lines 47--54
  []
 
 
-Underfull \hbox (badness 2065) in paragraph at lines 47--54
-\T1/ptm/m/n/10.95 (+20) dis-con-nect arises be-cause web-overlap la-bels
+Underfull \hbox (badness 6893) in paragraph at lines 47--54
+\T1/ptm/m/n/10.95 (+20) among web-contaminated items and 31.8%
  []
 
 [6]
-Underfull \hbox (badness 2005) in paragraph at lines 59--60
-\T1/ptm/m/n/10.95 (+20) 31.1--45.2% across 5 rep-re-sen-ta-tive sub-jects).
+Underfull \hbox (badness 3646) in paragraph at lines 59--60
+\T1/ptm/m/n/10.95 (+20) vastly dif-fer-ent un-matched rates, sug-gest-ing
  []
 
 
@@ -742,7 +769,7 @@ Underfull \hbox (badness 6725) in paragraph at lines 89--90
 \T1/ptm/m/n/10.95 (+20) items dis-pro-por-tion-ately dis-ad-van-tages 2024
  []
 
-[7 <../figures/paper/fig_2_dose_response.pdf>]
+
 Underfull \hbox (badness 2181) in paragraph at lines 95--96
 \T1/ptm/m/n/10.95 (+20) (Hel-laSwag ([][]Zellers et al.[][], [][]2019[][])) to 
 31.3%
@@ -750,47 +777,72 @@ Underfull \hbox (badness 2181) in paragraph at lines 95--96
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 95--96
-\T1/ptm/m/n/10.95 (+20) Knowl-edge/reasoning bench-marks (Wino-
- []
-
-) (./sections/discussion.tex
-Underfull \hbox (badness 1852) in paragraph at lines 9--10
-\T1/ptm/m/n/10.95 (+20) Temporal DIF de-com-poses bench-mark dif-fer-
+\T1/ptm/m/n/10.95 (+20) (MMLU). Knowl-edge/reasoning bench-marks
  []
 
 
-Underfull \hbox (badness 2165) in paragraph at lines 9--10
-\T1/ptm/m/n/10.95 (+20) ences into three lay-ers: (1) \T1/ptm/m/it/10.95 (+20) 
-im-pact\T1/ptm/m/n/10.95 (+20) ---ability
+Underfull \hbox (badness 1087) in paragraph at lines 95--96
+\T1/ptm/m/n/10.95 (+20) show C% $\OT1/cmr/m/n/10.95 = 26\OML/cmm/m/it/10.95 :\O
+T1/cmr/m/n/10.95 9$\T1/ptm/m/n/10.95 (+20) --$\OT1/cmr/m/n/10.95 31\OML/cmm/m/i
+t/10.95 :\OT1/cmr/m/n/10.95 3%$ \T1/ptm/m/n/10.95 (+20) ver-sus $\OT1/cmr/m/n/1
+0.95 17\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 9$\T1/ptm/m/n/10.95 (+20) --$\OT
+1/cmr/m/n/10.95 18\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 9%$
  []
 
 
-Underfull \hbox (badness 1742) in paragraph at lines 9--10
-\T1/ptm/m/n/10.95 (+20) dif-fer-ences re-moved by match-ing ($\OMS/cmsy/m/n/10.
-95 ^^X$\T1/ptm/m/n/10.95 (+20) 2.4 pp);
+Underfull \vbox (badness 2409) has occurred while \output is active []
+
+ [7 <../figures/paper/fig_2_dose_response.pdf>]) (./sections/discussion.tex
+Underfull \hbox (badness 3514) in paragraph at lines 9--10
+\T1/ptm/m/n/10.95 (+20) In stan-dard-ized ed-u-ca-tional test-ing, ETS C
  []
 
 
-Underfull \hbox (badness 4013) in paragraph at lines 9--10
-\T1/ptm/m/n/10.95 (+20) (2) \T1/ptm/m/it/10.95 (+20) DIF\T1/ptm/m/n/10.95 (+20)
- ---item-level dif-fer-ences af-ter abil-ity
+Underfull \hbox (badness 1728) in paragraph at lines 9--10
+\T1/ptm/m/n/10.95 (+20) (2) ca-pa-bil-ity evo-lu-tion, where gen-uine skill
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 9--10
-\T1/ptm/m/n/10.95 (+20) tem-po-ral DIF means the same score car-ries
+Underfull \hbox (badness 1005) in paragraph at lines 9--10
+\T1/ptm/m/n/10.95 (+20) difficulty--direction in-ter-ac-tion ($\OML/cmm/m/it/10
+.95 ^^Z \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 ^^@\OT1/cmr/m/n/10.95 0\OML/cm
+m/m/it/10.95 :\OT1/cmr/m/n/10.95 597$\T1/ptm/m/n/10.95 (+20) ;
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 12--13
+\T1/ptm/m/n/10.95 (+20) for bench-mark gov-er-nance, iden-ti-fy-ing which
+ []
+
+
+Underfull \hbox (badness 2865) in paragraph at lines 15--16
+\T1/ptm/m/n/10.95 (+20) among DIF-C items (en-rich-ment $\OT1/cmr/m/n/10.95 = 0
+\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 92\OMS/cmsy/m/n/10.95 ^^B$\T1/ptm/m/n/1
+0.95 (+20) ,
  []
 
 ) (./sections/conclusion.tex
-Underfull \hbox (badness 4303) in paragraph at lines 21--1
-\T1/ptm/m/n/10.95 (+20) grounds grad-u-ated thresh-olds: (1) \T1/ptm/m/it/10.95
- (+20) Mon-i-tor
+Underfull \hbox (badness 2707) in paragraph at lines 27--2
+\T1/ptm/m/n/10.95 (+20) Item-level prop-er-ties do not re-li-ably pre-dict
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 27--2
+\T1/ptm/m/n/10.95 (+20) equat-ing an-chors ([][]Kolen and Bren-nan[][], [][]201
+4[][];
  []
 
 ) (./sections/limitations.tex
-Underfull \vbox (badness 1655) has occurred while \output is active []
+Underfull \hbox (badness 1147) in paragraph at lines 6--1
+\T1/ptm/m/n/10.95 (+20) Across six METABENCH bench-marks, 17.9--
+ []
 
- [8])
+
+Underfull \hbox (badness 1997) in paragraph at lines 6--1
+\T1/ptm/m/n/10.95 (+20) horts (family-level clus-ter boot-strap 95% CI
+ []
+
+[8])
 Underfull \hbox (badness 10000) in paragraph at lines 13--35
  []\T1/ptm/b/n/10.95 (+20) Generalizability.[] \T1/ptm/m/n/10.95 (+20) All six 
 bench-marks use
@@ -801,23 +853,33 @@ Underfull \hbox (badness 2556) in paragraph at lines 13--35
 \T1/ptm/m/n/10.95 (+20) to open-ended gen-er-a-tion (e.g., Al-pacaE-val),
  []
 
+
+Underfull \hbox (badness 5726) in paragraph at lines 13--35
+\T1/ptm/m/n/10.95 (+20) cod-ing (e.g., Hu-manEval), or partial-credit
+ []
+
+
+Underfull \hbox (badness 5460) in paragraph at lines 13--35
+\T1/ptm/m/n/10.95 (+20) bench-marks is untested and would re-quire
+ []
+
 (./main.bbl
-Underfull \hbox (badness 1635) in paragraph at lines 22--29
+Underfull \hbox (badness 1635) in paragraph at lines 28--35
 \T1/ptm/m/n/10 (+20) Ull-man, Fer-nando Martinez-Plumed, Joshua B.
  []
 
 [9]
-Underfull \hbox (badness 2368) in paragraph at lines 118--122
+Underfull \hbox (badness 2368) in paragraph at lines 116--120
 \T1/ptm/m/n/10 (+20) 2026.  [][]Ef-fi-cient de-tec-tion of bad bench-mark
  []
 
 [10]
-Underfull \hbox (badness 1668) in paragraph at lines 352--358
+Underfull \hbox (badness 1668) in paragraph at lines 366--372
 \T1/ptm/m/n/10 (+20) Mungra, Richard Yuanzhe Pang, Ja-son Phang,
  []
 
 
-Underfull \hbox (badness 1221) in paragraph at lines 367--372
+Underfull \hbox (badness 1221) in paragraph at lines 381--386
 []\T1/ptm/m/n/10 (+20) Colin White. 2025.  [][]LiveBench: A chal-leng-ing,
  []
 
@@ -859,59 +921,80 @@ Underfull \hbox (badness 2253) in paragraph at lines 24--25
  []
 
 [12]
-Overfull \hbox (3.6588pt too wide) in paragraph at lines 84--96
+Overfull \hbox (4.9852pt too wide) in paragraph at lines 98--110
  [][] 
  []
 
-<../figures/paper/fig_3_within_subject_matching.pdf, id=783, 520.91881pt x 336.
+[13]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (3.6588pt too wide) in paragraph at lines 153--165
+ [][] 
+ []
+
+<../figures/paper/fig_3_within_subject_matching.pdf, id=844, 520.91881pt x 336.
 04222pt>
 File: ../figures/paper/fig_3_within_subject_matching.pdf Graphic file (type pdf
 )
 <use ../figures/paper/fig_3_within_subject_matching.pdf>
 Package pdftex.def Info: ../figures/paper/fig_3_within_subject_matching.pdf  us
-ed on input line 103.
+ed on input line 172.
 (pdftex.def)             Requested size: 219.08614pt x 141.3316pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../figures/paper/fig_4_downstream_impact.pdf, id=784, 417.18108pt x 401.35634p
+<../figures/paper/fig_4_downstream_impact.pdf, id=845, 417.18108pt x 401.35634p
 t>
 File: ../figures/paper/fig_4_downstream_impact.pdf Graphic file (type pdf)
 <use ../figures/paper/fig_4_downstream_impact.pdf>
 Package pdftex.def Info: ../figures/paper/fig_4_downstream_impact.pdf  used on 
-input line 110.
+input line 179.
 (pdftex.def)             Requested size: 219.08614pt x 210.77646pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../figures/paper/fig_5_gsm1k_dif_correlation.pdf, id=785, 709.27222pt x 494.42
+<../figures/paper/fig_5_gsm1k_dif_correlation.pdf, id=846, 709.27222pt x 494.42
 302pt>
 File: ../figures/paper/fig_5_gsm1k_dif_correlation.pdf Graphic file (type pdf)
 <use ../figures/paper/fig_5_gsm1k_dif_correlation.pdf>
 Package pdftex.def Info: ../figures/paper/fig_5_gsm1k_dif_correlation.pdf  used
- on input line 117.
+ on input line 186.
 (pdftex.def)             Requested size: 219.08614pt x 152.71881pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [13] [14 <../figures/paper/fig_3_within_subject_matching.pdf> <../figures/pap
-er/fig_4_downstream_impact.pdf> <../figures/paper/fig_5_gsm1k_dif_correlation.p
-df>] (./main.aux)
+<../figures/paper/fig_A3_rho_degradation.pdf, id=847, 493.59134pt x 312.5985pt>
+
+File: ../figures/paper/fig_A3_rho_degradation.pdf Graphic file (type pdf)
+<use ../figures/paper/fig_A3_rho_degradation.pdf>
+Package pdftex.def Info: ../figures/paper/fig_A3_rho_degradation.pdf  used on i
+nput line 193.
+(pdftex.def)             Requested size: 219.08614pt x 138.75053pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14]) [15 <../figures/paper/fig_3_within_subject_matching.pdf> <../figures/pape
+r/fig_4_downstream_impact.pdf> <../figures/paper/fig_5_gsm1k_dif_correlation.pd
+f>] [16
+
+ <../figures/paper/fig_A3_rho_degradation.pdf>] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CFACCA8794588AAA627BA3A7688F266C;4389.
+(rerunfilecheck)             Checksum: 8803D635DDFEAD773A7F01FAB92CA267;5012.
  ) 
 Here is how much of TeX's memory you used:
- 18123 strings out of 469438
- 295359 string characters out of 5468411
- 789115 words of memory out of 5000000
- 45934 multiletter control sequences out of 15000+600000
- 705940 words of font info for 425 fonts, out of 8000000 for 9000
+ 18174 strings out of 469438
+ 296614 string characters out of 5468411
+ 790115 words of memory out of 5000000
+ 45977 multiletter control sequences out of 15000+600000
+ 706224 words of font info for 422 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 84i,12n,93p,1887b,711s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,93p,2067b,711s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texli
@@ -930,10 +1013,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf
 ype1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (14 pages, 594000 bytes).
+Output written on main.pdf (16 pages, 635263 bytes).
 PDF statistics:
- 1108 PDF objects out of 1200 (max. 8388607)
- 804 compressed objects within 9 object streams
- 136 named destinations out of 1000 (max. 500000)
- 62186 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1256 PDF objects out of 1440 (max. 8388607)
+ 879 compressed objects within 9 object streams
+ 149 named destinations out of 1000 (max. 500000)
+ 62215 words of extra memory for PDF output out of 74296 (max. 10000000)
 
