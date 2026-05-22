@@ -6,13 +6,13 @@
 \label{sec:disc_temporal}
 
 \looseness=-1
-In standardized educational testing, ETS~C rates typically range from 5--15\%~\citep{clauser1998dif}; our $\approx$29\% corrected rate is 2--6$\times$ higher. Temporal DIF detects \emph{that} items function differently, not \emph{why}. Three non-mutually-exclusive mechanisms may drive the signal: (1)~differential contamination, where asymmetric training data exposure changes item difficulty for one cohort; (2)~capability evolution, where genuine skill acquisition alters the ability--item relationship; (3)~training methodology shifts (RLHF, chain-of-thought, or post-training techniques). The difficulty--direction interaction ($\rho = -0.597$; \Cref{sec:temporal}) provides suggestive evidence for capability evolution: memorization would more plausibly boost easy, frequently-encountered items, whereas genuine skill acquisition disproportionately affects harder items.
+In standardized educational testing, ETS~C rates typically range from 5--15\%~\citep{clauser1998dif}; our $\approx$29\% corrected rate is 2--6$\times$ higher. Temporal DIF detects \emph{that} items function differently, not \emph{why}. Three non-exclusive mechanisms may drive this: (1)~differential contamination (asymmetric training data exposure); (2)~capability evolution (genuine skill acquisition); (3)~training methodology shifts (RLHF, post-training techniques). The difficulty--direction interaction ($\rho = -0.597$; \Cref{sec:temporal}) provides suggestive evidence for~(2): memorization would boost easy items, whereas skill acquisition disproportionately affects harder ones.
 
 \looseness=-1
-The high aggregate correlation ($\rho \approx 0.997$) does not undermine DIF's utility---it demonstrates that MMLU's item redundancy (${\sim}$12{,}500 items) absorbs temporal shifts at the aggregate level. DIF monitoring serves as psychometric surveillance for benchmark governance, identifying which items shift to enable targeted replacement and benchmark versioning~\citep{zhao2025mmlucf,habba2026growingpains}. [PLACEHOLDER: subject-level $\rho$ results to be inserted]
+The high aggregate correlation ($\rho \approx 0.997$) does not undermine DIF's utility---it demonstrates that MMLU's item redundancy (${\sim}$12{,}500 items) absorbs temporal shifts at the aggregate level. DIF monitoring serves as psychometric surveillance for benchmark governance, identifying which items shift to enable targeted replacement and benchmark versioning~\citep{zhao2025mmlucf,habba2026growingpains}. However, this aggregate stability masks subject-level instability: mean per-subject $\rho = 0.950$, with 22/57 subjects below 0.95 and five below 0.90 (min: \emph{global\_facts}, $\rho = 0.77$); smaller subjects with high C\% are disproportionately affected, making DIF monitoring critical for fine-grained comparisons.
 
 \looseness=-1
-Expert-annotated ground truth errors~\citep{gema2024mmlu} (313 flagged items in MMLU-Redux, 4{,}802 matched to our item set) show no enrichment among DIF-C items (enrichment $= 0.92\times$, $\varphi = -0.01$, $p = 0.37$), confirming that temporal DIF captures dynamic measurement shifts rather than static item quality defects.
+Expert-annotated errors~\citep{gema2024mmlu} (313 items in MMLU-Redux, 4{,}802 matched) show no enrichment among DIF-C items ($0.92\times$, $\varphi = -0.01$, $p = 0.37$), confirming DIF captures dynamic shifts rather than static quality defects.
 
 \subsection{Ground Truth Meta-Critique}
 \label{sec:disc_groundtruth}
@@ -26,6 +26,6 @@ The near-independence between DIF flags and web-overlap labels (\Cref{sec:ground
 \looseness=-1
 Item-level properties do not reliably predict DIF susceptibility (AUROC $= 0.60$; \Cref{app:predictive}), confirming that post-hoc monitoring cannot be replaced by pre-screening.
 We propose temporal MH-DIF whenever $\geq$500 models accumulate, with $\rho$-degradation-grounded action levels (\Cref{app:fig_rho_degradation}):
-(1)~\emph{Monitor} (C\% $< 15\%$): report C\% in release notes.
-(2)~\emph{Flag} ($15$--$25\%$): report stable-item rankings as sensitivity analysis alongside full rankings.
-(3)~\emph{Act} (C\% $\geq 25\%$): prioritize flagged items for expert review; report stable-item rankings as primary metric; use DIF pre-screening for equating anchors~\citep{kolen2014equating,habba2026growingpains}.
+(1)~\emph{Monitor} (C\% $< 15\%$): report C\%.
+(2)~\emph{Flag} ($15$--$25\%$): report stable-item rankings alongside full rankings.
+(3)~\emph{Act} ($\geq 25\%$): prioritize flagged items for review; report stable-item rankings as primary; use DIF pre-screening for equating anchors~\citep{kolen2014equating,habba2026growingpains}.
