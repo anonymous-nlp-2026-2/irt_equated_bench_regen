@@ -73,6 +73,25 @@ $k$ & $\Delta\mathrm{FPR}$ & $\Delta\mathrm{TPR}$ \\
 \end{tabular}
 \end{table}
 
+\begin{table}[h]
+\centering
+\caption{Leave-one-family-out (LOFO) robustness on MMLU. Removing non-dominant families ($\leq$15\% of their cohort) changes C\% by at most 2.93\,pp. Larger shifts from removing Mistral or Llama-3 reflect both their outsized cohort share ($>$39\%) and reduced MH statistical power from smaller remaining samples. Stratification uses total test score for computational efficiency; cross-subject matching yields identical baseline C\%.}
+\label{tab:lofo}
+\small
+\begin{tabular}{lrrr}
+\toprule
+Family & $N$ removed & Cohort share & C\% (LOFO) \\
+\midrule
+\emph{Full sample} & --- & --- & 31.32 \\
+Mistral & 547 & 51\% ref & 22.47 \\
+Llama-3 & 315 & 39\% foc & 24.06 \\
+Mixtral & 120 & 15\% foc & 34.26 \\
+Llama-2 & 161 & 15\% ref & 31.48 \\
+Solar & 91 & 11\% foc & 31.01 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 \section{Cross-Benchmark Comparison}
 \label{app:gsm8k_details}
 
@@ -122,7 +141,7 @@ $\Delta$TPR ($p{=}0.5$, external) & $+0.508_{\pm.027}$ & $+0.514_{\pm.028}$ \\
 \begin{figure}[h]
 \centering
 \includegraphics[width=\columnwidth]{fig_A3_rho_degradation.pdf}
-\caption{Ranking degradation under DIF-ordered vs.\ random item removal across six benchmarks. DIF-ordered removal (red) consistently degrades $\rho$ faster than random removal (blue band = mean $\pm$ 1 SD, 20 seeds). Vertical dashed lines mark the Monitor/Flag (15\%) and Flag/Act (25\%) thresholds from \Cref{sec:disc_protocol}.}
+\caption{Ranking degradation under DIF-ordered vs.\ random item removal across six benchmarks. DIF-ordered removal (orange) consistently degrades $\rho$ faster than random removal (blue band = mean $\pm$ 1 SD, 20 seeds). Vertical dashed lines mark the Monitor/Flag (15\%) and Flag/Act (25\%) thresholds from \Cref{sec:disc_protocol}.}
 \label{app:fig_rho_degradation}
 \end{figure}
 
