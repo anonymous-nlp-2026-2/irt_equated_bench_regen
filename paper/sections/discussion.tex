@@ -1,6 +1,6 @@
 \section{Discussion}
 \label{sec:discussion}
-\enlargethispage{5\baselineskip}
+\enlargethispage*{8\baselineskip}
 
 \subsection{Implications for Benchmark Temporal Comparability}
 \label{sec:disc_temporal}
@@ -22,4 +22,4 @@ Item-level properties do not reliably predict DIF susceptibility (AUROC $= 0.60$
 We propose temporal MH-DIF whenever $\geq$500 models accumulate, with $\rho$-degradation-grounded action levels (\Cref{app:fig_rho_degradation}):
 (1)~\emph{Monitor} (C\% $< 15\%$): report C\% in release notes.
 (2)~\emph{Flag} ($15$--$25\%$): report stable-item rankings as sensitivity analysis alongside full rankings.
-(3)~\emph{Act} (C\% $\geq 25\%$): prioritize flagged items for independent expert review of content characteristics; report stable-item rankings as primary metric; use DIF pre-screening to identify stable anchors for equating~\citep{kolen2014equating,habba2026growingpains}.
+(3)~\emph{Act} (C\% $\geq 25\%$): prioritize flagged items for expert review; report stable-item rankings as primary metric; use DIF pre-screening for equating anchors~\citep{kolen2014equating,habba2026growingpains}.

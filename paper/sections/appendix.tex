@@ -75,7 +75,7 @@ $k$ & $\Delta\mathrm{FPR}$ & $\Delta\mathrm{TPR}$ \\
 
 \begin{table}[h]
 \centering
-\caption{Leave-one-family-out (LOFO) robustness on MMLU. Removing non-dominant families ($\leq$15\% of their cohort) changes C\% by at most 2.93\,pp. Larger shifts from removing Mistral or Llama-3 reflect both their outsized cohort share ($>$39\%) and reduced MH statistical power from smaller remaining samples. Stratification uses total test score for computational efficiency; cross-subject matching yields identical baseline C\%.}
+\caption{Leave-one-family-out (LOFO) robustness on MMLU. Removing non-dominant families ($\leq$15\% of their cohort) changes C\% by at most 2.93\,pp. Larger shifts from removing Mistral or Llama-3 are driven almost entirely by family composition, not statistical power loss: Monte Carlo random-subsample calibration (200 replicates per scenario, matching the reduced sample size) shows the power effect is $\leq$1\,pp, while the composition effect accounts for 95--113\% of the observed C\% drop (Mistral: $-8.44$\,pp composition vs.\ $-0.41$\,pp power; Llama-3: $-8.17$\,pp vs.\ ${+}0.91$\,pp; observed C\% falls below the 95\% random-subsample range in both cases). Stratification uses total test score for computational efficiency; cross-subject matching yields identical baseline C\%.}
 \label{tab:lofo}
 \small
 \begin{tabular}{lrrr}
@@ -91,6 +91,15 @@ Solar & 91 & 11\% foc & 31.01 \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\section{Design Effect Estimation}
+\label{app:deff}
+
+Model families (e.g., Mistral, Llama-3) induce intra-class correlation (ICC) that inflates Mantel-Haenszel $\chi^2$ statistics beyond the nominal $\chi^2_1$ reference distribution. We estimate the design effect (DEFF) per item following \citet{rao1992variance}: $\mathrm{DEFF}_i = 1 + (\bar{m} - 1) \cdot \mathrm{ICC}_i$, where $\bar{m}$ is the mean family size and $\mathrm{ICC}_i$ is the one-way random-effects ICC for item $i$ across 30 families (restricted to ref+foc cohort; 1,884 models with family$\geq$2).
+
+Two estimates of $\bar{m}$ bracket the adjustment: (1)~\emph{Simple mean} ($\bar{m} = 62.8$), treating all families equally, yields $\mathrm{DEFF} = 3.87$ and adjusted C\% $= 29.2\%$; (2)~\emph{Weighted mean} ($\bar{m} = \sum n_f^2 / \sum n_f = 254.5$; \citealp{kish1965survey}), reflecting the effective cluster size experienced by a randomly sampled model, yields $\mathrm{DEFF} = 12.79$ and adjusted C\% $= 13.5\%$.
+
+\noindent Mean ICC $= 0.047$ (median $0.041$, Q3 $= 0.061$, max $= 0.219$; 4.8\% of items exceed $0.10$). After dividing each item's $\chi^2_{\mathrm{MH}}$ by its item-specific DEFF and re-applying ETS thresholds, 13.5--29.2\% of items retain Category~C classification depending on the $\bar{m}$ variant---both far exceeding the 0.18\% random-split baseline (75--162$\times$).
 
 \section{Cross-Benchmark Comparison}
 \label{app:gsm8k_details}
