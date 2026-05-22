@@ -202,8 +202,8 @@ Yucheng Li, Yunhao Guo, Frank Guerin, and Chenghua Lin. 2024{\natexlab{b}}.
 
 \bibitem[{Liang(2026)}]{liang2026dvd}
 Rongzhen Liang. 2026.
-\newblock \href {https://arxiv.org/abs/2601.04895} {{DVD}: Detection via
-  variance of generation distribution for variant contamination}.
+\newblock \href {https://arxiv.org/abs/2601.04895} {{DVD}: A robust method for
+  detecting variant contamination in large language model evaluation}.
 \newblock \emph{Preprint}, arXiv:2601.04895.
 
 \bibitem[{Lin et~al.(2022)Lin, Hilton, and Evans}]{lin2022truthfulqa}
@@ -406,9 +406,9 @@ Jingyang Zhang, Jingwei Sun, Eric Yeats, Yang Ouyang, Martin Kuo, Jianyi Zhang,
 
 \bibitem[{Zhou et~al.(2026)Zhou, Huang, Zhao, Han, Wang, Chen, Yang, Bao, Dong,
   Xu, Zhu, Cao, and Zhao}]{zhou2026psnirt}
-Hao Zhou, Heng Huang, Zhenheng Zhao, Lin Han, Haoyu Wang, Ke~Chen, Min Yang,
-  Weidong Bao, Ji~Dong, Bo~Xu, Changshui Zhu, Huijun Cao, and Tiejun Zhao.
-  2026.
+Hongli Zhou, Hui Huang, Ziqing Zhao, Lvyuan Han, Huicheng Wang, Kehai Chen,
+  Muyun Yang, Wei Bao, Jian Dong, Bing Xu, Conghui Zhu, Hailong Cao, and Tiejun
+  Zhao. 2026.
 \newblock \href {https://arxiv.org/abs/2505.15055} {Lost in benchmarks?
   rethinking large language model benchmarking with item response theory}.
 \newblock In \emph{Proceedings of the AAAI Conference on Artificial
