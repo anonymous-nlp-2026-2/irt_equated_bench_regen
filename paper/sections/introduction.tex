@@ -19,9 +19,9 @@ DIF should be understood as a diagnostic lens rather than a quality filter: DIF-
 Our contributions are methodological and empirical, not algorithmic:
 
 \begin{enumerate}
-\item \textbf{Ground truth meta-critique}: We empirically demonstrate that web-overlap contamination labels~\citep{li2024contamination} do not provide appropriate ground truth for item-level differential detectors; direct comparison on 9,229 items shows near-independence (Jaccard $= 0.206$, $\phi = 0.012$), exposing a validation methodology gap (\Cref{sec:groundtruth}).
+\item \textbf{Orthogonal constructs}: We empirically demonstrate that web-overlap labels~\citep{li2024contamination}, which index global exposure, are near-independent of DIF flags, which index differential functioning (Jaccard $= 0.206$, $\phi = 0.012$ on 9,229 items); the two capture fundamentally different signals (\Cref{sec:groundtruth}).
 
 \item \textbf{Semi-synthetic validation framework}: We adapt and validate cross-subject matching, which provides theoretical $\Delta\mathrm{FPR} = 0$ guarantees for multi-domain benchmarks, with family-level clustering for non-independent models and per-item design-effect correction for correlated populations; replicated on GSM8K (\Cref{sec:semisynthetic,sec:gsm8k}).
 
-\item \textbf{Temporal measurement instability at scale}: We empirically establish that approximately 27--29\% of MMLU items exhibit differential functioning across model generations after three convergent non-independence corrections; replication across all six METABENCH benchmarks yields C\% $= 17.9$--$31.3\%$, with knowledge/reasoning benchmarks showing higher DIF rates than procedural ones (\Cref{sec:temporal,sec:gsm8k,sec:downstream}).
+\item \textbf{Temporal measurement instability at scale}: We empirically establish that approximately 27--29\% of MMLU items exhibit differential functioning across model generations after two convergent non-independence corrections; replication across all six METABENCH benchmarks yields C\% $= 17.9$--$31.3\%$, with knowledge/reasoning benchmarks showing higher DIF rates than procedural ones (\Cref{sec:temporal,sec:gsm8k,sec:downstream}).
 \end{enumerate}
