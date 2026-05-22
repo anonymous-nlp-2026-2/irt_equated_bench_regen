@@ -15,7 +15,7 @@ Temporal DIF detects \emph{that} items function differently, not \emph{why}. Thr
 Our diagnostic approach complements benchmark reform efforts such as MMLU-CF~\citep{zhao2025mmlucf}, which reconstructs contamination-free items, and dynamic benchmarks that generate novel items per evaluation cycle. DIF monitoring provides a low-cost alternative when reconstruction is infeasible: rather than replacing items, it identifies which existing items remain measurement-invariant.
 
 \looseness=-1
-MMLU contains documented ground truth errors~\citep{gema2024mmlu}, which could contribute to DIF if newer models learn correct answers that differ from the keyed response. [Overlap analysis results pending.]
+Expert-annotated ground truth errors~\citep{gema2024mmlu} (313 flagged items in MMLU-Redux, 4{,}802 matched to our item set) show no enrichment among DIF-C items (enrichment $= 0.92\times$, $\varphi = -0.01$, $p = 0.37$), confirming that temporal DIF captures dynamic measurement shifts rather than static item quality defects.
 
 \subsection{Ground Truth Meta-Critique}
 \label{sec:disc_groundtruth}
