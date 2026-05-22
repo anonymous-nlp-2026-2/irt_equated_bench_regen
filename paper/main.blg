@@ -12,43 +12,43 @@ Database file #1: references.bib
 Warning--can't use both volume and number fields in sakaguchi2021winogrande
 You've used 57 entries,
             3764 wiz_defined-function locations,
-            1050 strings with 20727 characters,
-and the built_in function-call counts, 44704 in all, are:
-= -- 3588
-> -- 2766
+            1050 strings with 20517 characters,
+and the built_in function-call counts, 44750 in all, are:
+= -- 3606
+> -- 2762
 < -- 30
 + -- 1144
 - -- 846
-* -- 3142
-:= -- 6770
+* -- 3165
+:= -- 6782
 add.period$ -- 229
 call.type$ -- 57
 change.case$ -- 616
 chr.to.int$ -- 60
 cite$ -- 58
-duplicate$ -- 2566
-empty$ -- 2939
+duplicate$ -- 2546
+empty$ -- 2953
 format.name$ -- 1019
-if$ -- 9523
+if$ -- 9550
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 617
+missing$ -- 609
 newline$ -- 289
 num.names$ -- 230
-pop$ -- 1752
+pop$ -- 1739
 preamble$ -- 1
 purify$ -- 509
 quote$ -- 0
-skip$ -- 2246
+skip$ -- 2243
 stack$ -- 0
-substring$ -- 903
-swap$ -- 1373
-text.length$ -- 28
+substring$ -- 902
+swap$ -- 1371
+text.length$ -- 27
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 504
 warning$ -- 1
 while$ -- 190
 width$ -- 0
-write$ -- 705
+write$ -- 709
 (There was 1 warning)

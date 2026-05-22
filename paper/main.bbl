@@ -59,9 +59,9 @@ Wei-Lin Chiang, Lianmin Zheng, Ying Sheng, Anastasios~N. Angelopoulos, Tianle
   and Tafjord}]{clark2018arc}
 Peter Clark, Isaac Cowhey, Oren Etzioni, Tushar Khot, Ashish Sabharwal, Carissa
   Schoenick, and Oyvind Tafjord. 2018.
-\newblock Think you have solved question answering? try {ARC}, the {AI2}
-  reasoning challenge.
-\newblock \emph{arXiv preprint arXiv:1803.05457}.
+\newblock \href {https://arxiv.org/abs/1803.05457} {Think you have solved
+  question answering? try {ARC}, the {AI2} reasoning challenge}.
+\newblock \emph{Preprint}, arXiv:1803.05457.
 
 \bibitem[{Clauser and Mazor(1998)}]{clauser1998dif}
 Brian~E. Clauser and Kathleen~M. Mazor. 1998.
@@ -105,8 +105,8 @@ Aryo~Pradipta Gema, Joshua Ong~Jun Leang, Giwon Hong, Alessio Devoto, Alberto
   Carlo~Maria Mancino, Rohit Saxena, Xuanli He, Yu~Zhao, Xiaotang Du,
   Mohammad~Reza Ghasemi~Madani, Claire Barale, Robert McHardy, Joshua Harris,
   Jean Kaddour, Emile van Krieken, and Pasquale Minervini. 2024.
-\newblock Are we done with {MMLU}?
-\newblock \emph{arXiv preprint arXiv:2406.04127}.
+\newblock \href {https://arxiv.org/abs/2406.04127} {Are we done with {MMLU}?}
+\newblock \emph{Preprint}, arXiv:2406.04127.
 
 \bibitem[{Golchin and Surdeanu(2024)}]{golchin2024timetravel}
 Shahriar Golchin and Mihai Surdeanu. 2024.
@@ -117,7 +117,7 @@ Shahriar Golchin and Mihai Surdeanu. 2024.
 
 \bibitem[{Habba et~al.(2026)Habba, Itzhak, Yehudai, Perlitz, Bandel,
   Shmueli-Scheuer, Choshen, and Stanovsky}]{habba2026growingpains}
-Eitam Habba, Ido Itzhak, Asaf Yehudai, Yotam Perlitz, Elron Bandel, Michal
+Eliya Habba, Itay Itzhak, Asaf Yehudai, Yotam Perlitz, Elron Bandel, Michal
   Shmueli-Scheuer, Leshem Choshen, and Gabriel Stanovsky. 2026.
 \newblock \href {https://arxiv.org/abs/2604.12843} {Growing pains: Extensible
   and efficient {LLM} benchmarking via fixed parameter calibration}.
@@ -141,8 +141,7 @@ Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn
 
 \bibitem[{Holland and Thayer(1988)}]{holland1988mh}
 Paul~W. Holland and Dorothy~T. Thayer. 1988.
-\newblock \href {https://doi.org/10.1002/j.2330-8516.1986.tb00186.x}
-  {Differential item functioning and the {Mantel-Haenszel} procedure}.
+\newblock Differential item functioning and the {Mantel-Haenszel} procedure.
 \newblock In Howard Wainer and Henry~I. Braun, editors, \emph{Test Validity}.
   Lawrence Erlbaum Associates.
 
@@ -237,9 +236,9 @@ Zhimeng Luo, Lixin Wu, Adam Frisch, and Daqing He. 2025.
 
 \bibitem[{Maeda(2025)}]{maeda2025difllm}
 Hotaka Maeda. 2025.
-\newblock Finding words associated with {DIF}: Predicting {DIF} using {LLMs}
-  and explainable {AI}.
-\newblock \emph{arXiv preprint arXiv:2502.07017}.
+\newblock \href {https://arxiv.org/abs/2502.07017} {Finding words associated
+  with {DIF}: Predicting {DIF} using {LLMs} and explainable {AI}}.
+\newblock \emph{Preprint}, arXiv:2502.07017.
 
 \bibitem[{Maia~Polo et~al.(2024)Maia~Polo, Weber, Choshen, Sun, Xu, and
   Yurochkin}]{maiapolo2024tinybenchmarks}
@@ -274,8 +273,8 @@ Yonatan Oren, Nicole Meister, Niladri~S. Chatterji, Faisal Ladhak, and
   Tatsunori~B. Hashimoto. 2024.
 \newblock \href {https://openreview.net/forum?id=KS8mIvetg2} {Proving test set
   contamination in black-box language models}.
-\newblock In \emph{Proceedings of the Twelfth International Conference on
-  Learning Representations (ICLR)}.
+\newblock In \emph{Proceedings of the International Conference on Learning
+  Representations (ICLR)}.
 
 \bibitem[{Qian and Huang(2026)}]{qian2026benchmark2}
 Qi~Qian and Chengsong Huang. 2026.
@@ -303,7 +302,7 @@ Pedro Rodriguez, Joe Barrow, Alexander~Miserlis Hoyle, John~P. Lalor, Robin
 Keisuke Sakaguchi, Ronan Le~Bras, Chandra Bhagavatula, and Yejin Choi. 2020.
 \newblock {WinoGrande}: An adversarial {Winograd} schema challenge at scale.
 \newblock In \emph{Proceedings of the AAAI Conference on Artificial
-  Intelligence}, volume~34, pages 8732--8740.
+  Intelligence (AAAI)}, volume~34, pages 8732--8740.
 
 \bibitem[{Shealy and Stout(1993)}]{shealy1993sibtest}
 Robin Shealy and William Stout. 1993.
@@ -424,9 +423,9 @@ Hao Zhou, Heng Huang, Zhenheng Zhao, Lin Han, Haoyu Wang, Ke~Chen, Min Yang,
 
 \bibitem[{Zhu et~al.(2026)Zhu, Hua, Miao, and Zhao}]{zhu2026bhi}
 Longyuan Zhu, Hairan Hua, Linlin Miao, and Bing Zhao. 2026.
-\newblock Benchmark health index: A systematic framework for benchmarking the
-  benchmarks of {LLMs}.
-\newblock \emph{arXiv preprint arXiv:2602.11674}.
+\newblock \href {https://arxiv.org/abs/2602.11674} {Benchmark health index: A
+  systematic framework for benchmarking the benchmarks of {LLMs}}.
+\newblock \emph{Preprint}, arXiv:2602.11674.
 
 \bibitem[{Zumbo(1999)}]{zumbo1999handbook}
 Bruno~D. Zumbo. 1999.
