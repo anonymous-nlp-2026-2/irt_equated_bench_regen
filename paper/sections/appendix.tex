@@ -200,3 +200,18 @@ $\Delta$TPR ($p{=}0.5$, external) & $+0.508_{\pm.027}$ & $+0.514_{\pm.028}$ \\
 
 To test whether DIF susceptibility is a fixed item property, we trained logistic regression and LightGBM classifiers to predict ETS~C classification from 17 leak-free features: ref-cohort difficulty and discrimination, 11 text features (question/option length, vocabulary metrics), subject metadata, and web-overlap labels~\citep{li2024contamination}. Features were computed exclusively from the reference (2023) cohort to prevent information leakage from the focal cohort. Five-fold subject-stratified cross-validation (no within-subject train/test overlap) yielded AUROC $= 0.603 \pm 0.020$ (LR) and $0.599 \pm 0.026$ (LightGBM)---near chance. Web-overlap labels contributed negligibly (SHAP $< 0.015$), independently confirming the DIF--contamination orthogonality reported in \Cref{sec:groundtruth}. These results indicate that temporal DIF reflects emergent cohort--item interactions rather than fixed item defects, motivating post-hoc monitoring over pre-screening.
 
+\section{ICC by Family Size}
+\label{app:icc_family}
+
+Within-family ICC shows no dependence on family size (Spearman $\rho = -0.009$, $p = 0.96$). Large families (Mistral, $m = 547$, ICC $= 0.47$; Llama-3, $m = 315$, ICC $= 0.53$) are no more homogeneous than small or mid-sized families, indicating that the weighted-mean DEFF variant's effective cluster size ($\bar{m} = 254$) reflects an arithmetic artifact of mega-family dominance rather than genuine within-family homogeneity.
+
+\section{Graduated De-Duplication Sensitivity}
+\label{app:dedup_k}
+
+C\% increases monotonically from 0.3\% ($K = 1$, single representative per family) to 31.3\% ($K = \text{all}$). At each fixed $K$, variance across random member draws is negligible (SD ${<} 1.5$\,pp), confirming that the signal scales with statistical power rather than within-family redundancy. The $K = 20$ threshold (29.1\%) closely matches the simple-mean DEFF estimate (29.2\%), providing independent convergence.
+
+\section{Rank-Reversal by Distance}
+\label{app:rank_reversal}
+
+Pairwise rank reversals between full-item and stable-item rankings concentrate among closely-ranked models. At $\Delta\mathrm{rank} < 50$ (mean $\Delta\mathrm{acc} = 0.003$, effectively statistical ties), the reversal rate is 35.2\%. It drops to 6.3\% for $\Delta\mathrm{rank} \in [50, 200)$, 0.6\% for $[500, 1000)$, and 0.0\% above 1000. Broad leaderboard structure is fully preserved; instability affects only models within each other's noise margin.
+
