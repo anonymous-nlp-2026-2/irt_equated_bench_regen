@@ -1,12 +1,12 @@
 \section{Discussion}
 \label{sec:discussion}
-\enlargethispage{2\baselineskip}
+\enlargethispage{5\baselineskip}
 
 \subsection{Implications for Benchmark Temporal Comparability}
 \label{sec:disc_temporal}
 
 \looseness=-1
-Temporal DIF decomposes benchmark differences into impact (ability differences removed by matching, $\sim$2.4~pp), DIF (item-level differences after ability control, $\sim$28--29\% floor, 92.4\% item-specific), and attribution (contamination, capability evolution, or methodology shifts---underdetermined without training data).
+Temporal DIF decomposes benchmark differences into impact (ability differences removed by matching, $\sim$2.4~pp), DIF (item-level differences after ability control, $\sim$28--29\% floor, 92.4\% item-specific), and attribution (contamination, capability evolution, or methodology shifts---underdetermined without training data). In standardized educational testing, ETS~C rates typically range from 5--15\%~\citep{clauser1998dif}; our 31\% rate is 2--6$\times$ higher, consistent with the rapid pace of LLM capability evolution. These interpretations are not mutually exclusive: temporal DIF may reflect capability evolution rather than measurement defect, and our results establish that item-level measurement properties change across cohorts without attributing cause.
 
 \subsection{Ground Truth Meta-Critique}
 \label{sec:disc_groundtruth}
@@ -22,4 +22,4 @@ Item-level properties do not reliably predict DIF susceptibility (AUROC $= 0.60$
 We propose temporal MH-DIF whenever $\geq$500 models accumulate, with $\rho$-degradation-grounded action levels (\Cref{app:fig_rho_degradation}):
 (1)~\emph{Monitor} (C\% $< 15\%$): report C\% in release notes.
 (2)~\emph{Flag} ($15$--$25\%$): report stable-item rankings as sensitivity analysis alongside full rankings.
-(3)~\emph{Act} (C\% $\geq 25\%$): review flagged items for differential-performance-associated content characteristics; report stable-item rankings as primary metric; use DIF pre-screening to identify stable anchors for equating~\citep{kolen2014equating,habba2026growingpains}.
+(3)~\emph{Act} (C\% $\geq 25\%$): prioritize flagged items for independent expert review of content characteristics; report stable-item rankings as primary metric; use DIF pre-screening to identify stable anchors for equating~\citep{kolen2014equating,habba2026growingpains}.

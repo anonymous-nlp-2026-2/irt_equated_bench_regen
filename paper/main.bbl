@@ -1,4 +1,4 @@
-\begin{thebibliography}{57}
+\begin{thebibliography}{54}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Balloccu et~al.(2024)Balloccu, Schmidtova, Lango, and
@@ -54,14 +54,6 @@ Wei-Lin Chiang, Lianmin Zheng, Ying Sheng, Anastasios~N. Angelopoulos, Tianle
   open platform for evaluating {LLMs} by human preference}.
 \newblock In \emph{Proceedings of the International Conference on Machine
   Learning (ICML)}.
-
-\bibitem[{Clark et~al.(2018)Clark, Cowhey, Etzioni, Khot, Sabharwal, Schoenick,
-  and Tafjord}]{clark2018arc}
-Peter Clark, Isaac Cowhey, Oren Etzioni, Tushar Khot, Ashish Sabharwal, Carissa
-  Schoenick, and Oyvind Tafjord. 2018.
-\newblock \href {https://arxiv.org/abs/1803.05457} {Think you have solved
-  question answering? try {ARC}, the {AI2} reasoning challenge}.
-\newblock \emph{Preprint}, arXiv:1803.05457.
 
 \bibitem[{Clauser and Mazor(1998)}]{clauser1998dif}
 Brian~E. Clauser and Kathleen~M. Mazor. 1998.
@@ -206,12 +198,6 @@ Rongzhen Liang. 2026.
   detecting variant contamination in large language model evaluation}.
 \newblock \emph{Preprint}, arXiv:2601.04895.
 
-\bibitem[{Lin et~al.(2022)Lin, Hilton, and Evans}]{lin2022truthfulqa}
-Stephanie Lin, Jacob Hilton, and Owain Evans. 2022.
-\newblock {TruthfulQA}: Measuring how models mimic human falsehoods.
-\newblock In \emph{Proceedings of the 60th Annual Meeting of the Association
-  for Computational Linguistics (ACL)}, pages 3214--3252.
-
 \bibitem[{Lord(1980)}]{lord1980irt}
 Frederic~M. Lord. 1980.
 \newblock \emph{Applications of Item Response Theory to Practical Testing
@@ -299,13 +285,6 @@ Pedro Rodriguez, Joe Barrow, Alexander~Miserlis Hoyle, John~P. Lalor, Robin
   change {NLP} leaderboards?
 \newblock In \emph{Proceedings of the 59th Annual Meeting of the Association
   for Computational Linguistics (ACL)}, pages 4486--4503.
-
-\bibitem[{Sakaguchi et~al.(2020)Sakaguchi, Le~Bras, Bhagavatula, and
-  Choi}]{sakaguchi2021winogrande}
-Keisuke Sakaguchi, Ronan Le~Bras, Chandra Bhagavatula, and Yejin Choi. 2020.
-\newblock {WinoGrande}: An adversarial {Winograd} schema challenge at scale.
-\newblock In \emph{Proceedings of the AAAI Conference on Artificial
-  Intelligence (AAAI)}, volume~34, pages 8732--8740.
 
 \bibitem[{Shealy and Stout(1993)}]{shealy1993sibtest}
 Robin Shealy and William Stout. 1993.
