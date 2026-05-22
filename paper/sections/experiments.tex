@@ -86,7 +86,7 @@ Cross-subject matching achieves $\Delta\mathrm{FPR} = 0.000$ across all five MML
 \label{sec:downstream}
 
 \looseness=-1
-Stable-item rank preservation holds across all six benchmarks ($\rho$ range: 0.994--0.999; mean $\rho = 0.997$; pairwise flip rate $\leq 2.8\%$; \Cref{tab:cross_benchmark}): aggregate ordering is preserved despite substantial measurement instability. DIF-flagged items concentrate discriminative signal ($z = -8\sigma$ to $-49\sigma$ vs.\ random removal), though a circularity ablation confirms DIF-based removal is the least disruptive non-random strategy. Model families show distinctive DIF profiles: Llama-3 derivatives gain ${+}53$ median rank positions, Mistral loses $35$ (\Cref{app:fig_downstream}). Removing C-flagged items disproportionately disadvantages 2024 models (cohort gap $= 96.2$ positions, $40\times$ larger than random removal; $p < 0.001$), confirming DIF items carry concentrated inter-generational signal. MMLU's 12{,}508 items provide sufficient redundancy; even the smallest benchmark (TruthfulQA, 817 items, 574 stable) preserves $\rho = 0.997$.
+Stable-item rank preservation holds across all six benchmarks (mean $\rho = 0.997$, $\tau = 0.958$; pairwise flip rate $\leq 2.8\%$; \Cref{tab:cross_benchmark}): aggregate ordering is preserved despite substantial measurement instability. DIF-flagged items concentrate discriminative signal ($z = -8\sigma$ to $-49\sigma$ vs.\ random removal), though a circularity ablation confirms DIF-based removal is the least disruptive non-random strategy. Model families show distinctive DIF profiles: Llama-3 derivatives gain ${+}53$ median rank positions, Mistral loses $35$ (\Cref{app:fig_downstream}). Removing C-flagged items disproportionately disadvantages 2024 models (cohort gap $= 96.2$ positions, $40\times$ larger than random removal; $p < 0.001$), confirming DIF items carry concentrated inter-generational signal. MMLU's 12{,}508 items provide sufficient redundancy; even the smallest benchmark (TruthfulQA, 817 items, 574 stable) preserves $\rho = 0.997$.
 
 \subsection{Cross-Benchmark Validation}
 \label{sec:gsm8k}
@@ -96,20 +96,20 @@ Temporal DIF extends across all six METABENCH benchmarks (\Cref{tab:cross_benchm
 
 \begin{table}[t]
 \centering
-\caption{Temporal DIF across six METABENCH benchmarks. C\% = ETS~C items ($|\Delta_{\mathrm{MH}}| \geq 1.5$) between 2023 and 2024 cohorts; $\rho$ = Spearman correlation between full and stable-item rankings; Flip = pairwise rank-flip rate. All six show substantial DIF (45--174$\times$ above random baseline), with knowledge/reasoning benchmarks exhibiting higher C\% than procedural ones.}
+\caption{Temporal DIF across six METABENCH benchmarks. C\% = ETS~C items ($|\Delta_{\mathrm{MH}}| \geq 1.5$) between 2023 and 2024 cohorts; $\rho$/$\tau$ = Spearman/Kendall correlation between full and stable-item rankings; Flip = pairwise rank-flip rate. All six show substantial DIF (45--174$\times$ above random baseline), with knowledge/reasoning benchmarks exhibiting higher C\% than procedural ones.}
 \label{tab:cross_benchmark}
 \small
 \resizebox{\columnwidth}{!}{%
-\begin{tabular}{lrrrrrl}
+\begin{tabular}{lrrrrrrl}
 \toprule
-Benchmark & Items & C\% & $\rho$ & Flip\% & Rand.\ C\% & Ratio \\
+Benchmark & Items & C\% & $\rho$ & $\tau$ & Flip\% & Rand.\ C\% & Ratio \\
 \midrule
-MMLU & 12{,}508 & 31.3 & 0.9965 & 2.00 & 0.18 & 174$\times$ \\
-WinoGrande & 1{,}267 & 30.3 & 0.9943 & 2.84 & 0.32 & 95$\times$ \\
-TruthfulQA & 817 & 29.7 & 0.9971 & 2.07 & 0.37 & 80$\times$ \\
-ARC & 1{,}172 & 26.9 & 0.9962 & 2.31 & 0.60 & 45$\times$ \\
-GSM8K & 1{,}319 & 18.9 & 0.9993 & 0.78 & 0.30 & 63$\times$ \\
-HellaSwag & 10{,}042 & 17.9 & 0.9986 & 1.39 & 0.28 & 64$\times$ \\
+MMLU & 12{,}508 & 31.3 & 0.9965 & 0.9600 & 2.00 & 0.18 & 174$\times$ \\
+WinoGrande & 1{,}267 & 30.3 & 0.9943 & 0.9432 & 2.84 & 0.32 & 95$\times$ \\
+TruthfulQA & 817 & 29.7 & 0.9971 & 0.9586 & 2.07 & 0.37 & 80$\times$ \\
+ARC & 1{,}172 & 26.9 & 0.9962 & 0.9538 & 2.31 & 0.60 & 45$\times$ \\
+GSM8K & 1{,}319 & 18.9 & 0.9993 & 0.9843 & 0.78 & 0.30 & 63$\times$ \\
+HellaSwag & 10{,}042 & 17.9 & 0.9986 & 0.9722 & 1.39 & 0.28 & 64$\times$ \\
 \bottomrule
 \end{tabular}}
 \end{table}
