@@ -1,4 +1,4 @@
-\begin{thebibliography}{67}
+\begin{thebibliography}{68}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Ackerman(1992)}]{ackerman1992didmf}
@@ -6,6 +6,17 @@ Terry~A Ackerman. 1992.
 \newblock A didactic explanation of item bias, item impact, and item validity
   from a multidimensional perspective.
 \newblock \emph{Journal of Educational Measurement}, 29(1):67--91.
+
+\bibitem[{Alzahrani et~al.(2024)Alzahrani, Alyahya, Alnumay, Alrashed,
+  Alsubaie, Almushaykeh, Mirza, Alotaibi, Altwairesh, Alowisheq, Bari, and
+  Khan}]{alzahrani2024benchmarks}
+Norah Alzahrani, Hisham~Abdullah Alyahya, Yazeed Alnumay, Sultan Alrashed,
+  Shaykhah Alsubaie, Yusef Almushaykeh, Faisal Mirza, Nouf Alotaibi, Nora
+  Altwairesh, Areeb Alowisheq, M.~Saiful Bari, and Haidar Khan. 2024.
+\newblock \href {https://arxiv.org/abs/2402.01781} {When benchmarks are
+  targets: Revealing the sensitivity of large language model leaderboards}.
+\newblock In \emph{Proceedings of the 62nd Annual Meeting of the Association
+  for Computational Linguistics (ACL)}.
 
 \bibitem[{Balloccu et~al.(2024)Balloccu, Schmidtova, Lango, and
   Dusek}]{balloccu2024leak}
@@ -382,13 +393,6 @@ Kushal Tirumala, Aram Markosyan, Luke Zettlemoyer, and Armen Aghajanyan. 2022.
 \newblock In \emph{Advances in Neural Information Processing Systems
   (NeurIPS)}.
 
-\bibitem[{Valliant et~al.(2013)Valliant, Dever, and
-  Kreuter}]{valliant2013practical}
-Richard Valliant, Jill~A. Dever, and Frauke Kreuter. 2013.
-\newblock \href {https://doi.org/10.1007/978-1-4614-6449-5} {\emph{Practical
-  Tools for Designing and Weighting Survey Samples}}.
-\newblock Springer, New York.
-
 \bibitem[{Vandenberg and Lance(2000)}]{vandenberg2000invariance}
 Robert~J. Vandenberg and Charles~E. Lance. 2000.
 \newblock \href {https://doi.org/10.1177/109442810031002} {A review and
@@ -416,6 +420,16 @@ Haonan Wang, Haoyang Li, Boeun Ko, and Hongyang Zhang. 2026.
   benchmark contamination detection in reasoning models}.
 \newblock In \emph{Proceedings of the International Conference on Learning
   Representations (ICLR)}.
+
+\bibitem[{Wang et~al.(2024)Wang, Ma, Zhang, Ni, Chandra, Guo, Ren, Arulraj, He,
+  Jiang, Li, Ku, Wang, Zhuang, Fan, Yue, and Chen}]{wang2024mmlupro}
+Yubo Wang, Xueguang Ma, Ge~Zhang, Yuansheng Ni, Abhranil Chandra, Shiguang Guo,
+  Weiming Ren, Aaran Arulraj, Xuan He, Ziyan Jiang, Tianle Li, Max Ku, Kai
+  Wang, Alex Zhuang, Rongqi Fan, Xiang Yue, and Wenhu Chen. 2024.
+\newblock \href {https://arxiv.org/abs/2406.01574} {{MMLU-Pro}: A more robust
+  and challenging multi-task language understanding benchmark}.
+\newblock In \emph{Advances in Neural Information Processing Systems (NeurIPS),
+  Datasets and Benchmarks Track}.
 
 \bibitem[{White(2025)}]{white2025livebench}
 Colin White. 2025.
