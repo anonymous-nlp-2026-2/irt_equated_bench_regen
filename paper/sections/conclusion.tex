@@ -1,6 +1,6 @@
-\vspace{-4pt}
+\vspace{-8pt}
 \section{Conclusion}
 \label{sec:conclusion}
 
 \looseness=-1
-Across six METABENCH benchmarks, 17.9--31.3\% of items exhibit temporal measurement instability between 2023 and 2024 model cohorts. For MMLU, three convergent non-independence corrections yield approximately 27--29\% (conservative bound: 13.5\%; cluster bootstrap 95\% CI $[26.7\%, 53.2\%]$; random-split baseline $= 0.18\%$). Web-overlap labels are near-independent of DIF flags (Jaccard $= 0.206$); our cross-subject matching resolves this validation gap. Aggregate rankings remain preserved ($\rho \approx 0.997$), but item-level monitoring should accompany score reporting. We recommend temporal MH-DIF audits whenever $\geq$500 models accumulate (\Cref{sec:disc_protocol}).
+Across six METABENCH benchmarks, 17.9--31.3\% of items exhibit temporal measurement instability between 2023 and 2024 model cohorts. For MMLU, three convergent corrections yield ${\approx}$27--29\% (conservative bound: 13.5\%; cluster bootstrap 95\% CI $[26.7\%, 53.2\%]$; random-split baseline $= 0.18\%$). Web-overlap labels are near-independent of DIF flags (Jaccard $= 0.206$); cross-subject matching resolves this validation gap. Aggregate rankings are preserved ($\rho \approx 0.997$), but item-level monitoring should accompany score reporting; we recommend temporal MH-DIF audits whenever $\geq$500 models accumulate.
