@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1779454599.70878 "main.aux" "main.bbl" "main" 1779454601.15242 0
+["bibtex main"] 1779454731.39886 "main.aux" "main.bbl" "main" 1779454732.76523 0
   "./acl_natbib.bst" 1779351689.75217 45186 3d1af46d62cc9172ef6e42b56c1cd613 ""
   "./references.bib" 1779451818.8279 26329 726563b31c639fb918a0eee4491325a2 ""
-  "main.aux" 1779454600.96601 49877 74e96a1ca679d2f5e06861ac0f100acc "pdflatex"
+  "main.aux" 1779454732.5814 49891 d4bc1103395a90cfe5de7f40d75b1ae0 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1779454599.74409 "main.tex" "main.pdf" "main" 1779454601.15277 0
+["pdflatex"] 1779454731.43234 "main.tex" "main.pdf" "main" 1779454732.76568 0
   "../figures/paper/fig_1_global_vs_differential.pdf" 1779327100.82072 40955 d68a010d80188de6d7627f1e0d115e60 ""
   "../figures/paper/fig_2_dose_response.pdf" 1779320563.64061 34084 7ccf137ee16d4501f6306a15603468f2 ""
   "../figures/paper/fig_3_within_subject_matching.pdf" 1779321832.06887 21389 3b32944cef9557fec1a2c28ed283aedd ""
@@ -180,9 +180,9 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1777718829 165211 6b08d096f3d0fe5ff6b266061a2b45e0 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1777718864 2265720 90ab98e8a3f8cce6d43d8f94f0c5436d ""
   "acl.sty" 1779351689.74717 11615 e2c027f483aa40e577ed34264c8b0655 ""
-  "main.aux" 1779454600.96601 49877 74e96a1ca679d2f5e06861ac0f100acc "pdflatex"
-  "main.bbl" 1779454599.737 21295 81684374304d883b05424da170da9f62 "bibtex main"
-  "main.out" 1779454600.96801 5012 8803d635ddfead773a7f01fab92ca267 "pdflatex"
+  "main.aux" 1779454732.5814 49891 d4bc1103395a90cfe5de7f40d75b1ae0 "pdflatex"
+  "main.bbl" 1779454731.42639 21295 81684374304d883b05424da170da9f62 "bibtex main"
+  "main.out" 1779454732.5834 5012 8803d635ddfead773a7f01fab92ca267 "pdflatex"
   "main.tex" 1779390942.57232 815 8805cfdcaaad346a43e0c55f01472d94 ""
   "math_commands.tex" 1779390985.75047 12304 b84f1ec7bb2fdb22f499448d475c9b55 ""
   "natbib.sty" 1779335901.99331 45154 40088ce024445d7ee2bca59e704cdd01 ""
@@ -190,7 +190,7 @@
   "sections/appendix.tex" 1779452308.30151 16181 06ad2c85711afc38ee389ede6060f4ab ""
   "sections/conclusion.tex" 1779454160.25059 762 00f0b7eee0e90a665b254e0ca5917b95 ""
   "sections/discussion.tex" 1779454594.54699 3015 b480d4d70fb70a925de89bc282bee32c ""
-  "sections/experiments.tex" 1779453993.44204 12603 d70effb454d897f6f28cbf078d43ed2c ""
+  "sections/experiments.tex" 1779454723.95137 12791 a96fa5b377997904d3f1df20938ae57b ""
   "sections/introduction.tex" 1779454027.01315 4883 00520a327a485bc3d617a1cf253c2ea0 ""
   "sections/limitations.tex" 1779454093.51137 4076 c4eac720c3d5f0d608d505eb00152600 ""
   "sections/method.tex" 1779454049.43523 10945 1f383f6b8d1606f275a2c9dd30efd52a ""

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.5.2)  22 MAY 2026 12:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.5.2)  22 MAY 2026 12:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -731,57 +731,57 @@ Underfull \hbox (badness 4193) in paragraph at lines 22--23
 File: ../figures/paper/fig_2_dose_response.pdf Graphic file (type pdf)
 <use ../figures/paper/fig_2_dose_response.pdf>
 Package pdftex.def Info: ../figures/paper/fig_2_dose_response.pdf  used on inpu
-t line 50.
+t line 51.
 (pdftex.def)             Requested size: 219.08614pt x 246.69092pt.
 
-Underfull \hbox (badness 2547) in paragraph at lines 47--54
+Underfull \hbox (badness 2547) in paragraph at lines 48--55
 \T1/ptm/m/n/10.95 (+20) Direct com-par-i-son of DIF flags against the
  []
 
 
-Underfull \hbox (badness 1584) in paragraph at lines 47--54
+Underfull \hbox (badness 1584) in paragraph at lines 48--55
 \T1/ptm/m/n/10.95 (+20) cap-ture or-thog-o-nal sig-nals. The en-rich-ment
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 47--54
+Underfull \hbox (badness 6893) in paragraph at lines 48--55
 \T1/ptm/m/n/10.95 (+20) among web-contaminated items and 31.8%
  []
 
 [6]
-Underfull \hbox (badness 3646) in paragraph at lines 59--60
+Underfull \hbox (badness 3646) in paragraph at lines 60--61
 \T1/ptm/m/n/10.95 (+20) vastly dif-fer-ent un-matched rates, sug-gest-ing
  []
 
 
-Underfull \hbox (badness 6032) in paragraph at lines 83--84
+Underfull \hbox (badness 6032) in paragraph at lines 84--85
 \T1/ptm/m/n/10.95 (+20) across all five MMLU sub-jects (4/5 with
  []
 
 
-Underfull \hbox (badness 2103) in paragraph at lines 83--84
+Underfull \hbox (badness 2103) in paragraph at lines 84--85
 \T1/ptm/m/n/10.95 (+20) un-der uni-form bi-nary flip-ping; Sec-tion [][]3.4[][]
 ),
  []
 
 
-Underfull \hbox (badness 6725) in paragraph at lines 89--90
+Underfull \hbox (badness 6725) in paragraph at lines 90--91
 \T1/ptm/m/n/10.95 (+20) items dis-pro-por-tion-ately dis-ad-van-tages 2024
  []
 
-
-Underfull \hbox (badness 2181) in paragraph at lines 95--96
+[7 <../figures/paper/fig_2_dose_response.pdf>]
+Underfull \hbox (badness 2181) in paragraph at lines 96--97
 \T1/ptm/m/n/10.95 (+20) (Hel-laSwag ([][]Zellers et al.[][], [][]2019[][])) to 
 31.3%
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 \T1/ptm/m/n/10.95 (+20) (MMLU). Knowl-edge/reasoning bench-marks
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 95--96
+Underfull \hbox (badness 1087) in paragraph at lines 96--97
 \T1/ptm/m/n/10.95 (+20) show C% $\OT1/cmr/m/n/10.95 = 26\OML/cmm/m/it/10.95 :\O
 T1/cmr/m/n/10.95 9$\T1/ptm/m/n/10.95 (+20) --$\OT1/cmr/m/n/10.95 31\OML/cmm/m/i
 t/10.95 :\OT1/cmr/m/n/10.95 3%$ \T1/ptm/m/n/10.95 (+20) ver-sus $\OT1/cmr/m/n/1
@@ -789,10 +789,7 @@ t/10.95 :\OT1/cmr/m/n/10.95 3%$ \T1/ptm/m/n/10.95 (+20) ver-sus $\OT1/cmr/m/n/1
 1/cmr/m/n/10.95 18\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 9%$
  []
 
-
-Underfull \vbox (badness 2409) has occurred while \output is active []
-
- [7 <../figures/paper/fig_2_dose_response.pdf>]) (./sections/discussion.tex
+) (./sections/discussion.tex
 Underfull \hbox (badness 2582) in paragraph at lines 9--10
 \T1/ptm/m/n/10.95 (+20) ing method-ol-ogy shifts (RLHF, post-training
  []
@@ -903,7 +900,7 @@ Overfull \hbox (3.6588pt too wide) in paragraph at lines 153--165
  [][] 
  []
 
-<../figures/paper/fig_3_within_subject_matching.pdf, id=840, 520.91881pt x 336.
+<../figures/paper/fig_3_within_subject_matching.pdf, id=842, 520.91881pt x 336.
 04222pt>
 File: ../figures/paper/fig_3_within_subject_matching.pdf Graphic file (type pdf
 )
@@ -914,7 +911,7 @@ ed on input line 172.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../figures/paper/fig_4_downstream_impact.pdf, id=841, 417.18108pt x 401.35634p
+<../figures/paper/fig_4_downstream_impact.pdf, id=843, 417.18108pt x 401.35634p
 t>
 File: ../figures/paper/fig_4_downstream_impact.pdf Graphic file (type pdf)
 <use ../figures/paper/fig_4_downstream_impact.pdf>
@@ -924,7 +921,7 @@ input line 179.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../figures/paper/fig_5_gsm1k_dif_correlation.pdf, id=842, 709.27222pt x 494.42
+<../figures/paper/fig_5_gsm1k_dif_correlation.pdf, id=844, 709.27222pt x 494.42
 302pt>
 File: ../figures/paper/fig_5_gsm1k_dif_correlation.pdf Graphic file (type pdf)
 <use ../figures/paper/fig_5_gsm1k_dif_correlation.pdf>
@@ -934,7 +931,7 @@ Package pdftex.def Info: ../figures/paper/fig_5_gsm1k_dif_correlation.pdf  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../figures/paper/fig_A3_rho_degradation.pdf, id=843, 493.59134pt x 312.5985pt>
+<../figures/paper/fig_A3_rho_degradation.pdf, id=845, 493.59134pt x 312.5985pt>
 
 File: ../figures/paper/fig_A3_rho_degradation.pdf Graphic file (type pdf)
 <use ../figures/paper/fig_A3_rho_degradation.pdf>
@@ -982,10 +979,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf
 ype1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (16 pages, 634937 bytes).
+Output written on main.pdf (16 pages, 635185 bytes).
 PDF statistics:
- 1252 PDF objects out of 1440 (max. 8388607)
- 875 compressed objects within 9 object streams
+ 1254 PDF objects out of 1440 (max. 8388607)
+ 877 compressed objects within 9 object streams
  149 named destinations out of 1000 (max. 500000)
  62215 words of extra memory for PDF output out of 74296 (max. 10000000)
 
