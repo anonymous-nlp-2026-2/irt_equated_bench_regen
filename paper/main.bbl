@@ -1,4 +1,4 @@
-\begin{thebibliography}{59}
+\begin{thebibliography}{61}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Ackerman(1992)}]{ackerman1992didmf}
@@ -354,6 +354,13 @@ Kushal Tirumala, Aram Markosyan, Luke Zettlemoyer, and Armen Aghajanyan. 2022.
 \newblock In \emph{Advances in Neural Information Processing Systems
   (NeurIPS)}.
 
+\bibitem[{Valliant et~al.(2013)Valliant, Dever, and
+  Kreuter}]{valliant2013practical}
+Richard Valliant, Jill~A. Dever, and Frauke Kreuter. 2013.
+\newblock \href {https://doi.org/10.1007/978-1-4614-6449-5} {\emph{Practical
+  Tools for Designing and Weighting Survey Samples}}.
+\newblock Springer, New York.
+
 \bibitem[{Vandenberg and Lance(2000)}]{vandenberg2000invariance}
 Robert~J. Vandenberg and Charles~E. Lance. 2000.
 \newblock \href {https://doi.org/10.1177/109442810031002} {A review and
@@ -369,6 +376,11 @@ Clara Vania, Phu~Mon Htut, William Huang, Dhara Mungra, Richard~Yuanzhe Pang,
   sets with item response theory}.
 \newblock In \emph{Proceedings of the 59th Annual Meeting of the Association
   for Computational Linguistics (ACL)}.
+
+\bibitem[{Wainer and Braun(1993)}]{wainer1993differential}
+Howard Wainer and Henry~I. Braun. 1993.
+\newblock \emph{Differential Item Functioning}.
+\newblock Lawrence Erlbaum Associates, Hillsdale, NJ.
 
 \bibitem[{Wang et~al.(2026)Wang, Li, Ko, and Zhang}]{wang2026fragility}
 Haonan Wang, Haoyang Li, Boeun Ko, and Hongyang Zhang. 2026.

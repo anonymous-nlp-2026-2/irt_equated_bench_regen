@@ -9,5 +9,8 @@ The MH $\chi^2$ test assumes independent examinees, yet LLMs sharing base models
 \paragraph{Matching boundary and sample size.}
 Cross-subject matching assumes contamination affects a minority of domains; when contamination spans ${>}10$ subjects (${>}18\%$ of MMLU), $\Delta\mathrm{FPR}$ rises to 0.026--0.069. Model-level bootstrap may underestimate CI width due to within-family correlation; family-level cluster bootstrap (preceding paragraph) confirms robustness despite a $3.1\times$ wider CI. The GSM1K correlation analysis ($N = 33$) has limited statistical power and is exploratory.
 
+\paragraph{Temporal granularity.}
+Our temporal cohorts are defined by model release date, which may lag training data cutoff by months. This coarse granularity, combined with within-cohort heterogeneity (e.g., 2023-Q1 vs.\ 2024-Q4 spans a larger gap than 2023-Q4 vs.\ 2024-Q1), likely attenuates DIF estimates, making 31\% a possible underestimate of true temporal instability.
+
 \paragraph{Generalizability.}
 All six benchmarks use multiple-choice or binary scoring; generalizability to open-ended generation (e.g., AlpacaEval), coding (e.g., HumanEval), or partial-credit benchmarks is untested and would require polytomous DIF methods. Temporal cohorts are defined by calendar year, a coarse grouping; finer-grained definitions (e.g., by training data cutoff or alignment method) might reveal more targeted patterns. All models are drawn from the Open LLM Leaderboard; generalizability to closed-source models cannot be assessed.
