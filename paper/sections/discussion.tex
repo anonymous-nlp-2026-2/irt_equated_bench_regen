@@ -9,20 +9,13 @@
 In standardized educational testing, ETS~C rates typically range from 5--15\%~\citep{clauser1998dif}; our $\approx$29\% corrected rate is 2--6$\times$ higher. Temporal DIF detects \emph{that} items function differently, not \emph{why}. Three non-exclusive mechanisms may drive this: (1)~differential contamination (asymmetric training data exposure); (2)~capability evolution (genuine skill acquisition); (3)~training methodology shifts (RLHF, post-training techniques). The difficulty--direction interaction ($\rho = -0.597$; \Cref{sec:temporal}) provides suggestive evidence for~(2): memorization would boost easy items, whereas skill acquisition disproportionately affects harder ones.
 
 \looseness=-1
-The high aggregate correlation ($\rho \approx 0.997$) does not undermine DIF's utility---MMLU's ${\sim}$12{,}500 items absorb temporal shifts at the aggregate level. DIF monitoring identifies which items shift, enabling targeted replacement and versioning~\citep{zhao2025mmlucf,habba2026growingpains}. However, this aggregate stability masks subject-level instability: mean per-subject $\rho = 0.950$, with 22/57 subjects below 0.95 and five below 0.90 (\emph{global\_facts} $0.77$, \emph{college\_mathematics} $0.82$, \emph{abstract\_algebra} $0.88$, \emph{business\_ethics} $0.89$, \emph{machine\_learning} $0.90$); smaller subjects with high C\% are disproportionately affected, making DIF monitoring critical for fine-grained comparisons.
+The high aggregate correlation ($\rho \approx 0.997$) does not undermine DIF's utility---MMLU's ${\sim}$12{,}500 items absorb shifts, but aggregate stability masks subject-level instability: mean per-subject $\rho = 0.950$, with 22/57 below 0.95 and five below 0.90 (\emph{global\_facts} $0.77$, \emph{college\_mathematics} $0.82$, \emph{abstract\_algebra} $0.88$, \emph{business\_ethics} $0.89$, \emph{machine\_learning} $0.90$). DIF monitoring enables targeted replacement~\citep{zhao2025mmlucf,habba2026growingpains} and is critical for fine-grained comparisons.
 
 \looseness=-1
-Expert-annotated errors~\citep{gema2024mmlu} (313 items in MMLU-Redux, 4{,}802 matched) show no enrichment among DIF-C items ($0.92\times$, $\varphi = -0.01$, $p = 0.37$), confirming DIF captures dynamic shifts rather than static quality defects.
-
-The near-independence between DIF flags and web-overlap labels (\Cref{sec:groundtruth}) reflects a category error: web-overlap measures global exposure while DIF measures differential functioning; the disconnect is in the ground truth, not detection power. MMLU-CF~\citep{zhao2025mmlucf} complements our approach: it sidesteps contamination via item reformulation, while DIF monitors which existing items are affected.
+Expert-annotated errors~\citep{gema2024mmlu} show no enrichment among DIF-C items ($0.92\times$, $p = 0.37$), confirming DIF captures dynamic shifts rather than static defects. The near-independence between DIF and web-overlap labels (\Cref{sec:groundtruth}) reflects a ground-truth category error, not detection failure. MMLU-CF~\citep{zhao2025mmlucf} complements our approach via item reformulation; DIF monitors which existing items shift.
 
 \subsection{Recommended DIF Audit Protocol}
 \label{sec:disc_protocol}
 
 \looseness=-1
-Item-level properties do not reliably predict DIF susceptibility (AUROC $= 0.60$; \Cref{app:predictive}), confirming that post-hoc monitoring cannot be replaced by pre-screening.
-We propose temporal MH-DIF whenever $\geq$500 models accumulate, with $\rho$-degradation-grounded action levels (\Cref{app:fig_rho_degradation}):
-(1)~\emph{Monitor} (C\% $< 15\%$): report C\%.
-(2)~\emph{Flag} ($15$--$25\%$): report stable-item rankings alongside full rankings.
-(3)~\emph{Act} ($\geq 25\%$): prioritize flagged items for review; report stable-item rankings as primary; use DIF pre-screening for equating anchors~\citep{kolen2014equating,habba2026growingpains}.
-The protocol recommends equating over removal: DIF-ordered removal degrades rankings faster than random removal (\Cref{app:fig_downstream}), confirming DIF items carry discriminating information.
+Item-level properties do not predict DIF susceptibility (AUROC $= 0.60$; \Cref{app:predictive}), so monitoring cannot be replaced by pre-screening. We propose temporal MH-DIF whenever $\geq$500 models accumulate, with three action levels (\Cref{app:fig_rho_degradation}): \emph{Monitor} (C\% $< 15\%$), \emph{Flag} ($15$--$25\%$: report stable-item rankings alongside full), \emph{Act} ($\geq 25\%$: stable-item rankings as primary; DIF pre-screening for equating anchors~\citep{kolen2014equating,habba2026growingpains}). Equating is preferred over removal: DIF-ordered removal degrades rankings faster than random (\Cref{app:fig_downstream}).

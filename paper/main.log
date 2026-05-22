@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.5.2)  22 MAY 2026 13:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.5.2)  22 MAY 2026 13:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -745,8 +745,9 @@ Underfull \hbox (badness 2103) in paragraph at lines 84--85
  []
 
 [7 <../figures/paper/fig_2_dose_response.pdf>]
-Underfull \hbox (badness 6725) in paragraph at lines 90--91
-\T1/ptm/m/n/10.95 (+20) items dis-pro-por-tion-ately dis-ad-van-tages 2024
+Underfull \hbox (badness 4144) in paragraph at lines 90--91
+\T1/ptm/m/n/10.95 (+20) Llama-3 deriva-tives gain $[]\OT1/cmr/m/n/10.95 53$ \T1
+/ptm/m/n/10.95 (+20) me-dian rank
  []
 
 
@@ -775,24 +776,28 @@ Underfull \hbox (badness 2582) in paragraph at lines 9--10
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 12--13
-\T1/ptm/m/it/10.95 (+20) busi-ness_ethics $\OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10
-.95 :\OT1/cmr/m/n/10.95 89$\T1/ptm/m/n/10.95 (+20) , \T1/ptm/m/it/10.95 (+20) m
-a-chine_learning $\OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 9
-0$\T1/ptm/m/n/10.95 (+20) );
+Underfull \hbox (badness 4899) in paragraph at lines 12--13
+\T1/ptm/m/n/10.95 (+20) items ab-sorb shifts, but ag-gre-gate sta-bil-ity
  []
 
 ) (./sections/conclusion.tex
-Underfull \hbox (badness 2707) in paragraph at lines 23--2
-\T1/ptm/m/n/10.95 (+20) Item-level prop-er-ties do not re-li-ably pre-dict
+Underfull \hbox (badness 1097) in paragraph at lines 21--2
+\T1/ptm/m/n/10.95 (+20) Item-level prop-er-ties do not pre-dict DIF sus-
  []
 
 
-Underfull \hbox (badness 1158) in paragraph at lines 23--2
-\T1/ptm/m/n/10.95 (+20) items for re-view; re-port stable-item rank-ings
+Underfull \hbox (badness 1019) in paragraph at lines 21--2
+\T1/ptm/m/n/10.95 (+20) cep-ti-bil-ity (AU-ROC $\OT1/cmr/m/n/10.95 = 0\OML/cmm/
+m/it/10.95 :\OT1/cmr/m/n/10.95 60$\T1/ptm/m/n/10.95 (+20) ; Sec-tion [][]G[][])
+, so
  []
 
-[8]) (./sections/limitations.tex
+
+Underfull \hbox (badness 2253) in paragraph at lines 21--2
+\T1/ptm/m/n/10.95 (+20) mod-els ac-cu-mu-late, with three ac-tion lev-els
+ []
+
+) (./sections/limitations.tex
 Underfull \hbox (badness 1147) in paragraph at lines 6--1
 \T1/ptm/m/n/10.95 (+20) Across six METABENCH bench-marks, 17.9--
  []
@@ -802,7 +807,7 @@ Underfull \hbox (badness 1997) in paragraph at lines 6--1
 \T1/ptm/m/n/10.95 (+20) horts (family-level clus-ter boot-strap 95% CI
  []
 
-[9])
+[8])
 Underfull \hbox (badness 10000) in paragraph at lines 16--35
  []\T1/ptm/b/n/10.95 (+20) Generalizability.[] \T1/ptm/m/n/10.95 (+20) All six 
 bench-marks use
@@ -823,7 +828,7 @@ Underfull \hbox (badness 5460) in paragraph at lines 16--35
 \T1/ptm/m/n/10.95 (+20) bench-marks is untested and would re-quire
  []
 
-(./main.bbl
+(./main.bbl [9]
 Underfull \hbox (badness 1635) in paragraph at lines 28--35
 \T1/ptm/m/n/10 (+20) Ull-man, Fer-nando Martinez-Plumed, Joshua B.
  []
@@ -833,17 +838,17 @@ Underfull \hbox (badness 2368) in paragraph at lines 116--120
 \T1/ptm/m/n/10 (+20) 2026.  [][]Ef-fi-cient de-tec-tion of bad bench-mark
  []
 
-[10] [11]
+[10]
 Underfull \hbox (badness 1668) in paragraph at lines 373--379
 \T1/ptm/m/n/10 (+20) Mungra, Richard Yuanzhe Pang, Ja-son Phang,
  []
 
-
+[11]
 Underfull \hbox (badness 1221) in paragraph at lines 393--398
 []\T1/ptm/m/n/10 (+20) Colin White. 2025.  [][]LiveBench: A chal-leng-ing,
  []
 
-) (./sections/appendix.tex [12]
+) (./sections/appendix.tex
 Underfull \hbox (badness 10000) in paragraph at lines 20--21
  []\T1/ptm/b/n/10.95 (+20) Threshold sen-si-tiv-ity.[] \T1/ptm/m/n/10.95 (+20) 
 We re-port re-
@@ -864,7 +869,7 @@ OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 1\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.9
 m/n/10.95 5\OMS/cmsy/m/n/10.95 g$\T1/ptm/m/n/10.95 (+20) ) to ver-ify that
  []
 
-
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 24--25
  []\T1/ptm/b/n/10.95 (+20) Architecture het-ero-gene-ity.[] \T1/ptm/m/n/10.95 (
 +20) The
@@ -880,7 +885,13 @@ Underfull \hbox (badness 2253) in paragraph at lines 24--25
 \T1/ptm/m/n/10.95 (+20) This near-complete ar-chi-tec-tural ho-mo-gene-ity
  []
 
-[13]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Overfull \hbox (4.9852pt too wide) in paragraph at lines 98--110
  [][] 
  []
@@ -888,12 +899,19 @@ Overfull \hbox (4.9852pt too wide) in paragraph at lines 98--110
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14]
+[13]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Overfull \hbox (3.6588pt too wide) in paragraph at lines 153--165
  [][] 
  []
 
-<../figures/paper/fig_3_within_subject_matching.pdf, id=859, 520.91881pt x 336.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../figures/paper/fig_3_within_subject_matching.pdf, id=851, 520.91881pt x 336.
 04222pt>
 File: ../figures/paper/fig_3_within_subject_matching.pdf Graphic file (type pdf
 )
@@ -901,7 +919,10 @@ File: ../figures/paper/fig_3_within_subject_matching.pdf Graphic file (type pdf
 Package pdftex.def Info: ../figures/paper/fig_3_within_subject_matching.pdf  us
 ed on input line 172.
 (pdftex.def)             Requested size: 219.08614pt x 141.3316pt.
-<../figures/paper/fig_4_downstream_impact.pdf, id=860, 417.18108pt x 401.35634p
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../figures/paper/fig_4_downstream_impact.pdf, id=852, 417.18108pt x 401.35634p
 t>
 File: ../figures/paper/fig_4_downstream_impact.pdf Graphic file (type pdf)
 <use ../figures/paper/fig_4_downstream_impact.pdf>
@@ -911,7 +932,7 @@ input line 179.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../figures/paper/fig_5_gsm1k_dif_correlation.pdf, id=861, 709.27222pt x 494.42
+<../figures/paper/fig_5_gsm1k_dif_correlation.pdf, id=853, 709.27222pt x 494.42
 302pt>
 File: ../figures/paper/fig_5_gsm1k_dif_correlation.pdf Graphic file (type pdf)
 <use ../figures/paper/fig_5_gsm1k_dif_correlation.pdf>
@@ -921,7 +942,7 @@ Package pdftex.def Info: ../figures/paper/fig_5_gsm1k_dif_correlation.pdf  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../figures/paper/fig_A3_rho_degradation.pdf, id=862, 493.59134pt x 312.5985pt>
+<../figures/paper/fig_A3_rho_degradation.pdf, id=854, 493.59134pt x 312.5985pt>
 
 File: ../figures/paper/fig_A3_rho_degradation.pdf Graphic file (type pdf)
 <use ../figures/paper/fig_A3_rho_degradation.pdf>
@@ -931,11 +952,11 @@ nput line 193.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [15 <../figures/paper/fig_3_within_subject_matching.pdf> <../figures/paper/fi
-g_4_downstream_impact.pdf>] [16
+[14]) [15 <../figures/paper/fig_3_within_subject_matching.pdf> <../figures/pape
+r/fig_4_downstream_impact.pdf> <../figures/paper/fig_5_gsm1k_dif_correlation.pd
+f>] [16
 
- <../figures/paper/fig_5_gsm1k_dif_correlation.pdf> <../figures/paper/fig_A3_rh
-o_degradation.pdf>] (./main.aux)
+ <../figures/paper/fig_A3_rho_degradation.pdf>] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -944,13 +965,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: F8926E9652B3DE135F94D8B8DF5D7381;4818.
  ) 
 Here is how much of TeX's memory you used:
- 18186 strings out of 469438
- 296835 string characters out of 5468411
- 790115 words of memory out of 5000000
- 45981 multiletter control sequences out of 15000+600000
- 706579 words of font info for 426 fonts, out of 8000000 for 9000
+ 18182 strings out of 469438
+ 296797 string characters out of 5468411
+ 791115 words of memory out of 5000000
+ 45980 multiletter control sequences out of 15000+600000
+ 706354 words of font info for 424 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 84i,12n,93p,2067b,699s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,93p,2067b,709s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texli
@@ -969,10 +990,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf
 ype1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (16 pages, 639937 bytes).
+Output written on main.pdf (16 pages, 638018 bytes).
 PDF statistics:
- 1266 PDF objects out of 1440 (max. 8388607)
- 889 compressed objects within 9 object streams
+ 1265 PDF objects out of 1440 (max. 8388607)
+ 888 compressed objects within 9 object streams
  151 named destinations out of 1000 (max. 500000)
  62207 words of extra memory for PDF output out of 74296 (max. 10000000)
 
