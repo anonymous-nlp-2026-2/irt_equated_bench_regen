@@ -1,6 +1,6 @@
 \section{Discussion}
 \label{sec:discussion}
-\enlargethispage{6\baselineskip}
+\enlargethispage{2\baselineskip}
 
 \subsection{Implications for Benchmark Temporal Comparability}
 \label{sec:disc_temporal}
@@ -12,10 +12,14 @@ Temporal DIF decomposes benchmark differences into three layers: (1)~\emph{impac
 \label{sec:disc_groundtruth}
 
 \looseness=-1
-The near-independence between DIF flags and web-overlap labels (\Cref{sec:groundtruth}) reflects a category error: web-overlap measures global exposure, while DIF measures differential functioning, making overlap-based labels an inappropriate ground truth for a differential method. The semi-synthetic dose-response confirms detection works when differential behavior exists; the disconnect is in the ground truth, not the method.
+The near-independence between DIF flags and web-overlap labels (\Cref{sec:groundtruth}) reflects a category error: web-overlap measures global exposure, while DIF measures differential functioning, making overlap-based labels an inappropriate ground truth for a differential method. Semi-synthetic dose-response confirms detection works when present; the disconnect is in the ground truth.
 
 \subsection{Recommended DIF Audit Protocol}
 \label{sec:disc_protocol}
 
 \looseness=-1
-We propose running temporal MH-DIF whenever $\geq 500$ new models accumulate ($N \geq 80$ suffices per \Cref{sec:validation}; 500 ensures coverage of diverse model families), with graduated action levels: (1)~\emph{Monitor} (C\% $< 15\%$); (2)~\emph{Flag} ($15$--$25\%$): report stable-item rankings alongside full rankings; (3)~\emph{Act} (C\% $\geq 25\%$): investigate flagged items and report stable-item rankings, per MMLU-Pro~\citep{wang2024mmlupro} and MMLU-Redux~\citep{gema2024mmlu}. These thresholds adapt ETS practice~\citep{clauser1998dif} and are portable across populations. DIF pre-screening identifies stable anchor items for equating~\citep{kolen2014equating,habba2026growingpains}; temporal C\% complements composite quality indices~\citep{zhu2026bhi}.
+We propose running temporal MH-DIF whenever $\geq 500$ new models accumulate ($N \geq 80$ suffices per \Cref{sec:validation}; 500 ensures family diversity). Empirical $\rho$ degradation simulation---DIF-ordered versus random item removal across six benchmarks---grounds graduated thresholds:
+(1)~\emph{Monitor} (C\% $< 15\%$): $\Delta\rho < 0.001$ vs.\ random on all benchmarks; report C\% in release notes.
+(2)~\emph{Flag} ($15$--$25\%$): $\Delta\rho = 0.001$--$0.003$ on 4/6 benchmarks; report stable-item rankings alongside full rankings.
+(3)~\emph{Act} (C\% $\geq 25\%$): WinoGrande drops below $\rho = 0.995$ at 25\% DIF-ordered removal; review flagged item content, cross-reference with contamination indicators, report stable-item rankings as primary comparability metric.
+Thresholds reflect where DIF-ordered degradation reliably exceeds random removal. DIF pre-screening identifies stable anchor items for equating~\citep{kolen2014equating,habba2026growingpains}; temporal C\% complements composite quality indices~\citep{zhu2026bhi}.
