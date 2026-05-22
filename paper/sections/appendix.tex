@@ -203,7 +203,7 @@ To test whether DIF susceptibility is a fixed item property, we trained logistic
 \section{ICC by Family Size}
 \label{app:icc_family}
 
-Within-family similarity (mean pairwise Pearson $r$ over 12{,}508-item response vectors) shows no dependence on family size (Spearman $\rho = -0.009$, $p = 0.96$; 30 families with $\geq 2$ members, 1{,}884 models). Large families (Mistral, $m = 547$, $\bar{r} = 0.47$; Llama-3, $m = 315$, $\bar{r} = 0.53$) are no more homogeneous than small or mid-sized families. The remaining 3{,}343 singleton models (no family assignment) are retained in DIF analysis but excluded from similarity estimation. This indicates that the weighted-mean DEFF variant's effective cluster size ($\bar{m} = 254$) reflects an arithmetic artifact of mega-family dominance rather than genuine within-family homogeneity.
+Within-family similarity (mean pairwise Pearson $r$ over 12{,}508-item response vectors) shows no dependence on family size (Spearman $\rho = -0.009$, $p = 0.96$; 30 families with $\geq 2$ members, 1{,}884 models). Large families (Mistral, $m = 547$, $\bar{r} = 0.47$; Llama-3, $m = 315$, $\bar{r} = 0.53$) are no more homogeneous than small or mid-sized families. Of the 5{,}227 models, 3{,}343 lack family assignments; these are retained in DIF analysis but excluded from similarity estimation. Within the temporal DIF cohorts ($N_{\mathrm{ref}} + N_{\mathrm{foc}} = 1{,}887$), 1{,}884 (99.8\%) belong to identified families with $\geq 2$ members, so DEFF estimates are computed over nearly the full cohort. This indicates that the weighted-mean DEFF variant's effective cluster size ($\bar{m} = 254$) reflects an arithmetic artifact of mega-family dominance rather than genuine within-family homogeneity.
 
 \section{Graduated De-Duplication Sensitivity}
 \label{app:dedup_k}
@@ -215,5 +215,5 @@ C\% increases monotonically from 0.3\% ($K = 1$) to 31.3\% ($K = \text{all}$). A
 \section{Rank-Reversal by Distance}
 \label{app:rank_reversal}
 
-Pairwise rank reversals between full-item and stable-item rankings concentrate among closely-ranked models. At $\Delta\mathrm{rank} < 50$ (mean $\Delta\mathrm{acc} = 0.003$, effectively statistical ties), the reversal rate is 35.2\%. It drops to 6.3\% for $\Delta\mathrm{rank} \in [50, 200)$, 0.6\% for $[500, 1000)$, and 0.0\% above 1000. Broad leaderboard structure is fully preserved; instability affects only models within each other's noise margin.
+Pairwise rank reversals between full-item and stable-item rankings concentrate among closely-ranked models. At $\Delta\mathrm{rank} < 50$ (mean $\Delta\mathrm{acc} = 0.003$, effectively statistical ties), the reversal rate is 35.2\%. It drops to 15.1\% for $\Delta\mathrm{rank} \in [50, 200)$, 4.0\% for $[200, 500)$, 0.6\% for $[500, 1000)$, and 0.0\% above 1000. Broad leaderboard structure is fully preserved; instability affects only models within each other's noise margin.
 
