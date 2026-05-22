@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.5.2)  22 MAY 2026 18:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.5.2)  22 MAY 2026 19:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -760,6 +760,17 @@ it/10.95 ^^L[]\OMS/cmsy/m/n/10.95 j ^^U \OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95
  :\OT1/cmr/m/n/10.95 5$\T1/ptm/m/n/10.95 (+20) ;
  []
 
+
+Underfull \hbox (badness 6032) in paragraph at lines 84--85
+\T1/ptm/m/n/10.95 (+20) across all five MMLU sub-jects (4/5 with
+ []
+
+
+Underfull \hbox (badness 2103) in paragraph at lines 84--85
+\T1/ptm/m/n/10.95 (+20) un-der uni-form bi-nary flip-ping; Sec-tion [][]3.4[][]
+),
+ []
+
 [7 <../figures/paper/fig_2_dose_response.pdf>]
 Underfull \hbox (badness 2181) in paragraph at lines 96--97
 \T1/ptm/m/n/10.95 (+20) (Hel-laSwag ([][]Zellers et al.[][], [][]2019[][])) to 
@@ -777,29 +788,19 @@ Underfull \hbox (badness 2111) in paragraph at lines 96--97
  []
 
 ) (./sections/discussion.tex
-Underfull \hbox (badness 4266) in paragraph at lines 12--13
-[]\OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 1%$ \T1/ptm/m/n/1
-0.95 (+20) of item-level DIF vari-ance (pseudo
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+[]\T1/ptm/m/n/10.95 (+20) Four ex-clu-sion ar-gu-ments con-strain this
  []
 
 
-Underfull \hbox (badness 2285) in paragraph at lines 12--13
-\T1/ptm/m/n/10.95 (+20) among expert-annotated er-rors ([][]Gema et al.[][],
+Underfull \hbox (badness 1430) in paragraph at lines 15--16
+\T1/ptm/m/n/10.95 (+20) via ceil-ing ef-fects, while difficulty-dependent
  []
 
 
-Underfull \hbox (badness 4328) in paragraph at lines 12--13
-\T1/ptm/m/n/10.95 (+20) are near-independent of DIF flags (Jac-card
- []
-
-
-Underfull \hbox (badness 7832) in paragraph at lines 15--16
-[]\T1/ptm/m/n/10.95 (+20) The ag-gre-gate difficulty--direction in-ter-ac-
- []
-
-
-Underfull \hbox (badness 2103) in paragraph at lines 15--16
-\T1/ptm/m/n/10.95 (+20) hardest-decile DIF-C items are 88.7% focal-
+Underfull \hbox (badness 1424) in paragraph at lines 15--16
+\T1/ptm/m/n/10.95 (+20) con-tam-i-na-tion from ca-pa-bil-ity evo-lu-tion ([][]S
+uk
  []
 
 
@@ -932,7 +933,7 @@ Overfull \hbox (3.6588pt too wide) in paragraph at lines 155--167
  [][] 
  []
 
-<../figures/paper/fig_3_within_subject_matching.pdf, id=895, 520.91881pt x 336.
+<../figures/paper/fig_3_within_subject_matching.pdf, id=902, 520.91881pt x 336.
 04222pt>
 File: ../figures/paper/fig_3_within_subject_matching.pdf Graphic file (type pdf
 )
@@ -943,7 +944,7 @@ ed on input line 174.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../figures/paper/fig_4_downstream_impact.pdf, id=896, 417.18108pt x 401.35634p
+<../figures/paper/fig_4_downstream_impact.pdf, id=903, 417.18108pt x 401.35634p
 t>
 File: ../figures/paper/fig_4_downstream_impact.pdf Graphic file (type pdf)
 <use ../figures/paper/fig_4_downstream_impact.pdf>
@@ -953,7 +954,7 @@ input line 181.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../figures/paper/fig_5_gsm1k_dif_correlation.pdf, id=897, 709.27222pt x 494.42
+<../figures/paper/fig_5_gsm1k_dif_correlation.pdf, id=904, 709.27222pt x 494.42
 302pt>
 File: ../figures/paper/fig_5_gsm1k_dif_correlation.pdf Graphic file (type pdf)
 <use ../figures/paper/fig_5_gsm1k_dif_correlation.pdf>
@@ -963,7 +964,7 @@ Package pdftex.def Info: ../figures/paper/fig_5_gsm1k_dif_correlation.pdf  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../figures/paper/fig_A3_rho_degradation.pdf, id=898, 493.59134pt x 312.5985pt>
+<../figures/paper/fig_A3_rho_degradation.pdf, id=905, 493.59134pt x 312.5985pt>
 
 File: ../figures/paper/fig_A3_rho_degradation.pdf Graphic file (type pdf)
 <use ../figures/paper/fig_A3_rho_degradation.pdf>
@@ -986,11 +987,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B07C837768E6FBC7F3338CBDC9E4CE47;5246.
  ) 
 Here is how much of TeX's memory you used:
- 18210 strings out of 469438
- 297481 string characters out of 5468411
+ 18207 strings out of 469438
+ 297454 string characters out of 5468411
  791115 words of memory out of 5000000
  46011 multiletter control sequences out of 15000+600000
- 705777 words of font info for 418 fonts, out of 8000000 for 9000
+ 705552 words of font info for 416 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  84i,12n,93p,2067b,735s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
@@ -1011,10 +1012,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf
 ype1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (16 pages, 643118 bytes).
+Output written on main.pdf (16 pages, 643667 bytes).
 PDF statistics:
- 1310 PDF objects out of 1440 (max. 8388607)
- 932 compressed objects within 10 object streams
+ 1317 PDF objects out of 1440 (max. 8388607)
+ 939 compressed objects within 10 object streams
  157 named destinations out of 1000 (max. 500000)
  62231 words of extra memory for PDF output out of 74296 (max. 10000000)
 
