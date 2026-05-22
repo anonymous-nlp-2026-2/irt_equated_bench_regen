@@ -885,9 +885,6 @@ Underfull \hbox (badness 2253) in paragraph at lines 24--25
 \T1/ptm/m/n/10.95 (+20) This near-complete ar-chi-tec-tural ho-mo-gene-ity
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [13]
 Overfull \hbox (4.9852pt too wide) in paragraph at lines 98--110
  [][] 
@@ -904,7 +901,11 @@ Overfull \hbox (3.6588pt too wide) in paragraph at lines 153--165
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../figures/paper/fig_3_within_subject_matching.pdf, id=852, 520.91881pt x 336.
+
+Underfull \vbox (badness 2922) has occurred while \output is active []
+
+ [14]
+<../figures/paper/fig_3_within_subject_matching.pdf, id=859, 520.91881pt x 336.
 04222pt>
 File: ../figures/paper/fig_3_within_subject_matching.pdf Graphic file (type pdf
 )
@@ -912,10 +913,7 @@ File: ../figures/paper/fig_3_within_subject_matching.pdf Graphic file (type pdf
 Package pdftex.def Info: ../figures/paper/fig_3_within_subject_matching.pdf  us
 ed on input line 172.
 (pdftex.def)             Requested size: 219.08614pt x 141.3316pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../figures/paper/fig_4_downstream_impact.pdf, id=853, 417.18108pt x 401.35634p
+<../figures/paper/fig_4_downstream_impact.pdf, id=860, 417.18108pt x 401.35634p
 t>
 File: ../figures/paper/fig_4_downstream_impact.pdf Graphic file (type pdf)
 <use ../figures/paper/fig_4_downstream_impact.pdf>
@@ -923,9 +921,10 @@ Package pdftex.def Info: ../figures/paper/fig_4_downstream_impact.pdf  used on
 input line 179.
 (pdftex.def)             Requested size: 219.08614pt x 210.77646pt.
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../figures/paper/fig_5_gsm1k_dif_correlation.pdf, id=854, 709.27222pt x 494.42
+<../figures/paper/fig_5_gsm1k_dif_correlation.pdf, id=861, 709.27222pt x 494.42
 302pt>
 File: ../figures/paper/fig_5_gsm1k_dif_correlation.pdf Graphic file (type pdf)
 <use ../figures/paper/fig_5_gsm1k_dif_correlation.pdf>
@@ -935,7 +934,7 @@ Package pdftex.def Info: ../figures/paper/fig_5_gsm1k_dif_correlation.pdf  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../figures/paper/fig_A3_rho_degradation.pdf, id=855, 493.59134pt x 312.5985pt>
+<../figures/paper/fig_A3_rho_degradation.pdf, id=862, 493.59134pt x 312.5985pt>
 
 File: ../figures/paper/fig_A3_rho_degradation.pdf Graphic file (type pdf)
 <use ../figures/paper/fig_A3_rho_degradation.pdf>
@@ -946,11 +945,10 @@ nput line 193.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package lineno Warning: Line number reference failed, re-run to get it right.
 
- [14])
-[15 <../figures/paper/fig_3_within_subject_matching.pdf> <../figures/paper/fig_
-4_downstream_impact.pdf>] [16
+) [15 <../figures/paper/fig_3_within_subject_matching.pdf> <../figures/paper/fi
+g_4_downstream_impact.pdf>] [16
 
  <../figures/paper/fig_5_gsm1k_dif_correlation.pdf> <../figures/paper/fig_A3_rh
 o_degradation.pdf>] (./main.aux)
@@ -958,17 +956,21 @@ o_degradation.pdf>] (./main.aux)
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: F8926E9652B3DE135F94D8B8DF5D7381;4818.
  ) 
 Here is how much of TeX's memory you used:
  18186 strings out of 469438
  296835 string characters out of 5468411
- 792115 words of memory out of 5000000
+ 789115 words of memory out of 5000000
  45981 multiletter control sequences out of 15000+600000
  706579 words of font info for 426 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 84i,12n,93p,2067b,703s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,93p,2067b,701s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texli
@@ -987,7 +989,7 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf
 ype1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (16 pages, 639363 bytes).
+Output written on main.pdf (16 pages, 639454 bytes).
 PDF statistics:
  1266 PDF objects out of 1440 (max. 8388607)
  889 compressed objects within 9 object streams
