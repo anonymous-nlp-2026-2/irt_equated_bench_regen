@@ -134,13 +134,13 @@ Model-level bootstrap & Models independent & 95\% CI [29.4\%, 38.1\%] \\
 Family-level cluster bootstrap & Family is clustering unit & 95\% CI [26.7\%, 53.2\%] \\
 DEFF (simple $\bar{m}$) & Equal-weight families & Adjusted C\% = 29.2\% \\
 DEFF (weighted $\bar{m}$) & Size-proportional weighting & Adjusted C\% = 13.5\% \\
-Graduated de-dup.\ ($K{=}20$) & Remove within-family duplicates & C\% = 29.1\% \\
+Graduated de-dup.\ ($K{=}20$) & Remove within-family duplicates & C\% = 19.7\% $\pm$ 0.9\% \\
 \bottomrule
 \end{tabular}}
 \label{tab:uncertainty}
 \end{table}
 
-The cluster bootstrap upper bound (53.2\%) is driven by extreme bootstrap resamples that over-represent Mistral ($n = 547$) or Llama-3 ($n = 315$), producing atypical cohort compositions. Three independent methods---cluster bootstrap lower bound (26.7\%), simple-mean DEFF adjustment (29.2\%), and graduated de-duplication at $K{=}20$ (29.1\%)---converge on $\sim$27--29\%, establishing a robust lower bound that remains $>$150$\times$ the random-split baseline (0.18\%). The weighted-mean DEFF (13.5\%) represents a conservative extreme that accounts for the effective cluster size experienced by a randomly sampled model; even this lower bound exceeds the baseline by 75$\times$.
+The cluster bootstrap upper bound (53.2\%) is driven by extreme bootstrap resamples that over-represent Mistral ($n = 547$) or Llama-3 ($n = 315$), producing atypical cohort compositions. Two independent methods---cluster bootstrap lower bound (26.7\%) and simple-mean DEFF adjustment (29.2\%)---converge on $\sim$27--29\%, establishing a robust corrected estimate that remains $>$150$\times$ the random-split baseline (0.18\%). Graduated de-duplication at $K{=}20$ yields C\% $= 19.7\% \pm 0.9\%$ (random member selection, 5 draws), lower than the corrected estimate due to reduced statistical power ($N \approx 450$ vs.\ 1,887), but within-$K$ variance ${<}1.5$\,pp at all $K$ confirms the signal is power-driven rather than redundancy-inflated (\Cref{app:dedup_k}). The weighted-mean DEFF (13.5\%) represents a conservative extreme; even this lower bound exceeds the baseline by 75$\times$.
 
 \section{Cross-Benchmark Comparison}
 \label{app:gsm8k_details}
@@ -203,12 +203,14 @@ To test whether DIF susceptibility is a fixed item property, we trained logistic
 \section{ICC by Family Size}
 \label{app:icc_family}
 
-Within-family ICC shows no dependence on family size (Spearman $\rho = -0.009$, $p = 0.96$). Large families (Mistral, $m = 547$, ICC $= 0.47$; Llama-3, $m = 315$, ICC $= 0.53$) are no more homogeneous than small or mid-sized families, indicating that the weighted-mean DEFF variant's effective cluster size ($\bar{m} = 254$) reflects an arithmetic artifact of mega-family dominance rather than genuine within-family homogeneity.
+Within-family similarity (mean pairwise Pearson $r$ over 12{,}508-item response vectors) shows no dependence on family size (Spearman $\rho = -0.009$, $p = 0.96$; 30 families with $\geq 2$ members, 1{,}884 models). Large families (Mistral, $m = 547$, $\bar{r} = 0.47$; Llama-3, $m = 315$, $\bar{r} = 0.53$) are no more homogeneous than small or mid-sized families. The remaining 3{,}343 singleton models (no family assignment) are retained in DIF analysis but excluded from similarity estimation. This indicates that the weighted-mean DEFF variant's effective cluster size ($\bar{m} = 254$) reflects an arithmetic artifact of mega-family dominance rather than genuine within-family homogeneity.
 
 \section{Graduated De-Duplication Sensitivity}
 \label{app:dedup_k}
 
-C\% increases monotonically from 0.3\% ($K = 1$, single representative per family) to 31.3\% ($K = \text{all}$). At each fixed $K$, variance across random member draws is negligible (SD ${<} 1.5$\,pp), confirming that the signal scales with statistical power rather than within-family redundancy. The $K = 20$ threshold (29.1\%) closely matches the simple-mean DEFF estimate (29.2\%), providing independent convergence.
+For each value of $K$ (max models retained per family), $K$ members are sampled uniformly at random; remaining family members are excluded from both reference and focal cohorts, and MH-DIF is recomputed on the reduced sample (5 independent draws per $K$; $K = \text{all}$ is deterministic).
+
+C\% increases monotonically from 0.3\% ($K = 1$) to 31.3\% ($K = \text{all}$). At each fixed $K$, variance across random member draws is negligible (SD ${<} 1.5$\,pp), confirming that the signal scales with statistical power rather than within-family redundancy. At $K{=}20$, C\% $= 19.7\% \pm 0.9\%$ ($N \approx 450$); the gap from the full-sample 31.3\% reflects reduced power, not reduced bias.
 
 \section{Rank-Reversal by Distance}
 \label{app:rank_reversal}
