@@ -1,4 +1,4 @@
-\begin{thebibliography}{55}
+\begin{thebibliography}{57}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Balloccu et~al.(2024)Balloccu, Schmidtova, Lango, and
@@ -245,6 +245,12 @@ William Meredith. 1993.
   factor analysis and factorial invariance}.
 \newblock \emph{Psychometrika}.
 
+\bibitem[{Millsap(2011)}]{millsap2011invariance}
+Roger~E. Millsap. 2011.
+\newblock \href {https://doi.org/10.4324/9780203821961} {\emph{Statistical
+  Approaches to Measurement Invariance}}.
+\newblock Routledge, New York.
+
 \bibitem[{Muth{\'e}n(1985)}]{muthen1985mimic}
 Bengt Muth{\'e}n. 1985.
 \newblock \href {https://doi.org/10.2307/1164966} {A method for studying the
@@ -265,6 +271,13 @@ Yonatan Oren, Nicole Meister, Niladri~S. Chatterji, Faisal Ladhak, and
   contamination in black-box language models}.
 \newblock In \emph{Proceedings of the International Conference on Learning
   Representations (ICLR)}.
+
+\bibitem[{Penfield and Camilli(2007)}]{penfield2007dif}
+Randall~D. Penfield and Gregory Camilli. 2007.
+\newblock \href {https://doi.org/10.1016/S0169-7161(06)26005-X} {Differential
+  item functioning and item bias}.
+\newblock In \emph{Handbook of Statistics}, volume~26, pages 125--167.
+  Elsevier.
 
 \bibitem[{Qian and Huang(2026)}]{qian2026benchmark2}
 Qi~Qian and Chengsong Huang. 2026.
