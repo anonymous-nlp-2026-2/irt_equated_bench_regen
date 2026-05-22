@@ -57,7 +57,7 @@ Direct comparison of DIF flags against the web-overlap labels of \citet{li2024co
 \label{sec:structural}
 
 \looseness=-1
-Three structural controls fail to reduce temporal C\% below 31\% (\Cref{tab:structural_comparison}): matched-ability quintiles, IRT $\theta$-conditioning ($r(\theta, \mathrm{total\ score}) = 0.9986$), and within-subject DIF (C\% $= 38.1\%$). The near-perfect $\theta$--total score correlation confirms that the analysis is essentially CTT-based; IRT provides no incremental information for ability stratification in this application. Logistic regression DIF confirms 92.1\% concordance with MH and reveals additional non-uniform DIF (24.8\%), making 31\% conservative. Graduated de-duplication ($K{=}10$: 22.7\%; $K{=}20$: 29.1\%) confirms family structure does not inflate C\%. Ability-matched analysis reduces Llama-2 vs.\ Llama-3 C\% from 61.3\% to $28.3\%$ and temporal C\% from 31.3\% to $28.9\%$---consistent matched values ($\sim$28--29\%) despite vastly different unmatched rates, suggesting genuine item-level DIF accounts for $\sim$28--29\% of items. Six alternative explanations (ability confounding, family inflation, $\theta$-conditioning, within-subject effects, ranking impact, local dependence) were tested; none reduces C\% below $\sim$28\% (\Cref{app:structural}). The random-split control (0.18\%) confirms this floor is temporal-specific, not a procedural artifact; causal attribution requires further investigation (\Cref{sec:disc_temporal}).
+Three structural controls fail to reduce temporal C\% below 31\% (\Cref{tab:structural_comparison}): matched-ability quintiles, IRT $\theta$-conditioning ($r(\theta, \mathrm{total\ score}) = 0.9986$), and within-subject DIF (C\% $= 38.1\%$; range 31.1--45.2\% across 5 representative subjects). The near-perfect $\theta$--total score correlation confirms that the analysis is essentially CTT-based; IRT provides no incremental information for ability stratification in this application. Logistic regression DIF confirms 92.1\% concordance with MH and reveals additional non-uniform DIF (24.8\%), making 31\% conservative. Graduated de-duplication ($K{=}10$: 22.7\%; $K{=}20$: 29.1\%) confirms family structure does not inflate C\%. Ability-matched analysis reduces Llama-2 vs.\ Llama-3 C\% from 61.3\% to $28.3\%$ and temporal C\% from 31.3\% to $28.9\%$---consistent matched values ($\sim$28--29\%) despite vastly different unmatched rates, suggesting genuine item-level DIF accounts for $\sim$28--29\% of items. Six alternative explanations (ability confounding, family inflation, $\theta$-conditioning, within-subject effects, ranking impact, local dependence) were tested; none reduces C\% below $\sim$28\% (\Cref{app:structural}). The random-split control (0.18\%) confirms this floor is temporal-specific, not a procedural artifact; causal attribution requires further investigation (\Cref{sec:disc_temporal}).
 
 \begin{table}[t]
 \centering
@@ -87,7 +87,7 @@ Cross-subject matching achieves $\Delta\mathrm{FPR} = 0.000$ across all five MML
 \label{sec:downstream}
 
 \looseness=-1
-Spearman correlation between full and stable-item rankings is $\rho \approx 0.997$: aggregate ordering is preserved despite 31\% measurement instability. DIF-flagged items concentrate discriminative signal ($z = -8\sigma$ to $-49\sigma$ vs.\ random removal), though a circularity ablation confirms DIF-based removal is the least disruptive non-random strategy. Model families show distinctive DIF profiles: Llama-3 derivatives gain ${+}53$ median rank positions, Mistral loses $35$ (\Cref{app:fig_downstream}). Removing C-flagged items disproportionately disadvantages 2024 models (cohort gap $= 96.2$ positions, $40\times$ larger than random removal; $p < 0.001$), confirming DIF items carry concentrated inter-generational signal.
+Across all six benchmarks, Spearman correlation between full and stable-item rankings exceeds 0.994 (mean $\rho = 0.997$; range: WinoGrande 0.994 to GSM8K 0.999), with mean pairwise flip rate 1.88\% (\Cref{tab:cross_benchmark}): aggregate ordering is preserved despite substantial measurement instability. DIF-flagged items concentrate discriminative signal ($z = -8\sigma$ to $-49\sigma$ vs.\ random removal), though a circularity ablation confirms DIF-based removal is the least disruptive non-random strategy. Model families show distinctive DIF profiles: Llama-3 derivatives gain ${+}53$ median rank positions, Mistral loses $35$ (\Cref{app:fig_downstream}). Removing C-flagged items disproportionately disadvantages 2024 models (cohort gap $= 96.2$ positions, $40\times$ larger than random removal; $p < 0.001$), confirming DIF items carry concentrated inter-generational signal. The uniformly high $\rho$ values despite varying item pool sizes (817--12{,}508) suggest sufficient measurement redundancy across all six benchmarks.
 
 \subsection{Cross-Benchmark Validation}
 \label{sec:gsm8k}
@@ -97,21 +97,22 @@ Temporal DIF extends across all six METABENCH benchmarks (\Cref{tab:cross_benchm
 
 \begin{table}[t]
 \centering
-\caption{Temporal DIF across six METABENCH benchmarks. C\% = ETS~C items ($|\Delta_{\mathrm{MH}}| \geq 1.5$) between 2023 and 2024 cohorts. All six show substantial DIF (45--174$\times$ above random baseline), with knowledge/reasoning benchmarks exhibiting higher C\% than procedural ones.}
+\caption{Temporal DIF across six METABENCH benchmarks. C\% = ETS~C items ($|\Delta_{\mathrm{MH}}| \geq 1.5$) between 2023 and 2024 cohorts; $\rho$ = Spearman correlation between full and stable-item rankings. All six show substantial DIF (45--174$\times$ above random baseline), with knowledge/reasoning benchmarks exhibiting higher C\% than procedural ones.}
 \label{tab:cross_benchmark}
 \small
-\begin{tabular}{lrrrl}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lrrrrl}
 \toprule
-Benchmark & Items & C\% & Rand.\ C\% & Ratio \\
+Benchmark & Items & C\% & $\rho$ & Rand.\ C\% & Ratio \\
 \midrule
-MMLU & 12{,}508 & 31.3 & 0.18 & 174$\times$ \\
-WinoGrande & 1{,}267 & 30.3 & 0.32 & 95$\times$ \\
-TruthfulQA & 817 & 29.7 & 0.37 & 80$\times$ \\
-ARC & 1{,}172 & 26.9 & 0.60 & 45$\times$ \\
-GSM8K & 1{,}319 & 18.9 & 0.30 & 63$\times$ \\
-HellaSwag & 10{,}042 & 17.9 & 0.28 & 64$\times$ \\
+MMLU & 12{,}508 & 31.3 & 0.997 & 0.18 & 174$\times$ \\
+WinoGrande & 1{,}267 & 30.3 & 0.994 & 0.32 & 95$\times$ \\
+TruthfulQA & 817 & 29.7 & 0.997 & 0.37 & 80$\times$ \\
+ARC & 1{,}172 & 26.9 & 0.996 & 0.60 & 45$\times$ \\
+GSM8K & 1{,}319 & 18.9 & 0.999 & 0.30 & 63$\times$ \\
+HellaSwag & 10{,}042 & 17.9 & 0.999 & 0.28 & 64$\times$ \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \end{table}
 
 On GSM8K, semi-synthetic injection confirms detection power ($\Delta\mathrm{TPR} = {+}0.514$ at $p = 0.5$; \Cref{app:gsm8k_details}); an exploratory GSM1K analysis suggests DIF captures capability change distinct from memorization ($r = -0.478$, $p = 0.005$; \Cref{app:fig_gsm1k}). DIF remains substantial even within a 6-month window (2023-H2 vs.\ 2024-H1: MMLU C\% $= 34.35\%$, TruthfulQA $= 31.33\%$).
