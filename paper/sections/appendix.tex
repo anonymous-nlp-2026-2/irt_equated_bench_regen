@@ -163,6 +163,8 @@ Graduated de-dup.\ ($K{=}20$) & Remove within-family duplicates & C\% = 19.7\% $
 \label{tab:uncertainty}
 \end{table}
 
+\paragraph{Half-year granularity.} Splitting at the 6-month boundary yields C\% $= 34.4\%$, slightly above the annual 31.3\%. The higher rate likely reflects more polarized cohort composition: fewer models span both half-year periods, producing reference and focal groups with less overlapping ability distributions and consequently inflated DIF detection rates.
+
 The cluster bootstrap upper bound (53.2\%) is driven by extreme bootstrap resamples that over-represent Mistral ($n = 547$) or Llama-3 ($n = 315$), producing atypical cohort compositions. Two independent methods---cluster bootstrap lower bound (26.7\%) and simple-mean DEFF adjustment (29.2\%)---converge on $\sim$27--29\%, establishing a robust corrected estimate that remains $>$150$\times$ the random-split baseline (0.18\%). Graduated de-duplication at $K{=}20$ yields C\% $= 19.7\% \pm 0.9\%$ (random member selection, 5 draws), lower than the corrected estimate due to reduced statistical power ($N \approx 450$ vs.\ 1,887), but within-$K$ variance ${<}1.5$\,pp at all $K$ confirms the signal is power-driven rather than redundancy-inflated (\Cref{app:dedup_k}). The weighted-mean DEFF (13.5\%) represents a conservative extreme; even this lower bound exceeds the baseline by 75$\times$.
 
 \section{Cross-Benchmark Comparison}
