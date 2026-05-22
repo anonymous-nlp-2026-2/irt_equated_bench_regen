@@ -51,7 +51,7 @@ $a$ & TPR & 95\% CI & FPR \\
 \section{Structural Analysis Details}
 \label{app:structural}
 
-Three progressively refined approaches fail to reduce the temporal false positive rate below 31\%, revealing a structural property of the data rather than a methodological limitation. Matched-ability quintile analysis restricts comparisons to models of similar total score and yields enrichment ratios of 0.94--1.04, with temporal FPR unchanged at approximately 0.31. IRT $\theta$-conditioning with 20 ability strata achieves $r(\theta, \mathrm{total\ score}) = 0.9986$ and FPR $= 0.312$, confirming that the external total score already captures nearly all ability variance relevant to DIF computation. Within-subject DIF analysis on 5 representative subjects, intended to isolate subject-specific effects, finds mean C\% $= 38.1\%$, exceeding the 25\% threshold that would indicate viable bifactor structure. \Cref{tab:structural_comparison} summarizes these results.
+Two structural controls and a sensitivity check fail to reduce the temporal C\% below 31\%, revealing a structural property of the data rather than a methodological limitation. Matched-ability quintile analysis restricts comparisons to models of similar total score and yields enrichment ratios of 0.94--1.04, with temporal C\% unchanged at approximately 0.31. Within-subject DIF analysis on 5 representative subjects, intended to isolate subject-specific effects, finds mean C\% $= 38.1\%$, exceeding the 25\% threshold that would indicate viable bifactor structure. As a sensitivity check, IRT $\theta$-conditioning with 20 ability strata achieves $r(\theta, \mathrm{total\ score}) = 0.9986$ and C\% $= 0.312$, confirming that the external total score already captures nearly all ability variance relevant to DIF computation. \Cref{tab:structural_comparison} summarizes these results.
 
 The temporal FPR reflects genuine item-level instability that persists regardless of how ability is measured or conditioned. Yen's Q3 diagnostic reveals mild local dependence within subjects (11.3\% of within-subject item pairs exceed $|Q3| > 0.20$, vs.\ 2.2\% cross-subject; $5{\times}$ ratio, $p = 2.3 \times 10^{-9}$), which contributes to elevated within-subject DIF rates but is not the primary driver: the cross-subject matching protocol addresses this bias, and temporal C\% persists under external matching (full Q3 distributions available in the supplementary material).
 
@@ -101,6 +101,30 @@ Two estimates of $\bar{m}$ bracket the adjustment: (1)~\emph{Simple mean} ($\bar
 
 \noindent Mean ICC $= 0.047$ (median $0.041$, Q3 $= 0.061$, max $= 0.219$; 4.8\% of items exceed $0.10$). After dividing each item's $\chi^2_{\mathrm{MH}}$ by its item-specific DEFF and re-applying ETS thresholds, 13.5--29.2\% of items retain Category~C classification depending on the $\bar{m}$ variant---both far exceeding the 0.18\% random-split baseline (75--162$\times$).
 
+\section{Uncertainty Quantification Comparison}
+\label{app:uncertainty}
+
+\begin{table}[h]
+\centering
+\caption{Comparison of uncertainty quantification methods for the 31.3\% C\% estimate on MMLU.}
+\small
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{llr}
+\toprule
+Method & Key assumption & Result \\
+\midrule
+Model-level bootstrap & Models independent & 95\% CI [29.4\%, 38.1\%] \\
+Family-level cluster bootstrap & Family is clustering unit & 95\% CI [26.7\%, 53.2\%] \\
+DEFF (simple $\bar{m}$) & Equal-weight families & Adjusted C\% = 29.2\% \\
+DEFF (weighted $\bar{m}$) & Size-proportional weighting & Adjusted C\% = 13.5\% \\
+Graduated de-dup.\ ($K{=}20$) & Remove within-family duplicates & C\% = 29.1\% \\
+\bottomrule
+\end{tabular}}
+\label{tab:uncertainty}
+\end{table}
+
+The cluster bootstrap upper bound (53.2\%) is driven by extreme bootstrap resamples that over-represent Mistral ($n = 547$) or Llama-3 ($n = 315$), producing atypical cohort compositions. Three independent methods---cluster bootstrap lower bound (26.7\%), simple-mean DEFF adjustment (29.2\%), and graduated de-duplication at $K{=}20$ (29.1\%)---converge on $\sim$27--29\%, establishing a robust lower bound that remains $>$150$\times$ the random-split baseline (0.18\%). The weighted-mean DEFF (13.5\%) represents a conservative extreme that accounts for the effective cluster size experienced by a randomly sampled model; even this lower bound exceeds the baseline by 75$\times$.
+
 \section{Cross-Benchmark Comparison}
 \label{app:gsm8k_details}
 
@@ -143,7 +167,7 @@ $\Delta$TPR ($p{=}0.5$, external) & $+0.508_{\pm.027}$ & $+0.514_{\pm.028}$ \\
 \begin{figure}[h]
 \centering
 \includegraphics[width=\columnwidth]{fig_5_gsm1k_dif_correlation.pdf}
-\caption{GSM1K contamination gap vs.\ DIF ranking advantage ($N = 33$). The negative correlation ($r = -0.478$, $p = 0.005$) indicates that models with larger contamination gaps benefit less from DIF-flagged items.}
+\caption{Exploratory: GSM1K contamination gap vs.\ DIF ranking advantage ($N = 33$; small sample, results should be interpreted cautiously). The negative correlation ($r = -0.478$, $p = 0.005$) indicates that models with larger contamination gaps benefit less from DIF-flagged items.}
 \label{app:fig_gsm1k}
 \end{figure}
 
