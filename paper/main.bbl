@@ -1,4 +1,4 @@
-\begin{thebibliography}{61}
+\begin{thebibliography}{62}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Ackerman(1992)}]{ackerman1992didmf}
@@ -323,6 +323,13 @@ Weijia Shi, Anirudh Ajith, Mengzhou Xia, Yangsibo Huang, Daogao Liu, Terra
   from large language models}.
 \newblock In \emph{Proceedings of the International Conference on Learning
   Representations (ICLR)}.
+
+\bibitem[{Suk and Lyu(2026)}]{suk2026rethinking}
+Youmi Suk and Weijun Lyu. 2026.
+\newblock Rethinking differential item functioning from a causal inference
+  perspective.
+\newblock \emph{Psychometrika}.
+\newblock Forthcoming.
 
 \bibitem[{Swaminathan and Rogers(1990)}]{swaminathan1990logistic}
 Hariharan Swaminathan and H.~Jane Rogers. 1990.

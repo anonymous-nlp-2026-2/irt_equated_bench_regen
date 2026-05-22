@@ -12,7 +12,7 @@ Contamination detectors---from membership inference~\citep{shi2024mink} to perfo
 \label{fig:global_vs_differential}
 \end{figure}
 
-We apply MH-DIF to the full METABENCH response matrix (5,227 models $\times$ 12,508 MMLU items), to our knowledge the largest-scale DIF analysis on LLM benchmarks, complementing concurrent work on anchor-item calibration~\citep{habba2026growingpains} and addressing the fragility of existing detectors under post-training perturbation~\citep{wang2026fragility}. Two structural controls, a sensitivity check, and replication across all six METABENCH benchmarks confirm that the $\sim$31\% temporal DIF rate is not a methodological artifact (\Cref{sec:temporal,sec:structural,sec:gsm8k}).
+We apply MH-DIF to the full METABENCH response matrix (5,227 models $\times$ 12,508 MMLU items), to our knowledge the largest-scale DIF analysis on LLM benchmarks, complementing concurrent work on anchor-item calibration~\citep{habba2026growingpains} and addressing the fragility of existing detectors under post-training perturbation~\citep{wang2026fragility}. Two structural controls, a sensitivity check, and replication across all six METABENCH benchmarks confirm that the temporal DIF rate (${\approx}$27--29\% after non-independence corrections) is not a methodological artifact (\Cref{sec:temporal,sec:structural,sec:gsm8k}).
 
 DIF should be understood as a diagnostic lens rather than a quality filter: DIF-flagged items concentrate discriminative signal ($z = -8$ to $-49$ vs.\ random removal; \Cref{sec:downstream}), and model families show distinctive DIF profiles.
 
@@ -23,5 +23,5 @@ Our contributions are methodological and empirical, not algorithmic:
 
 \item \textbf{Semi-synthetic validation framework}: Cross-subject matching provides theoretical $\Delta\mathrm{FPR} = 0$ guarantees for multi-domain benchmarks, with family-level clustering for non-independent models and per-item design-effect correction for correlated populations; replicated on GSM8K (\Cref{sec:semisynthetic,sec:gsm8k}).
 
-\item \textbf{Temporal measurement instability at scale}: Approximately 31\% of MMLU items exhibit differential functioning across model generations under ETS~C classification; replication across all six METABENCH benchmarks yields C\% $= 17.9$--$31.3\%$, with knowledge/reasoning benchmarks showing higher DIF rates than procedural ones (\Cref{sec:temporal,sec:gsm8k,sec:downstream}).
+\item \textbf{Temporal measurement instability at scale}: Approximately 27--29\% of MMLU items exhibit differential functioning across model generations after three convergent non-independence corrections; replication across all six METABENCH benchmarks yields C\% $= 17.9$--$31.3\%$, with knowledge/reasoning benchmarks showing higher DIF rates than procedural ones (\Cref{sec:temporal,sec:gsm8k,sec:downstream}).
 \end{enumerate}
