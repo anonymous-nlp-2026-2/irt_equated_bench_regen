@@ -1,4 +1,4 @@
-\begin{thebibliography}{51}
+\begin{thebibliography}{57}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Balloccu et~al.(2024)Balloccu, Schmidtova, Lango, and
@@ -77,11 +77,36 @@ Jasper Dekoninck, Mark~Niklas Mueller, and Martin Vechev. 2024.
 \newblock In \emph{Advances in Neural Information Processing Systems
   (NeurIPS)}.
 
+\bibitem[{Deng et~al.(2024)Deng, Zhao, Tang, Gerstein, and
+  Cohan}]{deng2024investigating}
+Chunyuan Deng, Yilun Zhao, Xiangru Tang, Mark Gerstein, and Arman Cohan. 2024.
+\newblock \href {https://doi.org/10.18653/v1/2024.naacl-long.482}
+  {Investigating data contamination in modern benchmarks for large language
+  models}.
+\newblock In \emph{Proceedings of the 2024 Conference of the North American
+  Chapter of the Association for Computational Linguistics (NAACL)}.
+
 \bibitem[{Donoghue and Allen(1993)}]{donoghue1993mh}
 John~R. Donoghue and Nancy~L. Allen. 1993.
 \newblock An empirical examination of the {Mantel-Haenszel} statistic for the
   study of differential item functioning.
 \newblock \emph{Applied Measurement in Education}, 6(2):163--179.
+
+\bibitem[{French and Finch(2010)}]{french2010hierarchical}
+Brian~F. French and W.~Holmes Finch. 2010.
+\newblock Hierarchical logistic regression: Accounting for multilevel data in
+  {DIF} detection.
+\newblock \emph{Journal of Educational Measurement}, 47(3):299--317.
+
+\bibitem[{Gema et~al.(2024)Gema, Leang, Hong, Devoto, Mancino, Saxena, He,
+  Zhao, Du, Ghasemi~Madani, Barale, McHardy, Harris, Kaddour, van Krieken, and
+  Minervini}]{gema2024mmlu}
+Aryo~Pradipta Gema, Joshua Ong~Jun Leang, Giwon Hong, Alessio Devoto, Alberto
+  Carlo~Maria Mancino, Rohit Saxena, Xuanli He, Yu~Zhao, Xiaotang Du,
+  Mohammad~Reza Ghasemi~Madani, Claire Barale, Robert McHardy, Joshua Harris,
+  Jean Kaddour, Emile van Krieken, and Pasquale Minervini. 2024.
+\newblock Are we done with {MMLU}?
+\newblock \emph{arXiv preprint arXiv:2406.04127}.
 
 \bibitem[{Golchin and Surdeanu(2024)}]{golchin2024timetravel}
 Shahriar Golchin and Mihai Surdeanu. 2024.
@@ -146,6 +171,12 @@ Alon Kipnis, Konstantinos Voudouris, Luca~Maria Schulze~Buschoff, and Eric
 \newblock \href {https://arxiv.org/abs/2407.12844} {metabench -- a sparse
   benchmark of reasoning and knowledge in large language models}.
 \newblock \emph{Preprint}, arXiv:2407.12844.
+
+\bibitem[{Kolen and Brennan(2014)}]{kolen2014equating}
+Michael~J. Kolen and Robert~L. Brennan. 2014.
+\newblock \emph{Test Equating, Scaling, and Linking: Methods and Practices},
+  3rd edition.
+\newblock Springer.
 
 \bibitem[{Lalor et~al.(2019)Lalor, Wu, and Yu}]{lalor2019irt}
 John Lalor, Hao Wu, and Hong Yu. 2019.
@@ -236,6 +267,15 @@ Ratna Nandakumar. 1993.
 \newblock Simultaneous {DIF} amplification and cancellation: {Shealy}-{Stout}'s
   test for {DIF}.
 \newblock \emph{Journal of Educational Measurement}, 30(4):293--311.
+
+\bibitem[{Oren et~al.(2024)Oren, Meister, Chatterji, Ladhak, and
+  Hashimoto}]{oren2024proving}
+Yonatan Oren, Nicole Meister, Niladri~S. Chatterji, Faisal Ladhak, and
+  Tatsunori~B. Hashimoto. 2024.
+\newblock \href {https://openreview.net/forum?id=KS8mIvetg2} {Proving test set
+  contamination in black-box language models}.
+\newblock In \emph{Proceedings of the Twelfth International Conference on
+  Learning Representations (ICLR)}.
 
 \bibitem[{Qian and Huang(2026)}]{qian2026benchmark2}
 Qi~Qian and Chengsong Huang. 2026.
@@ -333,6 +373,16 @@ Haonan Wang, Haoyang Li, Boeun Ko, and Hongyang Zhang. 2026.
   benchmark contamination detection in reasoning models}.
 \newblock In \emph{Proceedings of the International Conference on Learning
   Representations (ICLR)}.
+
+\bibitem[{Wang et~al.(2024)Wang, Ma, Zhang, Ni, Chandra, Guo, Ren, Arulraj, He,
+  Jiang, Li, Ku, Wang, Zhuang, Fan, Yue, and Chen}]{wang2024mmlupro}
+Yubo Wang, Xueguang Ma, Ge~Zhang, Yuansheng Ni, Abhranil Chandra, Shiguang Guo,
+  Weiming Ren, Aaran Arulraj, Xuan He, Ziyan Jiang, Tianle Li, Max Ku, Kai
+  Wang, Alex Zhuang, Rongqi Fan, Xiang Yue, and Wenhu Chen. 2024.
+\newblock \href {https://arxiv.org/abs/2406.01574} {{MMLU-Pro}: A more robust
+  and challenging multi-task language understanding benchmark}.
+\newblock In \emph{Advances in Neural Information Processing Systems (NeurIPS),
+  Datasets and Benchmarks Track}.
 
 \bibitem[{White(2025)}]{white2025livebench}
 Colin White. 2025.
