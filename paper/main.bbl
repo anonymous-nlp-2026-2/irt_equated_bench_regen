@@ -1,4 +1,4 @@
-\begin{thebibliography}{57}
+\begin{thebibliography}{55}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Balloccu et~al.(2024)Balloccu, Schmidtova, Lango, and
@@ -97,16 +97,6 @@ Brian~F. French and W.~Holmes Finch. 2010.
 \newblock Hierarchical logistic regression: Accounting for multilevel data in
   {DIF} detection.
 \newblock \emph{Journal of Educational Measurement}, 47(3):299--317.
-
-\bibitem[{Gema et~al.(2024)Gema, Leang, Hong, Devoto, Mancino, Saxena, He,
-  Zhao, Du, Ghasemi~Madani, Barale, McHardy, Harris, Kaddour, van Krieken, and
-  Minervini}]{gema2024mmlu}
-Aryo~Pradipta Gema, Joshua Ong~Jun Leang, Giwon Hong, Alessio Devoto, Alberto
-  Carlo~Maria Mancino, Rohit Saxena, Xuanli He, Yu~Zhao, Xiaotang Du,
-  Mohammad~Reza Ghasemi~Madani, Claire Barale, Robert McHardy, Joshua Harris,
-  Jean Kaddour, Emile van Krieken, and Pasquale Minervini. 2024.
-\newblock \href {https://arxiv.org/abs/2406.04127} {Are we done with {MMLU}?}
-\newblock \emph{Preprint}, arXiv:2406.04127.
 
 \bibitem[{Golchin and Surdeanu(2024)}]{golchin2024timetravel}
 Shahriar Golchin and Mihai Surdeanu. 2024.
@@ -372,16 +362,6 @@ Haonan Wang, Haoyang Li, Boeun Ko, and Hongyang Zhang. 2026.
   benchmark contamination detection in reasoning models}.
 \newblock In \emph{Proceedings of the International Conference on Learning
   Representations (ICLR)}.
-
-\bibitem[{Wang et~al.(2024)Wang, Ma, Zhang, Ni, Chandra, Guo, Ren, Arulraj, He,
-  Jiang, Li, Ku, Wang, Zhuang, Fan, Yue, and Chen}]{wang2024mmlupro}
-Yubo Wang, Xueguang Ma, Ge~Zhang, Yuansheng Ni, Abhranil Chandra, Shiguang Guo,
-  Weiming Ren, Aaran Arulraj, Xuan He, Ziyan Jiang, Tianle Li, Max Ku, Kai
-  Wang, Alex Zhuang, Rongqi Fan, Xiang Yue, and Wenhu Chen. 2024.
-\newblock \href {https://arxiv.org/abs/2406.01574} {{MMLU-Pro}: A more robust
-  and challenging multi-task language understanding benchmark}.
-\newblock In \emph{Advances in Neural Information Processing Systems (NeurIPS),
-  Datasets and Benchmarks Track}.
 
 \bibitem[{White(2025)}]{white2025livebench}
 Colin White. 2025.

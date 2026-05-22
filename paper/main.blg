@@ -10,45 +10,45 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: references.bib
 Warning--can't use both volume and number fields in sakaguchi2021winogrande
-You've used 57 entries,
+You've used 55 entries,
             3764 wiz_defined-function locations,
-            1050 strings with 20517 characters,
-and the built_in function-call counts, 44750 in all, are:
-= -- 3606
-> -- 2762
+            1040 strings with 19613 characters,
+and the built_in function-call counts, 41809 in all, are:
+= -- 3413
+> -- 2457
 < -- 30
-+ -- 1144
-- -- 846
-* -- 3165
-:= -- 6782
-add.period$ -- 229
-call.type$ -- 57
-change.case$ -- 616
-chr.to.int$ -- 60
-cite$ -- 58
-duplicate$ -- 2546
-empty$ -- 2953
-format.name$ -- 1019
-if$ -- 9550
++ -- 1012
+- -- 747
+* -- 2913
+:= -- 6340
+add.period$ -- 221
+call.type$ -- 55
+change.case$ -- 571
+chr.to.int$ -- 58
+cite$ -- 56
+duplicate$ -- 2415
+empty$ -- 2828
+format.name$ -- 914
+if$ -- 8967
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 609
-newline$ -- 289
-num.names$ -- 230
-pop$ -- 1739
+missing$ -- 566
+newline$ -- 279
+num.names$ -- 222
+pop$ -- 1610
 preamble$ -- 1
-purify$ -- 509
+purify$ -- 468
 quote$ -- 0
-skip$ -- 2243
+skip$ -- 2121
 stack$ -- 0
-substring$ -- 902
-swap$ -- 1371
+substring$ -- 880
+swap$ -- 1280
 text.length$ -- 27
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 504
+type$ -- 486
 warning$ -- 1
-while$ -- 190
+while$ -- 184
 width$ -- 0
-write$ -- 709
+write$ -- 684
 (There was 1 warning)
