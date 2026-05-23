@@ -72,6 +72,10 @@ N/cohort & TPR & FPR & AUC & TPR & FPR & AUC \\
 
 \paragraph{Logistic regression specification.} The Simpson's paradox analysis (\Cref{sec:temporal}) uses binary logistic regression with DIF-C classification as the dependent variable, domain-level accuracy change (2024 minus 2023 mean accuracy) as the primary predictor, and item difficulty (proportion correct) and IRT discrimination (point-biserial correlation) as controls. The interaction between domain accuracy change and item difficulty is included. Non-uniform DIF detection (\Cref{sec:structural}) uses logistic regression with a group $\times$ ability interaction term; a significant interaction ($p < 0.05$) indicates non-uniform DIF.
 
+\paragraph{Difficulty--model-type interaction.}
+\label{app:interaction}
+Logistic regression confirms that the base-vs-instruct direction reversal is not a difficulty confound: the difficulty $\times$ model-type interaction is significant ($\hat{\beta} = 1.56$, OR $= 4.75$, $p < 10^{-188}$; $N = 8{,}585$ items). Controlling for difficulty, model type remains a strong independent predictor of DIF direction (OR $= 4.24$, $p < 10^{-225}$). Among 2,053 items flagged DIF-C in both base and instruct analyses, 98\% show concordant direction; the aggregate reversal arises from \emph{which} items reach C threshold, not from individual items reversing direction.
+
 \section{Structural Analysis Details}
 \label{app:structural}
 
