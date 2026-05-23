@@ -16,7 +16,8 @@ import warnings
 
 warnings.filterwarnings("ignore", category=RuntimeWarning)
 
-ROOT = Path("artifacts")
+ROOT = Path("/home/ubuntu/.agent-ml-research-idea_gen_0520_2/"
+            "projects/irt_equated_bench_regen/artifacts")
 OUT = ROOT / "r19_model_size_dif"
 OUT.mkdir(exist_ok=True)
 

@@ -10,7 +10,7 @@ from scipy import sparse, stats
 from pathlib import Path
 import time
 
-BASE = Path(".")
+BASE = Path("/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen")
 OUT = BASE / "artifacts" / "sf1_cluster_bootstrap"
 
 # ── Load data ──────────────────────────────────────────────────────────────

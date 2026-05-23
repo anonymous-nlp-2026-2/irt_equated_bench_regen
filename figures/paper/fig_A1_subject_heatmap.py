@@ -95,8 +95,8 @@ SUBJECT_DOMAIN = {
 def format_subject(name):
     return name.replace('_', ' ').title()
 
-DATA_PATH = 'artifacts/plan_001_real_data_dif_mmlu/data/domain_specificity.csv'
-OUT_DIR = './figures/paper'
+DATA_PATH = '/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/artifacts/plan_001_real_data_dif_mmlu/data/domain_specificity.csv'
+OUT_DIR = '/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/figures/paper'
 
 df = pd.read_csv(DATA_PATH)
 df['domain'] = df['subject'].map(SUBJECT_DOMAIN)

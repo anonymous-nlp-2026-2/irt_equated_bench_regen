@@ -29,11 +29,11 @@ WITHIN_SUBJECT_MEAN = 11.3
 HIGHLIGHT_THRESHOLD = 20.0
 
 data_path = pathlib.Path(
-    '.'
+    '/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen'
     '/artifacts/plan_013_q3_local_independence/data/q3_summary.csv'
 )
 out_dir = pathlib.Path(
-    '.'
+    '/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen'
     '/figures/paper'
 )
 

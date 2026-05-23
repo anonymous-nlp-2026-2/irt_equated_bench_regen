@@ -6,7 +6,7 @@ import pandas as pd
 import scipy.sparse as sp
 from scipy.stats import chi2 as chi2_dist
 
-BASE = "artifacts"
+BASE = "/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/artifacts"
 N_STRATA = 5
 TOP_K = 5
 

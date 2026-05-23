@@ -9,7 +9,7 @@ from scipy import sparse, stats
 from scipy.stats import chi2 as chi2_dist
 import time, os, sys
 
-ROOT = "artifacts"
+ROOT = "/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/artifacts"
 OUT = os.path.join(ROOT, "r19_semisynthetic_gradient")
 
 N_SEEDS = 5

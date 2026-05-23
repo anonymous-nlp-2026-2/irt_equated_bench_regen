@@ -13,7 +13,8 @@ import pandas as pd
 from scipy.sparse import load_npz
 from pathlib import Path
 
-BASE = Path("artifacts")
+BASE = Path("/home/ubuntu/.agent-ml-research-idea_gen_0520_2/"
+            "projects/irt_equated_bench_regen/artifacts")
 OUT = BASE / "mf1_lofo_power_calibration"
 OUT.mkdir(exist_ok=True)
 

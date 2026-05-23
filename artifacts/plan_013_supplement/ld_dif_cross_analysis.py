@@ -5,7 +5,7 @@ import numpy as np
 from scipy import stats
 from pathlib import Path
 
-ROOT = Path(".")
+ROOT = Path("/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen")
 OUT = ROOT / "artifacts" / "plan_013_supplement"
 
 q3 = pd.read_csv(ROOT / "artifacts" / "plan_013" / "q3_summary.csv")

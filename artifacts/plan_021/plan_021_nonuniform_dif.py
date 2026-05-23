@@ -13,7 +13,7 @@ from statsmodels.stats.multitest import multipletests
 
 warnings.filterwarnings("ignore", category=RuntimeWarning)
 
-BASE = "artifacts"
+BASE = "/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/artifacts"
 OUT = f"{BASE}/plan_021"
 
 # ── Load data ──

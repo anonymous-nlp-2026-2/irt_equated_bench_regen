@@ -20,7 +20,7 @@ import warnings
 import gc
 warnings.filterwarnings("ignore", category=RuntimeWarning)
 
-BASE = Path("artifacts")
+BASE = Path("/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/artifacts")
 DATA = BASE / "metabench_data" / "benchmark-data"
 OUT = BASE / "plan_028_bootstrap_ci"
 OUT.mkdir(exist_ok=True)

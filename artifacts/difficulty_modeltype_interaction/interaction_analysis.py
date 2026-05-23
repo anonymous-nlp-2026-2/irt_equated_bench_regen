@@ -14,7 +14,7 @@ import statsmodels.api as sm
 import warnings
 warnings.filterwarnings("ignore")
 
-ROOT = "artifacts"
+ROOT = "/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/artifacts"
 OUT = f"{ROOT}/difficulty_modeltype_interaction"
 
 DELTA_THRESH = 1.5

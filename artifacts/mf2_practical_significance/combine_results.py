@@ -5,7 +5,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-OUT = Path("artifacts/mf2_practical_significance")
+OUT = Path("/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/artifacts/mf2_practical_significance")
 
 BENCH_ORDER = ["MMLU", "ARC", "HellaSwag", "WinoGrande", "TruthfulQA", "GSM8K"]
 

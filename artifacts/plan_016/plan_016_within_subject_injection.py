@@ -22,7 +22,7 @@ import warnings
 
 warnings.filterwarnings("ignore", category=RuntimeWarning)
 
-BASE = Path("artifacts")
+BASE = Path("/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/artifacts")
 OUT = BASE / "plan_016"
 OUT.mkdir(exist_ok=True)
 

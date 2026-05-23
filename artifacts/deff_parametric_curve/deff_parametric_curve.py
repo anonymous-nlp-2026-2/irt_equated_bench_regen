@@ -11,7 +11,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.ticker import ScalarFormatter
 
-ROOT = Path(".")
+ROOT = Path("/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen")
 ARTIFACTS = ROOT / "artifacts"
 OUT = ARTIFACTS / "deff_parametric_curve"
 OUT.mkdir(parents=True, exist_ok=True)

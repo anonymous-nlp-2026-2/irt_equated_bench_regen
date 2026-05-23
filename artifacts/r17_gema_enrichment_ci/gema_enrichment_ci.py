@@ -7,7 +7,7 @@ from scipy.stats import fisher_exact
 SEED = 42
 N_BOOT = 1000
 
-BASE = "artifacts"
+BASE = "/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/artifacts"
 DIF_PATH = f"{BASE}/plan_001/dif_results_temporal.csv"
 REDUX_PATH = f"{BASE}/mmlu_redux/mmlu_redux_2.0_all.csv"
 OUT_DIR = f"{BASE}/r17_gema_enrichment_ci"

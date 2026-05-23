@@ -19,7 +19,7 @@ import pandas as pd
 
 warnings.filterwarnings('ignore')
 
-PROJECT_DIR = Path(".")
+PROJECT_DIR = Path("/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen")
 DATA_DIR = PROJECT_DIR / "artifacts" / "metabench_data" / "benchmark-data"
 OUT_DIR = PROJECT_DIR / "artifacts"
 

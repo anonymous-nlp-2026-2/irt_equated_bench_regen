@@ -8,7 +8,7 @@ import pandas as pd
 from scipy import sparse
 from scipy.stats import chi2 as chi2_dist, spearmanr, chi2_contingency
 
-ROOT = "artifacts"
+ROOT = "/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/artifacts"
 OUT = f"{ROOT}/r18_base_vs_instruct_dif"
 
 N_STRATA = 5

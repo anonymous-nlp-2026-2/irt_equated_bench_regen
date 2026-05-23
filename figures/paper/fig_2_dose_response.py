@@ -43,7 +43,7 @@ LABELS = {
     'anchor':   'Anchor',
 }
 
-data_path = 'artifacts/plan_011_semi_synthetic_validation/data/dose_response_summary_779a18.csv'
+data_path = '/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/artifacts/plan_011_semi_synthetic_validation/data/dose_response_summary_779a18.csv'
 df = pd.read_csv(data_path)
 df = df[df['cohort_type'] == 'temporal'].copy()
 
@@ -135,7 +135,7 @@ ax_bot.set_xlabel('Exploitation Rate ($p$)')
 ax_bot.set_ylim(0.2, 0.72)
 ax_bot.set_xticks([0, 0.3, 0.5, 0.7, 1.0])
 
-out_base = './figures/paper/fig_2_dose_response'
+out_base = '/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/figures/paper/fig_2_dose_response'
 fig.savefig(f'{out_base}.pdf')
 fig.savefig(f'{out_base}.png')
 plt.close()

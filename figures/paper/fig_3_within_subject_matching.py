@@ -24,7 +24,7 @@ C_CROSS = '#0072B2'
 C_WITHIN = '#D55E00'
 
 csv_path = (
-    '.'
+    '/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen'
     '/artifacts/plan_016_within_subject_semi_synthetic/data'
     '/within_subject_dose_response_e6d86f.csv'
 )
@@ -130,7 +130,7 @@ ax_r.annotate('Within-subject', xy=(fl_within_fpr, fl_idx),
               fontsize=8.5, color=C_WITHIN, va='bottom', ha='left')
 
 out_dir = (
-    '.'
+    '/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen'
     '/figures/paper'
 )
 fig.savefig(f'{out_dir}/fig_3_within_subject_matching.pdf')

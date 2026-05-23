@@ -22,7 +22,8 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-BASE = Path("artifacts")
+BASE = Path("/home/ubuntu/.agent-ml-research-idea_gen_0520_2/"
+            "projects/irt_equated_bench_regen/artifacts")
 OUT = BASE / "plan_029_permutation_null"
 OUT.mkdir(exist_ok=True)
 

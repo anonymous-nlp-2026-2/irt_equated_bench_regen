@@ -10,7 +10,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-ROOT = Path(".")
+ROOT = Path("/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen")
 ARTIFACTS = ROOT / "artifacts"
 OUT = ARTIFACTS / "r20_size_stratified_deff"
 OUT.mkdir(parents=True, exist_ok=True)

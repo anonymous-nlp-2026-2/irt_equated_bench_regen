@@ -12,7 +12,8 @@ from scipy.stats import chi2 as chi2_dist
 from scipy.sparse import load_npz
 from pathlib import Path
 
-ROOT = Path("artifacts")
+ROOT = Path("/home/ubuntu/.agent-ml-research-idea_gen_0520_2/"
+            "projects/irt_equated_bench_regen/artifacts")
 OUT = ROOT / "r22_composition_control"
 OUT.mkdir(exist_ok=True)
 

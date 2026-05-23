@@ -10,7 +10,7 @@ import pandas as pd
 import scipy.sparse
 from scipy.stats import spearmanr, kendalltau
 
-BASE = Path("artifacts")
+BASE = Path("/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/artifacts")
 OUT = BASE / "mf2_practical_significance"
 
 DIF_PATHS = {

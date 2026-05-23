@@ -28,8 +28,8 @@ plt.rcParams.update({
 COL_DIF = '#D55E00'
 COL_RND = '#0072B2'
 
-DATA_PATH = 'artifacts/mf2_rho_degradation/degradation_curves.csv'
-OUT_DIR = './figures/paper'
+DATA_PATH = '/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/artifacts/mf2_rho_degradation/degradation_curves.csv'
+OUT_DIR = '/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/figures/paper'
 
 df = pd.read_csv(DATA_PATH)
 

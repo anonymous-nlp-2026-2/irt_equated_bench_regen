@@ -24,7 +24,7 @@ import numpy as np
 import pandas as pd
 from scipy.sparse import csr_matrix, save_npz
 
-ARTIFACTS = "artifacts"
+ARTIFACTS = "/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/artifacts"
 DATA_DIR = os.path.join(ARTIFACTS, "metabench_data", "benchmark-data")
 
 

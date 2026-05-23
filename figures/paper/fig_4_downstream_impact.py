@@ -50,7 +50,7 @@ def short_name(model_name):
     return parts[-1] if len(parts) > 1 else model_name
 
 # Load data
-DATA_PATH = 'artifacts/plan_017/data/rank_movers.csv'
+DATA_PATH = '/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/artifacts/plan_017/data/rank_movers.csv'
 df = pd.read_csv(DATA_PATH)
 df = df[df['cohort'] == 'all'].copy()
 
@@ -137,7 +137,7 @@ ax.set_ylim(lims)
 ax.set_aspect('equal')
 
 # Save
-out_base = './figures/paper/fig_4_downstream_impact'
+out_base = '/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/figures/paper/fig_4_downstream_impact'
 fig.savefig(f'{out_base}.pdf', format='pdf')
 fig.savefig(f'{out_base}.png', format='png')
 plt.close(fig)

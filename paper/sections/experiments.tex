@@ -1,0 +1,118 @@
+\section{Experiments}
+\label{sec:experiments}
+
+We apply MH-DIF to the METABENCH response matrix~\citep{kipnis2024metabench} (5,227 models $\times$ 12,508 MMLU items~\citep{hendrycks2021mmlu}), with temporal cohorts defined by release date (2023 vs.\ 2024). Cross-benchmark validation across all six METABENCH benchmarks appears in \Cref{sec:gsm8k}.
+
+\subsection{Validation: DIF Detection Power}
+\label{sec:validation}
+
+\looseness=-1
+A Monte Carlo power analysis (1,000 replications) using empirical 2PL parameters from PSN-IRT~\citep{zhou2026psnirt} ($\bar{a} = 1.2$, $\bar{b} = -0.84$) confirms that at $N \geq 80$ per cohort, ETS~C achieves TPR of 0.68--0.80 (under uniform injection) and AUC of 0.93--0.94 for $|\Delta_{\mathrm{MH}}| \geq 1.4$ (\Cref{app:method_details}). Our temporal cohorts ($N_{\mathrm{ref}} = 1{,}080$, $N_{\mathrm{focal}} = 807$) far exceed this threshold; power varies with item discrimination (TPR 0.40--0.95 across $a = 0.5$--$2.0$; \Cref{app:power_sensitivity}).
+
+\subsection{Temporal DIF: ${\sim}$29\% of Items Exhibit Differential Functioning}
+\label{sec:temporal}
+
+\looseness=-1
+We compare 2023 ($N = 1{,}080$) against 2024 ($N = 807$) models; 31.3\% of items receive ETS~C classification ($|\Delta_{\mathrm{MH}}| \geq 1.5$; bootstrap 95\% CI: $[29.4\%, 38.1\%]$; family-level cluster bootstrap: $[26.7\%, 53.2\%]$, upper bound driven by mega-family over-representation; \Cref{app:uncertainty}). Two design-effect (DEFF) estimators bound the non-independence effect: simple-mean DEFF yields 29.2\% and weighted-mean DEFF yields 13.5\%, bracketing temporal C\% at 13.5--29.2\%. The cluster bootstrap 95\% CI ($[26.7\%, 53.2\%]$)---a family-level resampling method independent of DEFF methodology---excludes the weighted-mean estimate (13.5\%), providing model-independent evidence that over-correction drives the lower bound. Under weighted-mean DEFF (C\% $= 13.5\%$), all downstream conclusions hold: $\rho = 0.999$, score shift $= {+}1.77$\,pp (\Cref{app:deff}). Under 100 random permutations within the 2023 cohort (540 vs.\ 540), the 99th percentile of item-level $|\Delta_{\mathrm{MH}}|$ is 1.45---just below the ETS~C threshold of 1.5---confirming that the threshold maintains a per-item false-positive rate below 1\%; together with the Monte Carlo power analysis (TPR $\geq 0.68$; \Cref{sec:validation}), this validates ETS~C classification for the LLM setting. No single family drives the signal (LOFO $|\Delta\mathrm{C\%}| \leq 2.93$\,pp); graduated de-duplication confirms C\% scales with power, not redundancy (\Cref{app:dedup_k}).
+
+\looseness=-1
+Three controls confirm genuine temporal change (\Cref{tab:temporal_landscape}): random splits yield mean C\% of 0.62\% (2023; 100 permutations) and 1.3\% (2024; 100 permutations), both ${\geq}24\times$ below temporal C\%; ability-quintile comparison yields 2.9\%; and 1:1 nearest-neighbor matching on total score ($N{=}638$/group, Cohen's $d = -0.17$) yields C\% $= 28.9\% \pm 0.1\%$, confirming at most ${\sim}2.4$~pp is attributable to ability mismatch ($p < 0.01$; \Cref{app:method_details}).
+
+\looseness=-1
+Across all 57 subjects, C\% ranges from 20.7\% to 48.4\% (mean $\approx 30\%$; \Cref{tab:temporal_landscape}). DIF rates are domain-invariant (Kruskal-Wallis $p = 0.78$), but DIF \emph{direction} exhibits domain dependence: STEM items favor 2024 models (55.4\%), Humanities favor 2023 (64.4\%). DIF is item-specific: domain-level accuracy gains explain ${<}0.1\%$ of item-level DIF variance (\Cref{app:structural}). A difficulty--direction interaction emerges ($\rho = -0.597$): 2024 models gain on hard items while eroding on easy ones. The conclusion is robust across thresholds ($18.3\%$ at $|\Delta_{\mathrm{MH}}| \geq 2.0$, $10.2\%$ at $\geq 2.5$).
+
+\begin{table}[t]
+\centering
+\caption{DIF landscape across cohort definitions. ETS~C denotes the percentage of items with $|\Delta_{\mathrm{MH}}| \geq 1.5$. C\% (web-clean) is the DIF-C flagging rate among items classified as web-clean by \citet{li2024contamination}. Enrichment is the ratio of observed to expected overlap between DIF flags and web-overlap labels. Dashes (--) indicate comparisons where Li et al.\ labels are not applicable.}
+\label{tab:temporal_landscape}
+\small
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+Cohort Definition & $N_{\mathrm{ref}}$ / $N_{\mathrm{focal}}$ & C\% & C\% (web-clean) & Enrich. \\
+\midrule
+Temporal (2023 vs.\ 2024) & 1,080 / 807 & 31.3 & 0.318 & 0.964 \\
+Ability quintile (Q1--2 vs.\ Q4--5) & ${\sim}$2,600 / ${\sim}$2,600 & 2.9 & 0.027 & 1.19 \\
+Within-family (Llama-2 vs.\ 3) & 161 / 308 & 61.3 & -- & -- \\
+Random split 2023 (sanity) & 540 / 540 & 0.62 & -- & -- \\
+Random split 2024 (sanity) & ${\sim}$400 / ${\sim}$400 & 1.3 & -- & -- \\
+Within-subject (avg, 5 subj.) & \textit{varies} & 38.1 & -- & -- \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\subsection{Comparison with Web-Overlap Labels}
+\label{sec:groundtruth}
+
+\looseness=-2
+Direct comparison of DIF flags against the web-overlap labels of \citet{li2024contamination} on 9,229 annotated items shows near-independence (enrichment $= 0.964$, Jaccard $= 0.206$; $p = 0.88$; \Cref{tab:temporal_landscape,app:structural}): DIF-C rates are 30.7\% among web-contaminated items and 31.8\% among clean items. Because web-overlap labels are a proxy for training-set membership (based on verbatim web matches, not actual training corpora), this near-independence could partly reflect proxy noise; however, label-independent evidence confirms mechanism separation: base and instruct models exhibit opposite DIF directions ($\chi^2 = 562.7$; \Cref{sec:disc_temporal}), a reversal that contamination alone cannot explain. Semi-synthetic injection confirms detection power ($\Delta\mathrm{TPR} = {+}0.508$ at $p = 0.5$; \Cref{fig:dose_response}). Web-overlap labels measure \emph{global exposure}, while DIF measures \emph{differential functioning}---complementary diagnostic dimensions (\Cref{fig:global_vs_differential}).
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{fig_2_dose_response.pdf}
+\caption{Semi-synthetic dose-response for DIF detection on MMLU. $\Delta\mathrm{TPR}$ increases monotonically with exploitation rate $p$ under binary injection (a calibration upper bound; \Cref{sec:injection}), confirming that MH-DIF is sensitive to differential item behavior when present. Baseline (no injection) produces $\Delta\mathrm{TPR} \approx 0$.}
+\label{fig:dose_response}
+\end{figure}
+
+\subsection{Structural Analysis}
+\label{sec:structural}
+
+\looseness=-1
+Two structural controls and a sensitivity check fail to reduce temporal C\% below 31\% (\Cref{tab:structural_comparison}): matched-ability quintiles, within-subject DIF (C\% $= 38.1\%$; cross-subject C\% is more conservative due to lower local dependence), and IRT $\theta$-conditioning ($r(\theta, \mathrm{total\ score}) = 0.9986$). Logistic regression detects an additional 17.7\% with non-uniform DIF ($|\beta_{\mathrm{interaction}}| \geq 0.5$), reaching a union of 47\% (\Cref{app:structural}). Ability-matched C\% converges to ${\sim}$28--29\% for both temporal and within-family comparisons despite vastly different unmatched rates (\Cref{app:structural}).
+
+\begin{table}[t]
+\centering
+\caption{Structural controls and sensitivity checks for temporal DIF. None reduces C\% below 31\%; $\theta$-conditioning serves as a sensitivity check confirming total-score adequacy.}
+\label{tab:structural_comparison}
+\small
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+Approach & Mechanism & Temp.\ C\% & TPR ($p{=}0.5$) & Outcome \\
+\midrule
+Baseline (ext.) & Cross-bench.\ total score & $0.314_{\pm.009}$ & $0.834_{\pm.027}$ & Reference \\
+Matched-ability & Within-quintile temp.\ DIF & ${\sim}$0.31 & -- & Enrich.\ 0.94--1.04 \\
+$\theta$-cond.\ (sens.) & $\theta$ replaces total score & 0.312 & 0.876 & $r(\theta,\mathrm{total}) {=} 0.9986$ \\
+Within-subject & Per-subject DIF & -- & -- & C\% $= 38.1\%$ ($>$25\%) \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\subsection{Detection Power under Controlled Injection}
+\label{sec:semisynthetic}
+
+\looseness=-1
+Cross-subject matching achieves $\Delta\mathrm{FPR} = 0.000$ across all five MMLU subjects (4/5 with reference-case detection power of $\Delta\mathrm{TPR} > 0.3$ at $p = 0.5$; under stylized uniform injection; \Cref{sec:injection}), while within-subject matching inflates FPR by ${+}0.186$ on average. The $\Delta\mathrm{FPR} \approx 0$ guarantee holds for single-subject contamination ($k \leq 5$, $\Delta\mathrm{FPR} < 0.007$). Under broader contamination, $\Delta\mathrm{FPR}$ rises to $0.069$ at $k{=}10$ (18\% of domains) and $0.167$ at $k{=}20$; at $k \geq 30$ (${>}50\%$ of domains), $\Delta\mathrm{FPR}$ exceeds 0.36 (\Cref{tab:multi_subject_injection}). Even at $k{=}20$, inflation (${\sim}$17~pp) cannot fully account for the observed 31\% C\% rate, which exceeds the random baseline by ${>}50\times$. Under DEFF adjustment, $\Delta\mathrm{FPR}$ at $k{=}20$ exceeds the weighted-mean lower bound (13.5\%), underscoring $k \leq 5$ in practice. Difficulty-dependent injection (flipping weighted by item difficulty) yields $\Delta\mathrm{TPR} \approx 0.41$ at $p = 0.5$ (vs.\ $0.51$ uniform), bounding overestimation at ${\sim}$20\% for heterogeneous contamination; the monotonic dose-response (\Cref{fig:dose_response}) confirms detection power scales continuously with effect magnitude (\Cref{app:method_details}).
+
+\subsection{Downstream Impact}
+\label{sec:downstream}
+
+\looseness=-2
+Stable-item ranks are preserved across all six benchmarks ($\rho = 0.997$, $\tau = 0.958$; flip rate $\leq 2.8\%$; \Cref{tab:cross_benchmark}). DIF-flagged items concentrate discriminative signal ($z = -8$ to $-49$ vs.\ random removal; \Cref{app:fig_downstream}). Among the 200 most displaced models, 33.6\% of pairwise rankings reverse, concentrating among closely-ranked pairs (\Cref{app:rank_reversal}). Removing C-flagged items disproportionately disadvantages 2024 models (cohort gap $= 96.2$ positions, $40\times$ random; $p < 0.001$). DIF-corrected scoring (excluding all C-flagged items) shifts accuracy by ${+}2.12$\,pp on average, with a cohort-differential of $0.29$\,pp ($d = 0.31$; individual displacements reach ${\pm}800$; \Cref{app:score_inflation}).
+
+\subsection{Cross-Benchmark Validation}
+\label{sec:gsm8k}
+
+\looseness=-2
+Temporal DIF extends across all six METABENCH benchmarks (\Cref{tab:cross_benchmark}): C\% ranges from 17.9\% (HellaSwag~\citep{zellers2019hellaswag}) to 31.3\% (MMLU), with knowledge/reasoning benchmarks consistently higher than procedural ones (C\% $= 26.9$--$31.3\%$ vs.\ $17.9$--$18.9\%$). These differences may partly reflect item difficulty distributions; we treat them as descriptive.
+
+\begin{table}[t]
+\centering
+\caption{Temporal DIF across six METABENCH benchmarks. C\% = ETS~C items ($|\Delta_{\mathrm{MH}}| \geq 1.5$) between 2023 and 2024 cohorts; $\rho$/$\tau$ = Spearman/Kendall correlation between full and stable-item rankings; Flip = pairwise rank-flip rate; Ratio = C\%/Rand.\ C\%, with baseline varying by benchmark. All six show substantial DIF (45--95$\times$ above random baseline), with knowledge/reasoning benchmarks exhibiting higher C\% than procedural ones.}
+\label{tab:cross_benchmark}
+\small
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lrrrrrrl}
+\toprule
+Benchmark & Items & C\% & $\rho$ & $\tau$ & Flip\% & Rand.\ C\% & Ratio \\
+\midrule
+MMLU & 12{,}508 & 31.3 & 0.9965 & 0.9600 & 2.00 & 0.62 & 50$\times$ \\
+WinoGrande & 1{,}267 & 30.3 & 0.9943 & 0.9432 & 2.84 & 0.32 & 95$\times$ \\
+TruthfulQA & 817 & 29.7 & 0.9971 & 0.9586 & 2.07 & 0.37 & 80$\times$ \\
+ARC & 1{,}172 & 26.9 & 0.9962 & 0.9538 & 2.31 & 0.60 & 45$\times$ \\
+GSM8K & 1{,}319 & 18.9 & 0.9993 & 0.9843 & 0.78 & 0.30 & 63$\times$ \\
+HellaSwag & 10{,}042 & 17.9 & 0.9986 & 0.9722 & 1.39 & 0.28 & 64$\times$ \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+Semi-synthetic injection on GSM8K confirms detection power ($\Delta\mathrm{TPR} = {+}0.514$; \Cref{app:gsm8k_details,app:fig_gsm1k}).

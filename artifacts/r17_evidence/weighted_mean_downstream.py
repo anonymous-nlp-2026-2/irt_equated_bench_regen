@@ -12,7 +12,7 @@ import numpy as np
 import pandas as pd
 from scipy import sparse, stats
 
-ART = Path('artifacts')
+ART = Path('/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/artifacts')
 OUT = ART / 'r17_evidence'
 
 # ── Load data ──────────────────────────────────────────────────────────

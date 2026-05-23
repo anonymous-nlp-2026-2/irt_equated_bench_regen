@@ -12,7 +12,7 @@ import shap
 import warnings
 warnings.filterwarnings("ignore")
 
-OUT = Path("artifacts/predictive_model")
+OUT = Path("/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/artifacts/predictive_model")
 
 # ── Load data ──────────────────────────────────────────────────────────
 feat = pd.read_csv(OUT / "features.csv")

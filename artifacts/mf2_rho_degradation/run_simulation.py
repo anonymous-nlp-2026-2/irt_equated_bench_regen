@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 from scipy import stats, sparse
 
-BASE = "artifacts"
+BASE = "/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/artifacts"
 OUT_DIR = os.path.join(BASE, "mf2_rho_degradation")
 REMOVAL_PCTS = [5, 10, 15, 20, 25, 30, 35, 40, 50]
 RANDOM_SEEDS = list(range(42, 62))

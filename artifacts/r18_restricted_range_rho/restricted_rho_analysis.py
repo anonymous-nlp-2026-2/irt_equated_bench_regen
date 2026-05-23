@@ -10,7 +10,7 @@ from scipy import sparse, stats
 from pathlib import Path
 from collections import OrderedDict
 
-ROOT = Path("artifacts")
+ROOT = Path("/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/artifacts")
 OUT  = ROOT / "r18_restricted_range_rho"
 
 # ── 1. Load DIF results, keep DIF-C ────────────────────────────────────

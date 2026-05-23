@@ -6,7 +6,7 @@ import statsmodels.api as sm
 from scipy import stats
 from pathlib import Path
 
-ROOT = Path(".")
+ROOT = Path("/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen")
 DATA = ROOT / "artifacts/plan_004/gsm1k_dif_correlation.csv"
 OUT = ROOT / "artifacts/r14_sf9_gsm1k_cooks"
 

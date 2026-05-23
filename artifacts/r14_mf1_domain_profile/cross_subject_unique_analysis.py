@@ -6,7 +6,7 @@ from scipy import sparse, stats
 from sklearn.metrics import cohen_kappa_score
 from pathlib import Path
 
-ROOT = Path(".")
+ROOT = Path("/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen")
 OUT = ROOT / "artifacts/r14_mf1_domain_profile"
 
 # ── Load data ──

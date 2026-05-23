@@ -11,7 +11,7 @@ from scipy import sparse, stats
 from scipy.stats import chi2 as chi2_dist
 import time, os
 
-ROOT = "artifacts"
+ROOT = "/home/ubuntu/.agent-ml-research-idea_gen_0520_2/projects/irt_equated_bench_regen/artifacts"
 OUT = os.path.join(ROOT, "mixed_mechanism_semisynthetic")
 
 N_SEEDS = 20
