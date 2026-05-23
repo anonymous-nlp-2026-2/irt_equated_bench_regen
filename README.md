@@ -116,7 +116,7 @@ This repository contains analysis scripts for applying Mantel-Haenszel Different
 
 Raw data (response matrices, model metadata) is not included due to size.
 To reproduce:
-1. Download MMLU evaluation results from [MetaBench](https://github.com/ildfrgen/MetaBench) or equivalent source
+1. Download MMLU evaluation results from [MetaBench](https://github.com/adkipnis/metabench) or equivalent source
 2. Run `artifacts/build_response_matrix.py` to construct the response matrix
 3. Run individual analysis scripts in `artifacts/plan_*/`
 
