@@ -1,6 +1,6 @@
 \section{Discussion}
 \label{sec:discussion}
-\enlargethispage*{10\baselineskip}
+\enlargethispage*{6\baselineskip}
 
 \subsection{Temporal DIF as Structured Signal}
 \label{sec:disc_temporal}
@@ -9,7 +9,7 @@
 Temporal DIF detects \emph{that} items function differently across cohorts, not \emph{why}---and this is by design. The signal is structured: stratifying by model type reveals opposite patterns---base models ($N{=}1{,}409$) are 60.1\% reference-favoring with a strong difficulty gradient ($\rho = -0.570$), while instruct models ($N{=}478$) are 65.6\% focal-favoring with a near-zero gradient ($\rho = -0.079$; $\chi^2 = 562.7$, $p < 10^{-124}$). This reversal cannot arise from a single mechanism, validating DIF as a meaningful diagnostic regardless of underlying cause. Detailed mechanism analysis---exclusion arguments, difficulty--direction interactions, and mixed-mechanism semi-synthetic validation---appears in \Cref{app:mechanism_discussion}.
 
 \looseness=-1
-Item-level DIF matters even when aggregate rankings are preserved ($\rho \approx 0.997$): it reveals \emph{which} capability dimensions shift---diagnostic value that aggregate scores mask. DIF-ordered removal shows ranking degradation accelerates with instability (\Cref{app:fig_rho_degradation}); among the top 3.8\% most displaced models, 33.6\% of pairwise rankings reverse (\Cref{app:rank_reversal}). Subject-level instability (22/57 below $\rho = 0.95$) motivates targeted replacement~\citep{zhao2025mmlucf,habba2026growingpains}.
+Item-level DIF matters even when aggregate rankings are preserved ($\rho \approx 0.997$): it reveals \emph{which} capability dimensions shift---diagnostic value that aggregate scores mask. DIF-ordered removal shows ranking degradation accelerates with instability (\Cref{app:fig_rho_degradation}); among the top 3.8\% most displaced models, 33.6\% of pairwise rankings reverse (\Cref{app:rank_reversal}).
 
 \looseness=-2
 Within-family analysis validates matching: Llama-2 vs.\ Llama-3 raw C\% $= 61.3\%$ reflects the ability gap ($d = -0.99$); after nearest-neighbor matching, C\% drops to $28.3\%$, consistent with temporal matched C\% ($28.9\%$), confirming that DIF captures structured item-level change beyond ability differences.
