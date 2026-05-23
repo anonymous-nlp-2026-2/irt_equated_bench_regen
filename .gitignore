@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.csv
+*.npz
+*.pdf
+*.png
+*.json
+*.yaml
+*.log
+data/
+intermediate/
+checkpoints/
+wandb/
+logs/
+.claude/
