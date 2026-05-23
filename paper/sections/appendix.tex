@@ -46,6 +46,28 @@ $a$ & TPR & 95\% CI & FPR \\
 \end{tabular}
 \end{table}
 
+\paragraph{Stratum sensitivity (K=3 vs K=5).}
+\label{app:k3_power}
+K=3 and K=5 yield near-identical detection power: TPR differences $<$0.02 across all conditions, within Monte Carlo noise. At $N \geq 80$ per cohort (our recommended minimum), K=3 achieves TPR of 0.571 at $|\Delta_{\mathrm{MH}}| \geq 1.4$ and AUC of 0.93, confirming that smaller corpora can use fewer strata without power loss (\Cref{tab:k3_power}).
+
+\begin{table}[h]
+\centering
+\caption{Detection power: K=3 vs K=5 at $|\Delta_{\mathrm{MH}}| \geq 1.0$.}
+\label{tab:k3_power}
+\small
+\begin{tabular}{lcccccc}
+\toprule
+& \multicolumn{3}{c}{K=3} & \multicolumn{3}{c}{K=5} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+N/cohort & TPR & FPR & AUC & TPR & FPR & AUC \\
+\midrule
+80  & 0.176 & 0.001 & 0.828 & 0.169 & 0.001 & 0.826 \\
+200 & 0.623 & 0.004 & 0.939 & 0.621 & 0.004 & 0.934 \\
+500 & 0.915 & 0.011 & 0.986 & 0.912 & 0.013 & 0.986 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 \paragraph{Nearest-neighbor matching.} The 1:1 nearest-neighbor matching selects, for each focal-cohort model, the reference-cohort model with the closest total score (caliper of 0.02 on normalized accuracy, approximately 0.14~SD). Balance is verified by Cohen's $d = -0.17$ on matched pairs ($N = 638$ per group), confirming minimal residual ability confounding.
 
 \paragraph{Logistic regression specification.} The Simpson's paradox analysis (\Cref{sec:temporal}) uses binary logistic regression with DIF-C classification as the dependent variable, domain-level accuracy change (2024 minus 2023 mean accuracy) as the primary predictor, and item difficulty (proportion correct) and IRT discrimination (point-biserial correlation) as controls. The interaction between domain accuracy change and item difficulty is included. Non-uniform DIF detection (\Cref{sec:structural}) uses logistic regression with a group $\times$ ability interaction term; a significant interaction ($p < 0.05$) indicates non-uniform DIF.
