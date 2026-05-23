@@ -9,7 +9,7 @@
 ## B5 (Q6): ≥500 threshold
 **审稿人可能追问**: K=3 的 power 是多少？最低需要多少模型？
 **Defense**: 引用 Clauser & Mazor (1998) 和 Penfield & Camilli (2006) 关于 K=3 的已有结论。如果需要，可跑 K=3 power simulation（复用 §4.1 框架，半小时出结果）。
-**E1 K=3 power**: K=3 vs K=5 TPR 差异 <0.02（所有条件下）。N≥80 时 K=3 达到 TPR=0.571 (|Δ_MH|≥1.4), AUC=0.93。详见 Tab k3_power + §5.2。
+**E1 K=3 power**: K=3 vs K=5 TPR 差异 <0.02（所有条件下）。N≥80 时 K=3 达到 TPR=0.571 (|Δ_MH|≥1.4), AUC=0.905。详见 Tab k3_power + §5.2。
 
 ## B8: Size-stratified DEFF
 **审稿人可能追问**: 为什么不用 tier-specific DEFF？哪个 tier 的 C% 才对？
