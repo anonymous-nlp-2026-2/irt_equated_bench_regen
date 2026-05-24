@@ -91,6 +91,13 @@ Logistic regression confirms that the base-vs-instruct direction reversal is not
 \label{app:mixed_mechanism}
 To test the hypothesis that different contamination mechanisms operate on base and instruct models simultaneously, we designed mixed injection schemes: Scheme~D applies difficulty-dependent injection to base models and uniform injection to instruct models. Across 20 seeds, Scheme~D reproduces the overall difficulty--direction gradient ($r = -0.676 \pm 0.005$ vs.\ observed $-0.597$) and direction reversal ($\chi^2 = 634 \pm 184$ vs.\ observed $562.7$), but cannot match the near-zero instruct gradient: simulated $r_{\mathrm{instruct}} = -0.302 \pm 0.090$ vs.\ observed $-0.079$. This residual gap ($3.8\times$ the observed value) persists across all tested injection parameters, suggesting that instruct-model DIF is at least partially driven by non-contamination mechanisms (e.g., alignment-induced capability shifts) rather than memorization alone.
 
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{fig_1_global_vs_differential.pdf}
+\caption{Schematic illustration of global vs.\ differential contamination via Item Characteristic Curves (ICCs). \textbf{Left}: global contamination produces no DIF; both cohorts encounter the item, and their ICCs overlap. \textbf{Right}: differential contamination produces DIF; the focal cohort's ICC shifts because only that cohort was disproportionately exposed during training (assuming no ceiling effect). The enrichment ratio of $\approx 1.0$ between DIF flags and web-overlap labels is expected because most MMLU items fall into the left category.}
+\label{fig:global_vs_differential}
+\end{figure}
+
 \section{Structural Analysis Details}
 \label{app:structural}
 
