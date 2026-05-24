@@ -10,19 +10,19 @@ import os
 
 plt.rcParams.update({
     'font.family': 'DejaVu Serif',
-    'font.size': 9,
-    'axes.titlesize': 10,
-    'axes.labelsize': 9,
-    'xtick.labelsize': 8,
-    'ytick.labelsize': 8,
-    'legend.fontsize': 8,
+    'font.size': 7,
+    'axes.titlesize': 7.5,
+    'axes.labelsize': 6.5,
+    'xtick.labelsize': 5.5,
+    'ytick.labelsize': 5.5,
+    'legend.fontsize': 6,
     'figure.dpi': 300,
     'savefig.dpi': 300,
     'savefig.bbox': 'tight',
     'savefig.pad_inches': 0.05,
     'axes.spines.top': False,
     'axes.spines.right': False,
-    'lines.linewidth': 1.5,
+    'lines.linewidth': 0.9,
     'pdf.fonttype': 42,
     'ps.fonttype': 42,
 })
@@ -51,7 +51,7 @@ BENCH_LABELS = {
     'mmlu': 'MMLU',
 }
 
-fig, axes = plt.subplots(2, 3, figsize=(7, 3.0))
+fig, axes = plt.subplots(2, 3, figsize=(7, 3.5))
 axes = axes.flatten()
 
 for idx, bench in enumerate(BENCH_ORDER):
@@ -69,14 +69,14 @@ for idx, bench in enumerate(BENCH_ORDER):
 
     ax.fill_between(pcts, y_rnd - y_std, y_rnd + y_std,
                     color=COL_RND, alpha=0.15, linewidth=0)
-    ax.plot(pcts, y_dif, color=COL_DIF, marker='o', markersize=3.5,
+    ax.plot(pcts, y_dif, color=COL_DIF, marker='o', markersize=2.5,
             label='DIF-ordered', zorder=3)
-    ax.plot(pcts, y_rnd, color=COL_RND, marker='s', markersize=3.5,
+    ax.plot(pcts, y_rnd, color=COL_RND, marker='s', markersize=2.5,
             linestyle='--', label='Random', zorder=3)
 
     # Threshold lines
     for xv, lbl in [(15, 'Monitor/Flag'), (25, 'Flag/Act')]:
-        ax.axvline(xv, color='#888888', linewidth=0.7, linestyle=':', zorder=1)
+        ax.axvline(xv, color='#888888', linewidth=0.5, linestyle=':', zorder=1)
 
     # Y-axis: adaptive per panel with some padding
     all_y = np.concatenate([y_dif, y_rnd - y_std, y_rnd + y_std])
@@ -90,13 +90,13 @@ for idx, bench in enumerate(BENCH_ORDER):
     ytop = ax.get_ylim()[1]
     for xv, lbl in [(15, 'Monitor/Flag'), (25, 'Flag/Act')]:
         ax.text(xv, ytop, lbl, ha='center', va='bottom',
-                fontsize=5.5, color='#666666', clip_on=False)
+                fontsize=4.5, color='#666666', clip_on=False)
 
     n_total = bench_items[bench]
     ax.set_title(f'{BENCH_LABELS[bench]} ($N$={n_total:,})')
 
     ax.set_xticks([5, 10, 15, 20, 25, 30, 35, 40, 50])
-    ax.tick_params(axis='both', which='both', length=3)
+    ax.tick_params(axis='both', which='both', length=2, pad=2)
 
     if idx >= 3:
         ax.set_xlabel('Items removed (%)')
@@ -105,7 +105,7 @@ for idx, bench in enumerate(BENCH_ORDER):
 
     # Legend only in first panel
     if idx == 0:
-        ax.legend(loc='lower left', frameon=False, handlelength=1.8)
+        ax.legend(loc='lower left', frameon=False, handlelength=1.5)
 
 fig.tight_layout(h_pad=1.0, w_pad=0.8)
 
