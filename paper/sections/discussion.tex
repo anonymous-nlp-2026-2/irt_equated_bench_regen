@@ -6,7 +6,7 @@
 \label{sec:disc_temporal}
 
 \looseness=-1
-Temporal DIF detects \emph{that} items function differently across cohorts, not \emph{why}---and this is by design (``temporal'' denotes release-year cohorts that differ simultaneously in architecture, data, and methodology; \Cref{sec:cohorts}). Stratifying by model type reveals opposite patterns: base models ($N{=}1{,}409$) are 60.1\% reference-favoring ($\rho = -0.570$), while instruct models ($N{=}478$) are 65.6\% focal-favoring ($\rho = -0.079$; $\chi^2 = 562.7$, $p < 10^{-124}$). Following the impact-bias framework~\citep{camilli1994methods}, this reversal reflects structured item-level bias rather than uniform group impact, validating DIF as a mechanism-agnostic diagnostic (\Cref{app:mechanism_discussion}).
+Temporal DIF detects \emph{that} items function differently across cohorts, not \emph{why}---and this is by design (``temporal'' denotes release-year cohorts that differ simultaneously in architecture, data, and methodology; \Cref{sec:cohorts}). Stratifying by model type reveals opposite patterns: base models ($N{=}1{,}409$) are 60.1\% reference-favoring ($r = -0.570$), while instruct models ($N{=}478$) are 65.6\% focal-favoring ($r = -0.079$; $\chi^2 = 562.7$, $p < 10^{-124}$). Following the impact-bias framework~\citep{camilli1994methods}, this reversal reflects structured item-level bias rather than uniform group impact, validating DIF as a mechanism-agnostic diagnostic (\Cref{app:mechanism_discussion}).
 
 \looseness=-1
 Composition downsampling ($\Delta = 1.08$\,pp) and base-only/instruct-only temporal analyses confirm DIF is not an artifact of cohort structure (\Cref{app:composition_control,app:baseinst_temporal,app:within_arch}).
