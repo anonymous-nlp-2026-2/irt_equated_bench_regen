@@ -23,6 +23,8 @@ plt.rcParams.update({
     'axes.spines.top': False,
     'axes.spines.right': False,
     'lines.linewidth': 1.5,
+    'pdf.fonttype': 42,
+    'ps.fonttype': 42,
 })
 
 COL_DIF = '#D55E00'

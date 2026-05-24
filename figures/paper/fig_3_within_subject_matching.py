@@ -18,6 +18,8 @@ plt.rcParams.update({
     'axes.spines.top': False,
     'axes.spines.right': False,
     'lines.linewidth': 1.8,
+    'pdf.fonttype': 42,
+    'ps.fonttype': 42,
 })
 
 C_CROSS = '#0072B2'

@@ -20,6 +20,8 @@ plt.rcParams.update({
     'savefig.pad_inches': 0.05,
     'axes.spines.top': False,
     'axes.spines.right': False,
+    'pdf.fonttype': 42,
+    'ps.fonttype': 42,
 })
 
 BLUE = '#0072B2'
