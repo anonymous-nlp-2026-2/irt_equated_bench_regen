@@ -1,4 +1,4 @@
-\begin{thebibliography}{68}
+\begin{thebibliography}{72}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Ackerman(1992)}]{ackerman1992didmf}
@@ -17,6 +17,12 @@ Norah Alzahrani, Hisham~Abdullah Alyahya, Yazeed Alnumay, Sultan Alrashed,
   targets: Revealing the sensitivity of large language model leaderboards}.
 \newblock In \emph{Proceedings of the 62nd Annual Meeting of the Association
   for Computational Linguistics (ACL)}.
+
+\bibitem[{Balk{\i}r et~al.(2026)}]{balkir2026confident}
+Esma Balk{\i}r and 1 others. 2026.
+\newblock \href {https://arxiv.org/abs/2601.13885} {Confident rankings with
+  fewer items: Adaptive {LLM} evaluation with continuous scores}.
+\newblock \emph{Preprint}, arXiv:2601.13885.
 
 \bibitem[{Balloccu et~al.(2024)Balloccu, Schmidtova, Lango, and
   Dusek}]{balloccu2024leak}
@@ -44,6 +50,11 @@ Ryan Burnell, Wout Schellaert, John Burden, Tomer~D. Ullman, Fernando
   evaluation results in {AI}}.
 \newblock \emph{Science}.
 
+\bibitem[{Camilli and Shepard(1994)}]{camilli1994methods}
+Gregory Camilli and Lorrie~A. Shepard. 1994.
+\newblock \emph{Methods for Identifying Biased Test Items}.
+\newblock Sage Publications, Thousand Oaks, CA.
+
 \bibitem[{Carlini et~al.(2023)Carlini, Ippolito, Jagielski, Lee, Tram{\`e}r,
   and Zhang}]{carlini2022quantifying}
 Nicholas Carlini, Daphne Ippolito, Matthew Jagielski, Katherine Lee, Florian
@@ -52,6 +63,12 @@ Nicholas Carlini, Daphne Ippolito, Matthew Jagielski, Katherine Lee, Florian
   across neural language models}.
 \newblock In \emph{International Conference on Learning Representations
   (ICLR)}.
+
+\bibitem[{Chai et~al.(2026)Chai, Zhe, and Sakuma}]{chai2026benchmarksleak}
+Jianzhe Chai, Yu~Zhe, and Jun Sakuma. 2026.
+\newblock \href {https://arxiv.org/abs/2601.19334} {When benchmarks leak:
+  Inference-time decontamination for {LLMs}}.
+\newblock \emph{Preprint}, arXiv:2601.19334.
 
 \bibitem[{Chang et~al.(2024)Chang, Wang, Wang, Wu, Zhu, Chen, Yang, Yi, Wang,
   Wang, Ye, Zhang, Chang, Yu, Yang, and Xie}]{chang2024survey}
@@ -174,12 +191,6 @@ Alon Kipnis, Konstantinos Voudouris, Luca~Maria Schulze~Buschoff, and Eric
 Leslie Kish. 1965.
 \newblock \emph{Survey Sampling}.
 \newblock John Wiley \& Sons, New York.
-
-\bibitem[{Kolen and Brennan(2014)}]{kolen2014equating}
-Michael~J. Kolen and Robert~L. Brennan. 2014.
-\newblock \emph{Test Equating, Scaling, and Linking: Methods and Practices},
-  3rd edition.
-\newblock Springer.
 
 \bibitem[{Kraus and Arora(2024)}]{kraus2024irt}
 Batu El-Houl Kraus and Shashank Arora. 2024.
@@ -451,6 +462,14 @@ Siyuan Xu, Chao Zhang, and Wenjun Zhao. 2025.
 \newblock In \emph{Proceedings of the 63rd Annual Meeting of the Association
   for Computational Linguistics (ACL)}.
 
+\bibitem[{Yao et~al.(2025)Yao, Jarvis, Zhan, Ghosh, Liu, and
+  Jiang}]{yao2025jeirt}
+Louie~Hong Yao, Nicholas Jarvis, Tiffany Zhan, Saptarshi Ghosh, Linfeng Liu,
+  and Tianyu Jiang. 2025.
+\newblock \href {https://arxiv.org/abs/2509.22888} {{JE-IRT}: A geometric lens
+  on {LLM} abilities through joint embedding item response theory}.
+\newblock \emph{Preprint}, arXiv:2509.22888.
+
 \bibitem[{Ying et~al.(2024)Ying, Cao, Luo, Gao, Zhang, Chen, and
   Liu}]{ying2024automating}
 Jiahao Ying, Rui Cao, Mingsheng Luo, Shangqing Gao, Yuhang Zhang, Shuang Chen,
@@ -459,6 +478,15 @@ Jiahao Ying, Rui Cao, Mingsheng Luo, Shangqing Gao, Yuhang Zhang, Shuang Chen,
   large language models.
 \newblock In \emph{Findings of the Association for Computational Linguistics:
   ACL 2024}.
+
+\bibitem[{Zawalski et~al.(2026)Zawalski, Boubdir, Ba{\l}azy, Nushi, and
+  Ribalta}]{zawalski2026codec}
+Micha{\l} Zawalski, Meriem Boubdir, Klaudia Ba{\l}azy, Besmira Nushi, and Pablo
+  Ribalta. 2026.
+\newblock \href {https://arxiv.org/abs/2510.27055} {Detecting data
+  contamination in {LLM}s via in-context learning}.
+\newblock In \emph{Proceedings of the International Conference on Learning
+  Representations (ICLR)}.
 
 \bibitem[{Zellers et~al.(2019)Zellers, Holtzman, Bisk, Farzaneh, and
   Choi}]{zellers2019hellaswag}

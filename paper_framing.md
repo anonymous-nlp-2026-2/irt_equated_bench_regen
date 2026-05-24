@@ -5,7 +5,7 @@
 - Page limit: 8 pages main text (当前 10 页，需压缩 2 页)
 
 ## Paper Type
-Empirical analysis + methodological framework. Discovery paper with substantive LLM-specific methodological innovations. "DIF audit framework reveals and quantifies benchmark measurement instability." NOT "just applied standard MH-DIF" — three LLM-specific adaptations are genuine methodological contributions.
+Empirical analysis + methodological framework. Discovery paper with substantive LLM-specific methodological adaptations. "DIF audit framework reveals and quantifies temporal score incomparability." NOT "just applied standard MH-DIF" — three LLM-specific adaptations address challenges absent in educational testing, with cross-subject matching as a genuine innovation.
 
 ## Core Claims (4 条, 可证伪)
 
@@ -81,9 +81,9 @@ Systematic experimentation reveals that three structural improvements — matche
 
 ## Novelty Articulation (v3 — stop disclaiming, highlight innovations)
 
-**CRITICAL CHANGE (R22 response)**: Previous framing said "MH-DIF applied without modification, novelty is NOT algorithmic." This is self-defeating and factually inaccurate — we made 3 substantive methodological adaptations to handle LLM-specific challenges that don't exist in educational testing. Stop disclaiming; start selling.
+**CRITICAL CHANGE (R22 response)**: Previous framing said "MH-DIF applied without modification, novelty is NOT algorithmic." This is self-defeating and factually inaccurate — we made 3 substantive methodological adaptations to handle LLM-specific challenges. Stop disclaiming. But don't overclaim either — 1/3 is genuine innovation (cross-subject matching), 2/3 are domain adaptations (DEFF, semi-synthetic). Use "adaptations" not "innovations" as umbrella term; highlight cross-subject matching novelty specifically.
 
-### Three LLM-Specific Methodological Innovations (beyond standard MH-DIF)
+### Three LLM-Specific Methodological Adaptations (beyond standard MH-DIF)
 
 1. **Cross-subject matching with ΔF PR guarantee**: Standard MH stratifies on total-test score. When the benchmark itself may contain compromised items, total-score matching absorbs contamination signal, violating conditional independence. Our cross-subject matching (score on all subjects EXCEPT the tested one) provides a constructive guarantee: ΔFPR = 0 under single-subject contamination (k ≤ 5), with graceful degradation at k = 10-20. This is novel to multi-domain LLM evaluation — educational testing doesn't face this problem because test items aren't publicly exposed.
 
@@ -119,11 +119,11 @@ This transforms contribution from "found instability" to "diagnosed, quantified,
 
 ### Revised Contribution Framing (for Introduction)
 
-"While the core MH statistic is established (Holland 1988), three LLM-specific challenges required novel methodological solutions: (1) matching variable contamination in multi-domain benchmarks, (2) model family non-independence, and (3) absence of differential ground truth. Our contributions are:"
+"While the core MH statistic is established (Holland 1988), three LLM-specific challenges required methodological adaptations: (1) matching variable contamination in multi-domain benchmarks, (2) model family non-independence, and (3) absence of differential ground truth. Our contributions are:"
 
 1. **Two orthogonal diagnostic dimensions** (empirical finding)
-2. **Temporal instability at scale + score inflation quantification** (finding + practical impact)
-3. **DIF audit framework with LLM-specific innovations** (methodological contribution — NOT "just applied MH-DIF")
+2. **Temporal score incomparability at scale** (finding + practical impact: ranking comparability preserved ρ≈0.997, but score comparability compromised with individual rank shifts ±561 positions)
+3. **DIF audit framework with LLM-specific adaptations** (methodological contribution — including novel cross-subject matching with ΔFPR=0 guarantee)
 
 ### Literature Gap Positioning
 

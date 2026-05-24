@@ -23,6 +23,8 @@ plt.rcParams.update({
     'axes.spines.top': False,
     'axes.spines.right': False,
     'lines.linewidth': 1.5,
+    'pdf.fonttype': 42,
+    'ps.fonttype': 42,
 })
 
 COL_DIF = '#D55E00'
@@ -49,7 +51,7 @@ BENCH_LABELS = {
     'mmlu': 'MMLU',
 }
 
-fig, axes = plt.subplots(2, 3, figsize=(7, 4.5))
+fig, axes = plt.subplots(2, 3, figsize=(7, 3.0))
 axes = axes.flatten()
 
 for idx, bench in enumerate(BENCH_ORDER):
