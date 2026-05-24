@@ -1,6 +1,6 @@
-# IRT-Equated Benchmark Regeneration
+# Temporal Score Incomparability in LLM Benchmarks
 
-Code for the paper: *Psychometric Auditing Reveals Measurement Instability in LLM Benchmarks* (EMNLP 2026 submission).
+Code for the paper: *Temporal Score Incomparability in LLM Benchmarks: A Large-Scale Psychometric Audit of 5,227 Models* (ARR / EMNLP 2026 submission).
 
 ## Overview
 
