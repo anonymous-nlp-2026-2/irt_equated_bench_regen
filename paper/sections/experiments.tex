@@ -53,6 +53,13 @@ Direct comparison of DIF flags against the web-overlap labels of \citet{li2024co
 \label{fig:dose_response}
 \end{figure}
 
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{fig_A3_rho_degradation.pdf}
+\caption{Ranking degradation under DIF-ordered vs.\ random item removal. DIF-ordered removal (orange) degrades $\rho$ faster than random (blue band = mean $\pm$ 1\,SD, 20 seeds). Dashed lines: Monitor/Flag (15\%) and Flag/Act (25\%) thresholds (\Cref{sec:disc_protocol}).}
+\label{fig:rho_degradation}
+\end{figure*}
+
 \subsection{Structural Analysis}
 \label{sec:structural}
 
@@ -81,20 +88,13 @@ Within-subject & Per-subject DIF & -- & -- & C\% $= 38.1\%$ ($>$25\%) \\
 \label{sec:semisynthetic}
 
 \looseness=-1
-Cross-subject matching achieves $\Delta\mathrm{FPR} = 0.000$ across all five MMLU subjects (4/5 with reference-case detection power of $\Delta\mathrm{TPR} > 0.3$ at $p = 0.5$; under stylized uniform injection; \Cref{sec:injection}), while within-subject matching inflates FPR by ${+}0.186$ on average (\Cref{app:fig_matching}). The $\Delta\mathrm{FPR} \approx 0$ guarantee holds for single-subject contamination ($k \leq 5$, $\Delta\mathrm{FPR} < 0.007$). Under broader contamination, $\Delta\mathrm{FPR}$ rises to $0.069$ at $k{=}10$ (18\% of domains) and $0.167$ at $k{=}20$; at $k \geq 30$ (${>}50\%$ of domains), $\Delta\mathrm{FPR}$ exceeds 0.36 (\Cref{tab:multi_subject_injection}). Even at $k{=}20$, inflation (${\sim}$17~pp) cannot fully account for the observed 31\% C\% rate, which exceeds the random baseline by ${>}50\times$. Under DEFF adjustment, $\Delta\mathrm{FPR}$ at $k{=}20$ exceeds the weighted-mean lower bound (13.5\%), underscoring $k \leq 5$ in practice. Difficulty-dependent injection (flipping weighted by item difficulty) yields $\Delta\mathrm{TPR} \approx 0.41$ at $p = 0.5$ (vs.\ $0.51$ uniform), bounding overestimation at ${\sim}$20\% for heterogeneous contamination; the monotonic dose-response (\Cref{fig:dose_response}) confirms detection power scales continuously with effect magnitude (\Cref{app:method_details}).
+Cross-subject matching achieves $\Delta\mathrm{FPR} = 0.000$ across all five MMLU subjects (4/5 with $\Delta\mathrm{TPR} > 0.3$ at $p = 0.5$; \Cref{sec:injection}), while within-subject matching inflates FPR by ${+}0.186$ (\Cref{app:fig_matching}). The $\Delta\mathrm{FPR} \approx 0$ guarantee holds for $k \leq 5$ contaminated subjects ($\Delta\mathrm{FPR} < 0.007$); at $k{=}20$, $\Delta\mathrm{FPR}$ rises to $0.167$---still insufficient to account for the observed 31\% C\% (\Cref{tab:multi_subject_injection}). Difficulty-dependent injection yields $\Delta\mathrm{TPR} \approx 0.41$ at $p = 0.5$ (vs.\ $0.51$ uniform), bounding overestimation at ${\sim}$20\% (\Cref{app:method_details}).
 
 \subsection{Downstream Impact}
 \label{sec:downstream}
 
 \looseness=-2
 Stable-item ranks are preserved across all six benchmarks (mean $\rho = 0.997$, mean $\tau = 0.962$; flip rate $\leq 2.9\%$; \Cref{tab:cross_benchmark}). DIF-flagged items concentrate discriminative signal: DIF-ordered removal degrades $\rho$ faster than random removal across all six benchmarks (\Cref{fig:rho_degradation}; $z = -8$ to $-49$; \Cref{app:fig_downstream}). Removing C-flagged items disproportionately disadvantages 2024 models (cohort gap $= 96.2$ positions, $40\times$ random; $p < 0.001$); DIF-corrected scoring shifts accuracy by ${+}2.12$\,pp on average (\Cref{app:score_inflation,app:rank_reversal}).
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=\columnwidth]{fig_A3_rho_degradation.pdf}
-\caption{Ranking degradation under DIF-ordered vs.\ random item removal across six benchmarks. DIF-ordered removal (orange) consistently degrades $\rho$ faster than random removal (blue band = mean $\pm$ 1 SD, 20 seeds). Vertical dashed lines mark the Monitor/Flag (15\%) and Flag/Act (25\%) thresholds from \Cref{sec:disc_protocol}.}
-\label{fig:rho_degradation}
-\end{figure}
 
 \subsection{Cross-Benchmark Validation}
 \label{sec:gsm8k}

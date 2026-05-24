@@ -51,7 +51,7 @@ BENCH_LABELS = {
     'mmlu': 'MMLU',
 }
 
-fig, axes = plt.subplots(2, 3, figsize=(7, 4.5))
+fig, axes = plt.subplots(2, 3, figsize=(7, 2.3))
 axes = axes.flatten()
 
 for idx, bench in enumerate(BENCH_ORDER):
