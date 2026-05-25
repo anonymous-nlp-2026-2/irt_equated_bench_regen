@@ -25,7 +25,7 @@ Three diagnostic procedures complement the primary DIF analysis.
 
 \paragraph{Power sensitivity to item discrimination.}
 \label{app:power_sensitivity}
-The Monte Carlo power analysis in \Cref{sec:validation} uses average 2PL parameters ($\bar{a} = 1.2$, $\bar{b} = -0.84$). \Cref{tab:power_sensitivity} reports TPR as a function of discrimination $a$ (other parameters at their means, $N = 80$ per cohort, $|\Delta_b| = 1.4$, 1,000 replications). TPR increases monotonically from 0.40 ($a = 0.5$) to 0.95 ($a = 2.0$); FPR remains below 0.04 throughout. The MMLU item pool shows substantial heterogeneity: $a$ ranges from 0.006 to 2.657 (SD $= 0.54$, IQR $= [0.75, 1.64]$). The aggregate TPR of 0.68 from Phase~2 reflects this full distribution, while TPR at mean $a \approx 1.2$ is 0.87---the gap is consistent with Jensen's inequality applied to the concave TPR($a$) function. Although 2PL fit is poor for MMLU's multidimensional structure, the power analysis serves as one leg of a triangulation: parametric estimates (TPR $= 0.68$--$0.80$) are validated by empirical semi-synthetic injection ($\Delta\mathrm{TPR} = {+}0.508$ at $p = 0.5$; \Cref{sec:semisynthetic}), confirming adequate detection power regardless of parametric assumptions.
+The Monte Carlo power analysis in \Cref{sec:validation} uses average 2PL parameters ($\bar{a} = 1.2$, $\bar{b} = -0.84$). \Cref{tab:power_sensitivity} reports TPR as a function of discrimination $a$ (other parameters at their means, $N = 80$ per cohort, $|\Delta_b| = 1.4$, 1,000 replications). TPR increases monotonically from 0.40 ($a = 0.5$) to 0.95 ($a = 2.0$); FPR remains below 0.04 throughout. The MMLU item pool shows substantial heterogeneity: $a$ ranges from 0.006 to 2.657 (SD $= 0.54$, IQR $= [0.75, 1.64]$). The aggregate TPR of 0.68 from Phase~2 reflects this full distribution, while TPR at mean $a \approx 1.2$ is 0.87; the gap is consistent with Jensen's inequality applied to the concave TPR($a$) function. Although 2PL fit is poor for MMLU's multidimensional structure, the power analysis serves as one leg of a triangulation: parametric estimates (TPR $= 0.68$--$0.80$) are validated by empirical semi-synthetic injection ($\Delta\mathrm{TPR} = {+}0.508$ at $p = 0.5$; \Cref{sec:semisynthetic}), confirming adequate detection power regardless of parametric assumptions.
 
 \begin{table}[h]
 \centering
@@ -91,12 +91,6 @@ Logistic regression confirms that the base-vs-instruct direction reversal is not
 \label{app:mixed_mechanism}
 To test the hypothesis that different contamination mechanisms operate on base and instruct models simultaneously, we designed mixed injection schemes: Scheme~D applies difficulty-dependent injection to base models and uniform injection to instruct models. Across 20 seeds, Scheme~D reproduces the overall difficulty--direction gradient ($r = -0.676 \pm 0.005$ vs.\ observed $-0.597$) and direction reversal ($\chi^2 = 634 \pm 184$ vs.\ observed $562.7$), but cannot match the near-zero instruct gradient: simulated $r_{\mathrm{instruct}} = -0.302 \pm 0.090$ vs.\ observed $-0.079$. This residual gap ($3.8\times$ the observed value) persists across all tested injection parameters, suggesting that instruct-model DIF is at least partially driven by non-contamination mechanisms (e.g., alignment-induced capability shifts) rather than memorization alone.
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=\columnwidth]{fig_1_global_vs_differential.pdf}
-\caption{Schematic illustration of global vs.\ differential contamination via Item Characteristic Curves (ICCs). \textbf{Left}: global contamination produces no DIF; both cohorts encounter the item, and their ICCs overlap. \textbf{Right}: differential contamination produces DIF; the focal cohort's ICC shifts because only that cohort was disproportionately exposed during training (assuming no ceiling effect). The enrichment ratio of $\approx 1.0$ between DIF flags and web-overlap labels is expected because most MMLU items fall into the left category.}
-\label{fig:global_vs_differential}
-\end{figure}
 
 \section{Structural Analysis Details}
 \label{app:structural}
@@ -160,7 +154,7 @@ $k$ & $\Delta\mathrm{FPR}$ & $\Delta\mathrm{TPR}$ \\
 \end{tabular}
 \end{table}
 
-\paragraph{Extreme contamination coverage ($k \geq 30$).} At $k = 30$--$50$ (53--88\% of 57 subjects), $\Delta\mathrm{FPR}$ reaches 0.36--0.46, confirming that cross-subject matching requires contamination to affect a minority of domains. At extreme coverage the matching variable itself is majority-contaminated, violating the identifying assumption. $\Delta\mathrm{TPR}$ drops to 0.159 at $k{=}30$ as matching-variable corruption dominates; at $k{=}50$, both $\Delta\mathrm{TPR}$ (0.439) and $\Delta\mathrm{FPR}$ (0.458) surge to comparable levels, indicating the test flags ${\sim}$76\% of all items regardless of contamination status---complete loss of discriminative power. This regime is primarily of theoretical interest: if ${\geq}$50\% of benchmark domains are differentially contaminated, the benchmark requires redesign rather than statistical correction.
+\paragraph{Extreme contamination coverage ($k \geq 30$).} At $k = 30$--$50$ (53--88\% of 57 subjects), $\Delta\mathrm{FPR}$ reaches 0.36--0.46, confirming that cross-subject matching requires contamination to affect a minority of domains. At extreme coverage the matching variable itself is majority-contaminated, violating the identifying assumption. $\Delta\mathrm{TPR}$ drops to 0.159 at $k{=}30$ as matching-variable corruption dominates; at $k{=}50$, both $\Delta\mathrm{TPR}$ (0.439) and $\Delta\mathrm{FPR}$ (0.458) surge to comparable levels, indicating the test flags ${\sim}$76\% of all items regardless of contamination status, a complete loss of discriminative power. This regime is primarily of theoretical interest: if ${\geq}$50\% of benchmark domains are differentially contaminated, the benchmark requires redesign rather than statistical correction.
 
 \begin{table}[h]
 \centering
@@ -188,7 +182,7 @@ Model families (e.g., Mistral, Llama-3) induce intra-class correlation (ICC) tha
 
 Two estimates of $\bar{m}$ bracket the adjustment: (1)~\emph{Simple mean} ($\bar{m} = 62.8$), treating all families equally, yields $\mathrm{DEFF} = 3.87$ and adjusted C\% $= 29.2\%$; (2)~\emph{Weighted mean} ($\bar{m} = \sum n_f^2 / \sum n_f = 254.5$; \citealp{kish1965survey}), reflecting the effective cluster size experienced by a randomly sampled model, yields $\mathrm{DEFF} = 12.79$ and adjusted C\% $= 13.5\%$.
 
-\noindent Mean ICC $= 0.047$ (median $0.041$, Q3 $= 0.061$, max $= 0.219$; 4.8\% of items exceed $0.10$). After dividing each item's $\chi^2_{\mathrm{MH}}$ by its item-specific DEFF and re-applying ETS thresholds, 13.5--29.2\% of items retain Category~C classification depending on the $\bar{m}$ variant---both far exceeding the 0.62\% random-split baseline (21--47$\times$).
+\noindent Mean ICC $= 0.047$ (median $0.041$, Q3 $= 0.061$, max $= 0.219$; 4.8\% of items exceed $0.10$). After dividing each item's $\chi^2_{\mathrm{MH}}$ by its item-specific DEFF and re-applying ETS thresholds, 13.5--29.2\% of items retain Category~C classification depending on the $\bar{m}$ variant, both far exceeding the 0.62\% random-split baseline (21--47$\times$).
 
 \paragraph{Size-stratified DEFF.} The aggregate ICC masks a size--ICC inverse relationship: smaller families exhibit higher within-family similarity (\Cref{tab:deff_stratified}). Tier-level ICC ranges from 0.246 (2--10 members) to 0.082 ({>}200 members), reflecting greater heterogeneity in mega-families. At small family sizes, DEFF correction has negligible impact (Adj.\ C\% $= 31.3\%$); the conservative 13.5\% bound is driven entirely by the two mega-families (Mistral, Llama-3). Family definition sensitivity is minimal: merging sub-generations (e.g., Llama-2 + Llama-3) into coarse families (22 families) changes C\% by $\leq$0.3~pp.
 
@@ -235,7 +229,7 @@ Graduated de-dup.\ ($K{=}20$) & Remove within-family duplicates & C\% = 19.7\% $
 
 \paragraph{Half-year granularity.} Splitting at the 6-month boundary yields C\% $= 34.4\%$, slightly above the annual 31.3\%. The higher rate likely reflects more polarized cohort composition: fewer models span both half-year periods, producing reference and focal groups with less overlapping ability distributions and consequently inflated DIF detection rates.
 
-The cluster bootstrap upper bound (53.2\%) is driven by extreme bootstrap resamples that over-represent Mistral ($n = 547$) or Llama-3 ($n = 315$), producing atypical cohort compositions. Two independent methods---cluster bootstrap lower bound (26.7\%) and simple-mean DEFF adjustment (29.2\%)---converge on $\sim$27--29\%, establishing a corrected estimate that remains $>$45$\times$ the random-split baseline (0.62\%). Graduated de-duplication at $K{=}20$ yields C\% $= 19.7\% \pm 0.9\%$ (random member selection, 5 draws), lower than the corrected estimate due to reduced statistical power ($N \approx 450$ vs.\ 1,887), but within-$K$ variance ${<}1.5$\,pp at all $K$ confirms the signal is power-driven rather than redundancy-inflated (\Cref{app:dedup_k}). The weighted-mean DEFF (13.5\%) represents a conservative extreme; even this lower bound exceeds the baseline by ${\approx}22\times$.
+The cluster bootstrap upper bound (53.2\%) is driven by extreme bootstrap resamples that over-represent Mistral ($n = 547$) or Llama-3 ($n = 315$), producing atypical cohort compositions. Two independent methods (cluster bootstrap lower bound [26.7\%] and simple-mean DEFF adjustment [29.2\%]) converge on $\sim$27--29\%, establishing a corrected estimate that remains $>$45$\times$ the random-split baseline (0.62\%). Graduated de-duplication at $K{=}20$ yields C\% $= 19.7\% \pm 0.9\%$ (random member selection, 5 draws), lower than the corrected estimate due to reduced statistical power ($N \approx 450$ vs.\ 1,887), but within-$K$ variance ${<}1.5$\,pp at all $K$ confirms the signal is power-driven rather than redundancy-inflated (\Cref{app:dedup_k}). The weighted-mean DEFF (13.5\%) represents a conservative extreme; even this lower bound exceeds the baseline by ${\approx}22\times$.
 
 \section{Cross-Benchmark Comparison}
 \label{app:gsm8k_details}
@@ -264,10 +258,12 @@ $\Delta$TPR ($p{=}0.5$, external) & $+0.508_{\pm.027}$ & $+0.514_{\pm.028}$ \\
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\columnwidth]{fig_3_within_subject_matching.pdf}
-\caption{Cross-subject vs.\ within-subject matching for semi-synthetic DIF detection. Cross-subject matching eliminates FPR inflation ($\Delta\mathrm{FPR} = 0.000$) while preserving detection power ($\Delta\mathrm{TPR} > 0.3$ for 4/5 subjects at $p = 0.5$). Within-subject matching inflates FPR by ${+}0.186$ on average.}
-\label{app:fig_matching}
+\includegraphics[width=\columnwidth]{fig_5_gsm1k_dif_correlation.pdf}
+\caption{Exploratory: GSM1K contamination gap vs.\ DIF ranking advantage ($N = 33$; small sample, results should be interpreted cautiously). The negative correlation ($r = -0.478$, $p = 0.005$) indicates that models with larger contamination gaps benefit less from DIF-flagged items. Three of 33 models exceed the Cook's $D$ threshold ($4/N = 0.12$); leave-one-out analysis confirms all individual-removal correlations remain significant ($r \in [-0.54, -0.37]$, all $p < 0.05$), and removing all three outliers yields $r = -0.38$ ($p = 0.036$, $N = 30$).}
+\label{app:fig_gsm1k}
 \end{figure}
+
+See \Cref{fig:rho_degradation} in the main text for ranking degradation curves.
 
 \begin{figure}[h]
 \centering
@@ -276,19 +272,10 @@ $\Delta$TPR ($p{=}0.5$, external) & $+0.508_{\pm.027}$ & $+0.514_{\pm.028}$ \\
 \label{app:fig_downstream}
 \end{figure}
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=\columnwidth]{fig_5_gsm1k_dif_correlation.pdf}
-\caption{Exploratory: GSM1K contamination gap vs.\ DIF ranking advantage ($N = 33$; small sample, results should be interpreted cautiously). The negative correlation ($r = -0.478$, $p = 0.005$) indicates that models with larger contamination gaps benefit less from DIF-flagged items. Three of 33 models exceed the Cook's $D$ threshold ($4/N = 0.12$); leave-one-out analysis confirms all individual-removal correlations remain significant ($r \in [-0.54, -0.37]$, all $p < 0.05$), and removing all three outliers yields $r = -0.38$ ($p = 0.036$, $N = 30$).}
-\label{app:fig_gsm1k}
-\end{figure}
-
-See \Cref{fig:rho_degradation} in the main text for ranking degradation curves.
-
 \section{Item-Property Predictive Analysis}
 \label{app:predictive}
 
-To test whether DIF susceptibility is a fixed item property, we trained logistic regression and LightGBM classifiers to predict ETS~C classification from 17 leak-free features: ref-cohort difficulty and discrimination, 11 text features (question/option length, vocabulary metrics), subject metadata, and web-overlap labels~\citep{li2024contamination}. Features were computed exclusively from the reference (2023) cohort to prevent information leakage from the focal cohort. Five-fold subject-stratified cross-validation (no within-subject train/test overlap) yielded AUROC $= 0.603 \pm 0.020$ (LR) and $0.599 \pm 0.026$ (LightGBM)---weak predictive power. Web-overlap labels contributed negligibly (SHAP $< 0.015$), independently confirming the DIF--contamination orthogonality reported in \Cref{sec:groundtruth}. These results indicate that temporal DIF reflects emergent cohort--item interactions rather than fixed item defects, motivating post-hoc monitoring over pre-screening.
+To test whether DIF susceptibility is a fixed item property, we trained logistic regression and LightGBM classifiers to predict ETS~C classification from 17 leak-free features: ref-cohort difficulty and discrimination, 11 text features (question/option length, vocabulary metrics), subject metadata, and web-overlap labels~\citep{li2024contamination}. Features were computed exclusively from the reference (2023) cohort to prevent information leakage from the focal cohort. Five-fold subject-stratified cross-validation (no within-subject train/test overlap) yielded AUROC $= 0.603 \pm 0.020$ (LR) and $0.599 \pm 0.026$ (LightGBM), indicating weak predictive power. Web-overlap labels contributed negligibly (SHAP $< 0.015$), independently confirming the DIF--contamination orthogonality reported in \Cref{sec:groundtruth}. These results indicate that temporal DIF reflects emergent cohort--item interactions rather than fixed item defects, motivating post-hoc monitoring over pre-screening.
 
 \section{Within-Family Similarity by Family Size}
 \label{app:icc_family}
@@ -375,7 +362,7 @@ Phi & 60 & 20 & 1.3\% & 2.85 \\
 \end{tabular}
 \end{table}
 
-Llama, Qwen, and Yi show C\% above the random baseline; Phi (C\% $= 1.3\%$, $N_{\mathrm{foc}} = 20$) is inconclusive due to low power. Llama is the best-powered comparison ($N = 486$ total) and yields raw C\% $= 59.2\%$, which combines temporal and generational effects. After ability matching, within-architecture C\% converges to ${\sim}$28--29\%, consistent with temporal C\% ($28.9\%$)---confirming that the temporal DIF signal persists within individual lineages and is not an artifact of comparing different architectures.
+Llama, Qwen, and Yi show C\% above the random baseline; Phi (C\% $= 1.3\%$, $N_{\mathrm{foc}} = 20$) is inconclusive due to low power. Llama is the best-powered comparison ($N = 486$ total) and yields raw C\% $= 59.2\%$, which combines temporal and generational effects. After ability matching, within-architecture C\% converges to ${\sim}$28--29\%, consistent with temporal C\% ($28.9\%$), confirming that the temporal DIF signal persists within individual lineages and is not an artifact of comparing different architectures.
 
 \section{Base-Only and Instruct-Only Temporal DIF}
 \label{app:baseinst_temporal}
