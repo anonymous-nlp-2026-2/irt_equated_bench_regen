@@ -1,4 +1,4 @@
-\begin{thebibliography}{72}
+\begin{thebibliography}{33}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Ackerman(1992)}]{ackerman1992didmf}
@@ -6,49 +6,6 @@ Terry~A Ackerman. 1992.
 \newblock A didactic explanation of item bias, item impact, and item validity
   from a multidimensional perspective.
 \newblock \emph{Journal of Educational Measurement}, 29(1):67--91.
-
-\bibitem[{Alzahrani et~al.(2024)Alzahrani, Alyahya, Alnumay, Alrashed,
-  Alsubaie, Almushaykeh, Mirza, Alotaibi, Altwairesh, Alowisheq, Bari, and
-  Khan}]{alzahrani2024benchmarks}
-Norah Alzahrani, Hisham~Abdullah Alyahya, Yazeed Alnumay, Sultan Alrashed,
-  Shaykhah Alsubaie, Yusef Almushaykeh, Faisal Mirza, Nouf Alotaibi, Nora
-  Altwairesh, Areeb Alowisheq, M.~Saiful Bari, and Haidar Khan. 2024.
-\newblock \href {https://arxiv.org/abs/2402.01781} {When benchmarks are
-  targets: Revealing the sensitivity of large language model leaderboards}.
-\newblock In \emph{Proceedings of the 62nd Annual Meeting of the Association
-  for Computational Linguistics (ACL)}.
-
-\bibitem[{Balk{\i}r et~al.(2026)}]{balkir2026confident}
-Esma Balk{\i}r and 1 others. 2026.
-\newblock \href {https://arxiv.org/abs/2601.13885} {Confident rankings with
-  fewer items: Adaptive {LLM} evaluation with continuous scores}.
-\newblock \emph{Preprint}, arXiv:2601.13885.
-
-\bibitem[{Balloccu et~al.(2024)Balloccu, Schmidtova, Lango, and
-  Dusek}]{balloccu2024leak}
-Simone Balloccu, Patrícia Schmidtova, Mateusz Lango, and Ondrej Dusek. 2024.
-\newblock \href {https://doi.org/10.18653/v1/2024.eacl-long.5} {Leak, cheat,
-  repeat: Data contamination and evaluation malpractices in closed-source
-  {LLMs}}.
-\newblock In \emph{Proceedings of the 18th Conference of the European Chapter
-  of the Association for Computational Linguistics (EACL)}.
-
-\bibitem[{Belzak(2020)}]{belzak2020smallsample}
-William Belzak. 2020.
-\newblock \href {https://doi.org/10.1080/00273171.2019.1671162} {Testing
-  differential item functioning in small samples}.
-\newblock \emph{Multivariate Behavioral Research}.
-
-\bibitem[{Burnell et~al.(2023)Burnell, Schellaert, Burden, Ullman,
-  Martinez-Plumed, Tenenbaum, Rutar, Cheke, Sohl-Dickstein, Mitchell, Kiela,
-  Shanahan, Voorhees, Cohn, Leibo, and Hernandez-Orallo}]{burnell2023rethink}
-Ryan Burnell, Wout Schellaert, John Burden, Tomer~D. Ullman, Fernando
-  Martinez-Plumed, Joshua~B. Tenenbaum, Danaja Rutar, Lucy~G. Cheke, Jascha
-  Sohl-Dickstein, Melanie Mitchell, Douwe Kiela, Murray Shanahan, Ellen~M.
-  Voorhees, Anthony~G. Cohn, Joel~Z. Leibo, and Jose Hernandez-Orallo. 2023.
-\newblock \href {https://doi.org/10.1126/science.adf6369} {Rethink reporting of
-  evaluation results in {AI}}.
-\newblock \emph{Science}.
 
 \bibitem[{Camilli and Shepard(1994)}]{camilli1994methods}
 Gregory Camilli and Lorrie~A. Shepard. 1994.
@@ -63,12 +20,6 @@ Nicholas Carlini, Daphne Ippolito, Matthew Jagielski, Katherine Lee, Florian
   across neural language models}.
 \newblock In \emph{International Conference on Learning Representations
   (ICLR)}.
-
-\bibitem[{Chai et~al.(2026)Chai, Zhe, and Sakuma}]{chai2026benchmarksleak}
-Jianzhe Chai, Yu~Zhe, and Jun Sakuma. 2026.
-\newblock \href {https://arxiv.org/abs/2601.19334} {When benchmarks leak:
-  Inference-time decontamination for {LLMs}}.
-\newblock \emph{Preprint}, arXiv:2601.19334.
 
 \bibitem[{Chang et~al.(2024)Chang, Wang, Wang, Wu, Zhu, Chen, Yang, Yi, Wang,
   Wang, Ye, Zhang, Chang, Yu, Yang, and Xie}]{chang2024survey}
@@ -93,15 +44,6 @@ Jasper Dekoninck, Mark~Niklas Mueller, and Martin Vechev. 2024.
 \newblock In \emph{Advances in Neural Information Processing Systems
   (NeurIPS)}.
 
-\bibitem[{Deng et~al.(2024)Deng, Zhao, Tang, Gerstein, and
-  Cohan}]{deng2024investigating}
-Chunyuan Deng, Yilun Zhao, Xiangru Tang, Mark Gerstein, and Arman Cohan. 2024.
-\newblock \href {https://doi.org/10.18653/v1/2024.naacl-long.482}
-  {Investigating data contamination in modern benchmarks for large language
-  models}.
-\newblock In \emph{Proceedings of the 2024 Conference of the North American
-  Chapter of the Association for Computational Linguistics (NAACL)}.
-
 \bibitem[{Donoghue and Allen(1993)}]{donoghue1993mh}
 John~R. Donoghue and Nancy~L. Allen. 1993.
 \newblock An empirical examination of the {Mantel-Haenszel} statistic for the
@@ -114,22 +56,16 @@ Brian~F. French and W.~Holmes Finch. 2010.
   {DIF} detection.
 \newblock \emph{Journal of Educational Measurement}, 47(3):299--317.
 
-\bibitem[{Gema et~al.(2024)Gema, Leang, Hong, Devoto, Mancino, Saxena, He,
+\bibitem[{Gema et~al.(2025)Gema, Leang, Hong, Devoto, Mancino, Saxena, He,
   Zhao, Du, Ghasemi~Madani, Barale, McHardy, Harris, Kaddour, van Krieken, and
   Minervini}]{gema2024mmlu}
 Aryo~Pradipta Gema, Joshua Ong~Jun Leang, Giwon Hong, Alessio Devoto, Alberto
   Carlo~Maria Mancino, Rohit Saxena, Xuanli He, Yu~Zhao, Xiaotang Du,
   Mohammad~Reza Ghasemi~Madani, Claire Barale, Robert McHardy, Joshua Harris,
-  Jean Kaddour, Emile van Krieken, and Pasquale Minervini. 2024.
+  Jean Kaddour, Emile van Krieken, and Pasquale Minervini. 2025.
 \newblock \href {https://arxiv.org/abs/2406.04127} {Are we done with {MMLU}?}
-\newblock \emph{Preprint}, arXiv:2406.04127.
-
-\bibitem[{Golchin and Surdeanu(2024)}]{golchin2024timetravel}
-Shahriar Golchin and Mihai Surdeanu. 2024.
-\newblock \href {https://arxiv.org/abs/2308.08493} {Time travel in {LLMs}:
-  Tracing data contamination in large language models}.
-\newblock In \emph{Proceedings of the International Conference on Learning
-  Representations (ICLR)}.
+\newblock In \emph{Proceedings of the 2025 Conference of the Nations of the
+  Americas Chapter of the Association for Computational Linguistics (NAACL)}.
 
 \bibitem[{Habba et~al.(2026)Habba, Itzhak, Yehudai, Perlitz, Bandel,
   Shmueli-Scheuer, Choshen, and Stanovsky}]{habba2026growingpains}
@@ -138,13 +74,6 @@ Eliya Habba, Itay Itzhak, Asaf Yehudai, Yotam Perlitz, Elron Bandel, Michal
 \newblock \href {https://arxiv.org/abs/2604.12843} {Growing pains: Extensible
   and efficient {LLM} benchmarking via fixed parameter calibration}.
 \newblock \emph{Preprint}, arXiv:2604.12843.
-
-\bibitem[{Hardy et~al.(2026)Hardy, Gilbert, and
-  Domingue}]{hardy2026scalability}
-Matthew Hardy, Juan Gilbert, and Benjamin Domingue. 2026.
-\newblock \href {https://arxiv.org/abs/2603.24999} {Efficient detection of bad
-  benchmark items with novel scalability coefficients}.
-\newblock \emph{Preprint}, arXiv:2603.24999.
 
 \bibitem[{Hendrycks et~al.(2021)Hendrycks, Burns, Basart, Zou, Mazeika, Song,
   and Steinhardt}]{hendrycks2021mmlu}
@@ -157,9 +86,14 @@ Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn
 
 \bibitem[{Holland and Thayer(1988)}]{holland1988mh}
 Paul~W. Holland and Dorothy~T. Thayer. 1988.
-\newblock Differential item functioning and the {Mantel-Haenszel} procedure.
+\newblock Differential item performance and the {Mantel-Haenszel} procedure.
 \newblock In Howard Wainer and Henry~I. Braun, editors, \emph{Test Validity}.
   Lawrence Erlbaum Associates.
+
+\bibitem[{Holland and Wainer(1993)}]{wainer1993differential}
+Paul~W. Holland and Howard Wainer, editors. 1993.
+\newblock \emph{Differential Item Functioning}.
+\newblock Lawrence Erlbaum Associates, Hillsdale, NJ.
 
 \bibitem[{Kiela et~al.(2021)Kiela, Bartolo, Nie, Kaushik, Geiger, Wu, Vidgen,
   Prasad, Singh, Ringshia, Ma, Thrush, Riedel, Talat, Stenetorp, and
@@ -173,30 +107,19 @@ Douwe Kiela, Max Bartolo, Yixin Nie, Divyansh Kaushik, Atticus Geiger,
 \newblock In \emph{Proceedings of the 2021 Conference of the North American
   Chapter of the Association for Computational Linguistics (NAACL)}.
 
-\bibitem[{Kim and Kolen(2019)}]{kim2019fpc}
-Seonghoon Kim and Michael Kolen. 2019.
-\newblock \href {https://doi.org/10.1080/08957347.2019.1660344} {Application of
-  {IRT} fixed parameter calibration to multiple-group test data}.
-\newblock \emph{Applied Measurement in Education}.
-
-\bibitem[{Kipnis et~al.(2024)Kipnis, Voudouris, Schulze~Buschoff, and
+\bibitem[{Kipnis et~al.(2025)Kipnis, Voudouris, Schulze~Buschoff, and
   Schulz}]{kipnis2024metabench}
-Alon Kipnis, Konstantinos Voudouris, Luca~Maria Schulze~Buschoff, and Eric
-  Schulz. 2024.
+Alex Kipnis, Konstantinos Voudouris, Luca~Maria Schulze~Buschoff, and Eric
+  Schulz. 2025.
 \newblock \href {https://arxiv.org/abs/2407.12844} {metabench -- a sparse
   benchmark of reasoning and knowledge in large language models}.
-\newblock \emph{Preprint}, arXiv:2407.12844.
+\newblock In \emph{Proceedings of the International Conference on Learning
+  Representations (ICLR)}.
 
 \bibitem[{Kish(1965)}]{kish1965survey}
 Leslie Kish. 1965.
 \newblock \emph{Survey Sampling}.
 \newblock John Wiley \& Sons, New York.
-
-\bibitem[{Kraus and Arora(2024)}]{kraus2024irt}
-Batu El-Houl Kraus and Shashank Arora. 2024.
-\newblock Using {IRT} to measure the quality of {LLM} evaluations.
-\newblock In \emph{Proceedings of the 2024 Conference on Empirical Methods in
-  Natural Language Processing (EMNLP)}.
 
 \bibitem[{Lalor et~al.(2019)Lalor, Wu, and Yu}]{lalor2019irt}
 John Lalor, Hao Wu, and Hong Yu. 2019.
@@ -207,53 +130,20 @@ John Lalor, Hao Wu, and Hong Yu. 2019.
   Natural Language Processing and the 9th International Joint Conference on
   Natural Language Processing (EMNLP-IJCNLP)}.
 
-\bibitem[{Li et~al.(2025)Li, Tang, Chen, Cheng, Metoyer, Hua, and
-  Chawla}]{li2025atlas}
-Peiyang Li, Xiaobo Tang, Sai Chen, Ying Cheng, Ronald Metoyer, Tianyi Hua, and
-  Nitesh~V. Chawla. 2025.
-\newblock \href {https://arxiv.org/abs/2511.04689} {{ATLAS}: Adaptive testing
-  for {LLM} evaluation: A psychometric alternative to static benchmarks}.
-\newblock \emph{Preprint}, arXiv:2511.04689.
-
-\bibitem[{Li et~al.(2024{\natexlab{a}})Li, Guerin, and Lin}]{li2024latesteval}
-Yucheng Li, Frank Guerin, and Chenghua Lin. 2024{\natexlab{a}}.
-\newblock \href {https://doi.org/10.48550/arXiv.2312.12343} {{LatestEval}:
-  Addressing data contamination in language model evaluation through dynamic
-  and time-sensitive test construction}.
-\newblock In \emph{Proceedings of the AAAI Conference on Artificial
-  Intelligence (AAAI)}.
-
-\bibitem[{Li et~al.(2024{\natexlab{b}})Li, Guo, Guerin, and
-  Lin}]{li2024contamination}
-Yucheng Li, Yunhao Guo, Frank Guerin, and Chenghua Lin. 2024{\natexlab{b}}.
+\bibitem[{Li et~al.(2024)Li, Guo, Guerin, and Lin}]{li2024contamination}
+Yucheng Li, Yunhao Guo, Frank Guerin, and Chenghua Lin. 2024.
 \newblock \href {https://doi.org/10.18653/v1/2024.findings-emnlp.30} {An
   open-source data contamination report for large language models}.
 \newblock In \emph{Findings of the Association for Computational Linguistics:
   EMNLP 2024}.
 
-\bibitem[{Liang(2026)}]{liang2026dvd}
-Rongzhen Liang. 2026.
+\bibitem[{Liang et~al.(2026)Liang, Chen, Jia, Deng, Xie, Wang, Jin, Wang,
+  Zhang, and Wang}]{liang2026dvd}
+Renzhao Liang, Jingru Chen, Bo~Jia, Bo~Deng, Chenggang Xie, Yidong Wang,
+  Ke~Jin, Xin Wang, Linfeng Zhang, and Cunxiang Wang. 2026.
 \newblock \href {https://arxiv.org/abs/2601.04895} {{DVD}: A robust method for
   detecting variant contamination in large language model evaluation}.
 \newblock \emph{Preprint}, arXiv:2601.04895.
-
-\bibitem[{Lord(1980)}]{lord1980irt}
-Frederic~M. Lord. 1980.
-\newblock \emph{Applications of Item Response Theory to Practical Testing
-  Problems}.
-\newblock Lawrence Erlbaum Associates, Hillsdale, NJ.
-
-\bibitem[{Luo et~al.(2025)Luo, Wu, Frisch, and He}]{luo2025medirt}
-Zhimeng Luo, Lixin Wu, Adam Frisch, and Daqing He. 2025.
-\newblock \href {https://arxiv.org/abs/2509.24186} {Measuring competency, not
-  performance: Item-aware evaluation across medical benchmarks}.
-\newblock \emph{Preprint}, arXiv:2509.24186.
-
-\bibitem[{Maeda(2025)}]{maeda2025difllm}
-Hotaka Maeda. 2025.
-\newblock \href {https://arxiv.org/abs/2502.07017} {Finding words associated
-  with {DIF}: Predicting {DIF} using {LLMs} and explainable {AI}}.
-\newblock \emph{Preprint}, arXiv:2502.07017.
 
 \bibitem[{Magis et~al.(2010)Magis, B{\'e}land, Tuerlinckx, and
   De~Boeck}]{magis2010difr}
@@ -264,53 +154,11 @@ David Magis, S{\'e}bastien B{\'e}land, Francis Tuerlinckx, and Paul De~Boeck.
   functioning}.
 \newblock \emph{Behavior Research Methods}, 42(3):847--862.
 
-\bibitem[{Maia~Polo et~al.(2024)Maia~Polo, Weber, Choshen, Sun, Xu, and
-  Yurochkin}]{maiapolo2024tinybenchmarks}
-Felipe Maia~Polo, Lucas Weber, Leshem Choshen, Yuekai Sun, Gongjun Xu, and
-  Mikhail Yurochkin. 2024.
-\newblock \href {https://proceedings.mlr.press/v235/maia-polo24a.html}
-  {{tinyBenchmarks}: evaluating {LLMs} with fewer examples}.
-\newblock In \emph{Proceedings of the International Conference on Machine
-  Learning (ICML)}.
-
 \bibitem[{Meredith(1993)}]{meredith1993invariance}
 William Meredith. 1993.
 \newblock \href {https://doi.org/10.1007/BF02294825} {Measurement invariance,
   factor analysis and factorial invariance}.
 \newblock \emph{Psychometrika}.
-
-\bibitem[{Millsap(2011)}]{millsap2011invariance}
-Roger~E. Millsap. 2011.
-\newblock \href {https://doi.org/10.4324/9780203821961} {\emph{Statistical
-  Approaches to Measurement Invariance}}.
-\newblock Routledge, New York.
-
-\bibitem[{Millsap and Everson(1993)}]{millsap1993dif}
-Roger~E. Millsap and Howard~T. Everson. 1993.
-\newblock \href {https://doi.org/10.1177/014662169301700401} {Methodology
-  review: Statistical approaches for assessing measurement bias}.
-\newblock \emph{Applied Psychological Measurement}, 17(4):297--334.
-
-\bibitem[{Muth{\'e}n(1985)}]{muthen1985mimic}
-Bengt Muth{\'e}n. 1985.
-\newblock \href {https://doi.org/10.2307/1164966} {A method for studying the
-  homogeneity of test items with respect to other relevant variables}.
-\newblock \emph{Journal of Educational Statistics}.
-
-\bibitem[{Nandakumar(1993)}]{nandakumar1993dif}
-Ratna Nandakumar. 1993.
-\newblock Simultaneous {DIF} amplification and cancellation: {Shealy}-{Stout}'s
-  test for {DIF}.
-\newblock \emph{Journal of Educational Measurement}, 30(4):293--311.
-
-\bibitem[{Oren et~al.(2024)Oren, Meister, Chatterji, Ladhak, and
-  Hashimoto}]{oren2024proving}
-Yonatan Oren, Nicole Meister, Niladri~S. Chatterji, Faisal Ladhak, and
-  Tatsunori~B. Hashimoto. 2024.
-\newblock \href {https://openreview.net/forum?id=KS8mIvetg2} {Proving test set
-  contamination in black-box language models}.
-\newblock In \emph{Proceedings of the International Conference on Learning
-  Representations (ICLR)}.
 
 \bibitem[{Penfield and Camilli(2007)}]{penfield2007dif}
 Randall~D. Penfield and Gregory Camilli. 2007.
@@ -319,44 +167,16 @@ Randall~D. Penfield and Gregory Camilli. 2007.
 \newblock In \emph{Handbook of Statistics}, volume~26, pages 125--167.
   Elsevier.
 
-\bibitem[{Qian and Huang(2026)}]{qian2026benchmark2}
-Qi~Qian and Chengsong Huang. 2026.
-\newblock \href {https://arxiv.org/abs/2601.03986} {{Benchmark}$^2$: Systematic
-  evaluation of {LLM} benchmarks}.
-\newblock \emph{Preprint}, arXiv:2601.03986.
-
-\bibitem[{Raju(1988)}]{raju1988area}
-Nambury~S. Raju. 1988.
-\newblock \href {https://doi.org/10.1007/BF02294403} {The area between two item
-  characteristic curves}.
-\newblock \emph{Psychometrika}.
-
 \bibitem[{Rao and Scott(1992)}]{rao1992variance}
 J.~N.~K. Rao and A.~J. Scott. 1992.
 \newblock A simple method for the analysis of clustered binary data.
 \newblock \emph{Biometrics}, 48(2):577--585.
-
-\bibitem[{Rodriguez et~al.(2021)Rodriguez, Barrow, Hoyle, Lalor, Jia, and
-  Boyd-Graber}]{rodriguez2021evaluation}
-Pedro Rodriguez, Joe Barrow, Alexander~Miserlis Hoyle, John~P. Lalor, Robin
-  Jia, and Jordan Boyd-Graber. 2021.
-\newblock Evaluation examples are not equally informative: How should that
-  change {NLP} leaderboards?
-\newblock In \emph{Proceedings of the 59th Annual Meeting of the Association
-  for Computational Linguistics (ACL)}, pages 4486--4503.
 
 \bibitem[{Roussos and Stout(1996)}]{roussos1996multidimensionality}
 Louis~A Roussos and William~F Stout. 1996.
 \newblock A new view of the effect of multidimensionality on the
   {Mantel-Haenszel} and {SIBTEST} procedures.
 \newblock \emph{Journal of Educational Measurement}, 33(3):278--295.
-
-\bibitem[{Shealy and Stout(1993)}]{shealy1993sibtest}
-Robin Shealy and William Stout. 1993.
-\newblock \href {https://doi.org/10.1007/BF02294572} {A model-based
-  standardization approach that separates true bias/{DIF} from group ability
-  differences and detects test bias/{DTF} as well as item bias/{DIF}}.
-\newblock \emph{Psychometrika}.
 
 \bibitem[{Shi et~al.(2024)Shi, Ajith, Xia, Huang, Liu, Blevins, Chen, and
   Zettlemoyer}]{shi2024mink}
@@ -368,11 +188,10 @@ Weijia Shi, Anirudh Ajith, Mengzhou Xia, Yangsibo Huang, Daogao Liu, Terra
   Representations (ICLR)}.
 
 \bibitem[{Suk and Lyu(2026)}]{suk2026rethinking}
-Youmi Suk and Weijun Lyu. 2026.
-\newblock Rethinking differential item functioning from a causal inference
-  perspective.
-\newblock \emph{Psychometrika}.
-\newblock Forthcoming.
+Youmi Suk and Weicong Lyu. 2026.
+\newblock \href {https://doi.org/10.3102/10769986251415570} {Rethinking item
+  fairness using single world intervention graphs}.
+\newblock \emph{Journal of Educational and Behavioral Statistics}.
 
 \bibitem[{Swaminathan and Rogers(1990)}]{swaminathan1990logistic}
 Hariharan Swaminathan and H.~Jane Rogers. 1990.
@@ -390,123 +209,24 @@ Yongding Tao, Tian Wang, Yihong Dong, Huanyu Liu, Kechi Zhang, Xiaolong Hu, and
 \newblock In \emph{Proceedings of the International Conference on Learning
   Representations (ICLR)}.
 
-\bibitem[{Teresi and Fleishman(2007)}]{teresi2007dif}
-Jeanne~A. Teresi and John~A. Fleishman. 2007.
-\newblock \href {https://doi.org/10.1007/s11136-007-9184-6} {Differential item
-  functioning and health assessment}.
-\newblock \emph{Quality of Life Research}.
-
-\bibitem[{Tirumala et~al.(2022)Tirumala, Markosyan, Zettlemoyer, and
-  Aghajanyan}]{tirumala2022memorization}
-Kushal Tirumala, Aram Markosyan, Luke Zettlemoyer, and Armen Aghajanyan. 2022.
-\newblock \href {https://arxiv.org/abs/2205.10770} {Memorization without
-  overfitting: Analyzing the training dynamics of large language models}.
-\newblock In \emph{Advances in Neural Information Processing Systems
-  (NeurIPS)}.
-
-\bibitem[{Vandenberg and Lance(2000)}]{vandenberg2000invariance}
-Robert~J. Vandenberg and Charles~E. Lance. 2000.
-\newblock \href {https://doi.org/10.1177/109442810031002} {A review and
-  synthesis of the measurement invariance literature: Suggestions, practices,
-  and recommendations for organizational research}.
-\newblock \emph{Organizational Research Methods}.
-
-\bibitem[{Vania et~al.(2021)Vania, Htut, Huang, Mungra, Pang, Phang, Liu, Cho,
-  and Bowman}]{vania2021irt}
-Clara Vania, Phu~Mon Htut, William Huang, Dhara Mungra, Richard~Yuanzhe Pang,
-  Jason Phang, Haokun Liu, Kyunghyun Cho, and Samuel~R. Bowman. 2021.
-\newblock \href {https://doi.org/10.18653/v1/2021.acl-long.92} {Comparing test
-  sets with item response theory}.
-\newblock In \emph{Proceedings of the 59th Annual Meeting of the Association
-  for Computational Linguistics (ACL)}.
-
-\bibitem[{Wainer and Braun(1993)}]{wainer1993differential}
-Howard Wainer and Henry~I. Braun. 1993.
-\newblock \emph{Differential Item Functioning}.
-\newblock Lawrence Erlbaum Associates, Hillsdale, NJ.
-
 \bibitem[{Wang et~al.(2026)Wang, Li, Ko, and Zhang}]{wang2026fragility}
-Haonan Wang, Haoyang Li, Boeun Ko, and Hongyang Zhang. 2026.
+Han Wang, Haoyu Li, Brian Ko, and Huan Zhang. 2026.
 \newblock \href {https://arxiv.org/abs/2510.02386} {On the fragility of
   benchmark contamination detection in reasoning models}.
 \newblock In \emph{Proceedings of the International Conference on Learning
   Representations (ICLR)}.
 
-\bibitem[{Wang et~al.(2024)Wang, Ma, Zhang, Ni, Chandra, Guo, Ren, Arulraj, He,
-  Jiang, Li, Ku, Wang, Zhuang, Fan, Yue, and Chen}]{wang2024mmlupro}
-Yubo Wang, Xueguang Ma, Ge~Zhang, Yuansheng Ni, Abhranil Chandra, Shiguang Guo,
-  Weiming Ren, Aaran Arulraj, Xuan He, Ziyan Jiang, Tianle Li, Max Ku, Kai
-  Wang, Alex Zhuang, Rongqi Fan, Xiang Yue, and Wenhu Chen. 2024.
-\newblock \href {https://arxiv.org/abs/2406.01574} {{MMLU-Pro}: A more robust
-  and challenging multi-task language understanding benchmark}.
-\newblock In \emph{Advances in Neural Information Processing Systems (NeurIPS),
-  Datasets and Benchmarks Track}.
-
-\bibitem[{White(2025)}]{white2025livebench}
-Colin White. 2025.
-\newblock \href {https://doi.org/10.48550/arXiv.2406.19314} {{LiveBench}: A
-  challenging, contamination-free {LLM} benchmark}.
-\newblock In \emph{Proceedings of the International Conference on Learning
-  Representations (ICLR)}.
-
-\bibitem[{Woods(2009)}]{woods2009mimic}
-Carol~M. Woods. 2009.
-\newblock \href {https://doi.org/10.1177/0146621609331279} {Empirical selection
-  of anchors for tests of differential item functioning}.
-\newblock \emph{Applied Psychological Measurement}.
-
-\bibitem[{Xu et~al.(2025)Xu, Zhang, and Zhao}]{xu2025benchmark}
-Siyuan Xu, Chao Zhang, and Wenjun Zhao. 2025.
-\newblock Benchmark self-evolving: A multi-agent framework for dynamic {LLM}
-  benchmarking.
-\newblock In \emph{Proceedings of the 63rd Annual Meeting of the Association
-  for Computational Linguistics (ACL)}.
-
-\bibitem[{Yao et~al.(2025)Yao, Jarvis, Zhan, Ghosh, Liu, and
-  Jiang}]{yao2025jeirt}
-Louie~Hong Yao, Nicholas Jarvis, Tiffany Zhan, Saptarshi Ghosh, Linfeng Liu,
-  and Tianyu Jiang. 2025.
-\newblock \href {https://arxiv.org/abs/2509.22888} {{JE-IRT}: A geometric lens
-  on {LLM} abilities through joint embedding item response theory}.
-\newblock \emph{Preprint}, arXiv:2509.22888.
-
-\bibitem[{Ying et~al.(2024)Ying, Cao, Luo, Gao, Zhang, Chen, and
-  Liu}]{ying2024automating}
-Jiahao Ying, Rui Cao, Mingsheng Luo, Shangqing Gao, Yuhang Zhang, Shuang Chen,
-  and Jiawei Liu. 2024.
-\newblock Automating dataset updates towards reliable and timely evaluation of
-  large language models.
-\newblock In \emph{Findings of the Association for Computational Linguistics:
-  ACL 2024}.
-
-\bibitem[{Zawalski et~al.(2026)Zawalski, Boubdir, Ba{\l}azy, Nushi, and
-  Ribalta}]{zawalski2026codec}
-Micha{\l} Zawalski, Meriem Boubdir, Klaudia Ba{\l}azy, Besmira Nushi, and Pablo
-  Ribalta. 2026.
-\newblock \href {https://arxiv.org/abs/2510.27055} {Detecting data
-  contamination in {LLM}s via in-context learning}.
-\newblock In \emph{Proceedings of the International Conference on Learning
-  Representations (ICLR)}.
-
-\bibitem[{Zellers et~al.(2019)Zellers, Holtzman, Bisk, Farzaneh, and
+\bibitem[{Zellers et~al.(2019)Zellers, Holtzman, Bisk, Farhadi, and
   Choi}]{zellers2019hellaswag}
-Rowan Zellers, Ari Holtzman, Yonatan Bisk, Ali Farzaneh, and Yejin Choi. 2019.
+Rowan Zellers, Ari Holtzman, Yonatan Bisk, Ali Farhadi, and Yejin Choi. 2019.
 \newblock {HellaSwag}: Can a machine really finish your sentence?
 \newblock In \emph{Proceedings of the 57th Annual Meeting of the Association
   for Computational Linguistics (ACL)}, pages 4791--4800.
 
-\bibitem[{Zhang et~al.(2024)Zhang, Sun, Yeats, Ouyang, Kuo, Zhang, Yang, and
-  Li}]{zhang2024minkpp}
-Jingyang Zhang, Jingwei Sun, Eric Yeats, Yang Ouyang, Martin Kuo, Jianyi Zhang,
-  Hao Yang, and Hai Li. 2024.
-\newblock \href {https://arxiv.org/abs/2404.02936} {{Min-K\%++}: Improved
-  baseline for detecting pre-training data from large language models}.
-\newblock \emph{Preprint}, arXiv:2404.02936.
-
-\bibitem[{Zhao et~al.(2025)Zhao, Huang, Jing, Shi, Liang, Du, He, and
-  Lin}]{zhao2025mmlucf}
-Qihao Zhao, Yangyu Huang, Tengchao Jing, Xiaoming Shi, Yanan Liang, Jiaqing Du,
-  Wenbo He, and Yankai Lin. 2025.
+\bibitem[{Zhao et~al.(2025)Zhao, Huang, Lv, Cui, Sun, Mao, Zhang, Xin, Yin, Li,
+  and Wei}]{zhao2025mmlucf}
+Qihao Zhao, Yangyu Huang, Tengchao Lv, Lei Cui, Qinzheng Sun, Shaoguang Mao,
+  Xin Zhang, Ying Xin, Qiufeng Yin, Scarlett Li, and Furu Wei. 2025.
 \newblock \href {https://arxiv.org/abs/2412.15194} {{MMLU-CF}: A
   contamination-free multi-task language understanding benchmark}.
 \newblock In \emph{Proceedings of the 63rd Annual Meeting of the Association
@@ -527,14 +247,5 @@ Longyuan Zhu, Hairan Hua, Linlin Miao, and Bing Zhao. 2026.
 \newblock \href {https://arxiv.org/abs/2602.11674} {Benchmark health index: A
   systematic framework for benchmarking the benchmarks of {LLMs}}.
 \newblock \emph{Preprint}, arXiv:2602.11674.
-
-\bibitem[{Zumbo(1999)}]{zumbo1999handbook}
-Bruno~D. Zumbo. 1999.
-\newblock \href {https://faculty.educ.ubc.ca/zumbo/DIF/handbook.pdf} {\emph{A
-  Handbook on the Theory and Methods of Differential Item Functioning ({DIF}):
-  Logistic Regression Modeling as a Unitary Framework for Binary and
-  {Likert}-Type (Ordinal) Item Scores}}.
-\newblock Directorate of Human Resources Research and Evaluation, Department of
-  National Defense, Ottawa.
 
 \end{thebibliography}
