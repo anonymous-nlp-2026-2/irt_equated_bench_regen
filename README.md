@@ -19,7 +19,6 @@ This repository contains analysis scripts for applying Mantel-Haenszel Different
 | `build_response_matrix.py` | Builds response matrix and metadata from METABENCH MMLU data |
 | `metabench_explore.py` | METABENCH data exploration: cohort sizes, IRT parameters, response matrix statistics |
 | `plan_001/` | Purified MH-DIF detection on MMLU with temporal (2023 vs 2024) cohort comparisons |
-| `plan_001_real_data_dif_mmlu/` | Matched-ability temporal DIF within accuracy quintiles |
 | `plan_001b/` | Matched-ability DIF analysis using temporal comparisons within accuracy quintiles |
 | `plan_004/` | GSM8K replication of MH-DIF methodology with standard and external matching |
 | `plan_010/` | Architecture-stratified DIF analysis on decoder-only models |
@@ -96,17 +95,21 @@ This repository contains analysis scripts for applying Mantel-Haenszel Different
 | `r22_deff_simulation/` | DEFF mean vs weighted-mean simulation with Rao-Scott correction |
 | `r22_within_arch_temporal/` | Within-architecture temporal DIF ruling out cross-arch confound |
 
-### `figures/paper/` — Figure Scripts
+### `figures/paper/` — Figure Scripts and Outputs
 
-| Script | Description |
-|--------|-------------|
-| `fig_1_global_vs_differential.py` | Figure 1: Global vs differential measurement comparison |
-| `fig_2_dose_response.py` | Figure 2: Dose-response curve for semi-synthetic injection |
-| `fig_3_within_subject_matching.py` | Figure 3: Within-subject matching results |
-| `fig_4_downstream_impact.py` | Figure 4: Downstream ranking impact |
-| `fig_A1_subject_heatmap.py` | Figure A1: Subject-level DIF heatmap |
-| `fig_A2_q3_distribution.py` | Figure A2: Q3 local dependence distribution |
-| `fig_A3_rho_degradation.py` | Figure A3: Spearman ρ degradation curves |
+Paper figures (numbering follows the final submission):
+
+| File | Paper Figure | Description |
+|------|-------------|-------------|
+| `fig_0_pipeline.{pdf,png}` | Figure 1 | Psychometric audit pipeline overview |
+| `fig_1_global_vs_differential.{py,pdf,png}` | Figure 2 | Global vs differential measurement comparison |
+| `fig_2_dose_response.{py,pdf,png}` | Figure 4 | Semi-synthetic injection dose-response curve |
+| `fig_3_within_subject_matching.{py,pdf,png}` | Figure 5 | Cross-subject matching TPR/FPR |
+| `fig_A3_rho_degradation.{py,pdf,png}` | Figure 6 | Spearman ρ degradation under DIF-C removal |
+| `fig_4_downstream_impact.{py,pdf,png}` | Appendix | Downstream ranking impact |
+| `fig_5_gsm1k_dif_correlation.{pdf,png}` | Appendix | GSM1K DIF correlation |
+| `fig_A1_subject_heatmap.{py,pdf,png}` | (archival) | Subject-level DIF heatmap |
+| `fig_A2_q3_distribution.{py,pdf,png}` | (archival) | Q3 local dependence distribution |
 
 ### `scripts/` — Utility Scripts
 
