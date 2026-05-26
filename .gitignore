@@ -7,9 +7,9 @@ wandb/
 checkpoints/
 data/
 *.npz
-*.csv
 .DS_Store
-paper/main.pdf
+
+# LaTeX build artifacts
 paper/*.aux
 paper/*.bbl
 paper/*.blg
@@ -17,3 +17,16 @@ paper/*.fdb_latexmk
 paper/*.fls
 paper/*.out
 paper/*.synctex.gz
+paper/_pdf_images/
+
+# Project management (not part of submission)
+_anonymous_repo.json
+_last_visual_review.json
+_paper_audit_result.json
+review_visual_check_state.json
+*.lock
+*.yaml.bak
+distill_tmp/
+dream_registry.yaml
+task_context/
+logs/

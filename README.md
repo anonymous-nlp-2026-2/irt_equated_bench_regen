@@ -1,10 +1,14 @@
 # Temporal Score Incomparability in LLM Benchmarks
 
-Code for the paper: *Temporal Score Incomparability in LLM Benchmarks: A Large-Scale Psychometric Audit of 5,227 Models* (ARR / EMNLP 2026 submission).
+Code and data for the paper: *Temporal Score Incomparability in LLM Benchmarks: A Large-Scale Psychometric Audit of 5,227 Models* (ARR / EMNLP 2026 submission).
+
+## Abstract
+
+Every leaderboard comparison assumes that benchmark items measure the same construct across model generations. In educational testing, this foundational property, measurement invariance, is routinely verified. In large language model (LLM) evaluation, it has never been tested at scale. We bring differential item functioning (DIF) analysis from psychometrics to the METABENCH response matrix (5,227 models on MMLU) and find that 31% of items function systematically differently between 2023 and 2024 model cohorts, 50x above random baselines. This instability is not driven by data contamination: DIF flags are near-independent of web-overlap labels (phi = 0.012), an overlooked diagnostic dimension. Nor does it threaten validity: aggregate rankings remain near-perfect (rho ~ 0.997). Instead, unstable items expose which capability dimensions shift across generations; base and instruct models exhibit opposite DIF directions. We develop a semi-synthetic validation framework with cross-subject matching that guarantees zero false-positive inflation, replicate findings across six benchmarks (18-31% instability), and propose an actionable audit protocol. LLM benchmarks need psychometric monitoring, not just score reporting.
 
 ## Overview
 
-This repository contains analysis scripts for applying Mantel-Haenszel Differential Item Functioning (MH-DIF) analysis to LLM benchmark evaluation. The methodology treats benchmark items as psychometric test items and detects measurement instability (differential item functioning) across temporal cohorts of language models.
+This repository contains analysis scripts for applying Mantel-Haenszel Differential Item Functioning (MH-DIF) analysis to LLM benchmark evaluation. The methodology treats benchmark items as psychometric test items and detects measurement instability (differential item functioning) across temporal cohorts of language models. Data is drawn from the [METABENCH](https://github.com/adkipnis/metabench) response matrix (Kipnis et al., ICLR 2025).
 
 ## Repository Structure
 
@@ -116,7 +120,7 @@ This repository contains analysis scripts for applying Mantel-Haenszel Different
 
 Raw data (response matrices, model metadata) is not included due to size.
 To reproduce:
-1. Download MMLU evaluation results from [MetaBench](https://github.com/adkipnis/metabench) or equivalent source
+1. Download MMLU evaluation results from [METABENCH](https://github.com/adkipnis/metabench) (Kipnis et al., ICLR 2025)
 2. Run `artifacts/build_response_matrix.py` to construct the response matrix
 3. Run individual analysis scripts in `artifacts/plan_*/`
 

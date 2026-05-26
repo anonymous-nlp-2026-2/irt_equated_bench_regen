@@ -6,19 +6,30 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{microtype}
+
+% inconsolata is recommended by the official ACL template for typewriter font
+% aesthetics, but is not strictly necessary. Omitted here as it is not
+% installed on the build system.
+% \usepackage{inconsolata}
+
+\usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage{graphicx}
-\usepackage{xcolor}
 \usepackage{multirow}
 \usepackage{subcaption}
 \usepackage{pifont}
 \usepackage{enumitem}
 
-\input{math_commands.tex}
-
 \usepackage{cleveref}
 
 \graphicspath{{../figures/paper/}}
+
+\setlength{\dbltextfloatsep}{6pt plus 2pt minus 2pt}
+\setlength{\textfloatsep}{6pt plus 2pt minus 2pt}
+\setlength{\floatsep}{6pt plus 2pt minus 2pt}
+\setlength{\intextsep}{4pt plus 2pt minus 2pt}
+\setlength{\abovecaptionskip}{4pt}
+\setlength{\belowcaptionskip}{0pt}
 
 \title{Temporal Score Incomparability in LLM Benchmarks:\\A Large-Scale Psychometric Audit of 5,227 Models}
 

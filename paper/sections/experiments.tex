@@ -3,18 +3,18 @@
 
 We apply MH-DIF to the METABENCH response matrix~\citep{kipnis2024metabench} (5,227 models $\times$ 12,508 MMLU items~\citep{hendrycks2021mmlu}), with temporal cohorts defined by release date (2023 vs.\ 2024). Cross-benchmark validation across all six METABENCH benchmarks appears in \Cref{sec:gsm8k}.
 
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{fig_A3_rho_degradation.pdf}
+\caption{Ranking degradation under DIF-ordered vs.\ random item removal. DIF-ordered removal (orange) degrades $\rho$ faster than random (blue band = mean $\pm$ 1\,SD, 20 seeds). Dashed lines: Monitor/Flag (15\%) and Flag/Act (25\%) thresholds (\Cref{sec:disc_protocol}).}
+\label{fig:rho_degradation}
+\end{figure*}
+
 \subsection{Validation: DIF Detection Power}
 \label{sec:validation}
 
 \looseness=-1
 A Monte Carlo power analysis (1,000 replications) using empirical 2PL parameters from PSN-IRT~\citep{zhou2026psnirt} ($\bar{a} = 1.2$, $\bar{b} = -0.84$) confirms that at $N \geq 100$ per cohort, ETS~C achieves TPR of 0.68--0.80 (under uniform injection) and area under the curve (AUC) of 0.93--0.94 for $|\Delta_{\mathrm{MH}}| \geq 1.4$ (\Cref{app:method_details}). Our temporal cohorts ($N_{\mathrm{ref}} = 1{,}080$, $N_{\mathrm{focal}} = 807$) far exceed this threshold; power varies with item discrimination (TPR 0.40--0.95 across $a = 0.5$--$2.0$; \Cref{app:power_sensitivity}).
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=\columnwidth]{fig_2_dose_response.pdf}
-\caption{Semi-synthetic dose-response for DIF detection on MMLU. $\Delta\mathrm{TPR}$ ($= \mathrm{TPR}_{\text{injected}} - \mathrm{TPR}_{\text{baseline}}$) increases monotonically with exploitation rate $p$ under binary injection (a calibration upper bound; \Cref{sec:injection}); MH-DIF is sensitive to differential item behavior when present. Baseline (no injection) produces $\Delta\mathrm{TPR} \approx 0$.}
-\label{fig:dose_response}
-\end{figure}
 
 \subsection{Temporal DIF: ${\sim}$29\% of Items Exhibit Differential Functioning}
 \label{sec:temporal}
@@ -48,18 +48,11 @@ Within-subject (avg, 5 subj.) & \textit{varies} & 38.1 & -- & -- \\
 \end{tabular}}
 \end{table}
 
-\begin{figure*}[t]
-\centering
-\includegraphics[width=\textwidth]{fig_A3_rho_degradation.pdf}
-\caption{Ranking degradation under DIF-ordered vs.\ random item removal. DIF-ordered removal (orange) degrades $\rho$ faster than random (blue band = mean $\pm$ 1\,SD, 20 seeds). Dashed lines: Monitor/Flag (15\%) and Flag/Act (25\%) thresholds (\Cref{sec:disc_protocol}).}
-\label{fig:rho_degradation}
-\end{figure*}
-
 \subsection{Comparison with Web-Overlap Labels}
 \label{sec:groundtruth}
 
 \looseness=-2
-Direct comparison of DIF flags against the web-overlap labels of \citet{li2024contamination} on 9,229 annotated items shows near-independence (enrichment $= 0.964$, Jaccard $= 0.206$; $p = 0.88$; \Cref{tab:temporal_landscape,app:structural}): DIF-C rates are 30.7\% among web-contaminated items and 31.8\% among clean items. Because web-overlap labels are a proxy for training-set membership (based on verbatim web matches, not actual training corpora), this near-independence could partly reflect proxy noise. Crucially, label-independent evidence confirms mechanism separation: base and instruct models exhibit opposite DIF directions ($\chi^2 = 562.7$; \Cref{sec:disc_temporal}), a reversal incompatible with uniform contamination. Semi-synthetic injection confirms detection power ($\Delta\mathrm{TPR} = {+}0.508$ at $p = 0.5$; \Cref{fig:dose_response}). Web-overlap labels measure \emph{global exposure}, while DIF measures \emph{differential functioning}---complementary diagnostic dimensions (\Cref{fig:global_vs_differential}).
+Direct comparison of DIF flags against the web-overlap labels of \citet{li2024contamination} on 9,229 annotated items shows near-independence (enrichment $= 0.964$, Jaccard $= 0.206$, $\phi = 0.012$; $p = 0.88$; \Cref{tab:temporal_landscape,app:structural}): DIF-C rates are 30.7\% among web-contaminated items and 31.8\% among clean items. Because web-overlap labels are a proxy for training-set membership (based on verbatim web matches, not actual training corpora), this near-independence could partly reflect proxy noise. Label-independent evidence further supports mechanism separation: base and instruct models exhibit opposite DIF directions ($\chi^2 = 562.7$; \Cref{sec:disc_temporal}), a reversal incompatible with uniform contamination. Semi-synthetic injection confirms detection power ($\Delta\mathrm{TPR} = {+}0.508$ at $p = 0.5$; \Cref{fig:dose_response}). Web-overlap labels measure \emph{global exposure}, while DIF measures \emph{differential functioning}: complementary diagnostic dimensions (\Cref{fig:global_vs_differential}).
 
 \subsection{Structural Analysis}
 \label{sec:structural}
@@ -67,38 +60,23 @@ Direct comparison of DIF flags against the web-overlap labels of \citet{li2024co
 \looseness=-1
 Two structural controls and a sensitivity check fail to reduce temporal C\% below 31\% (\Cref{tab:structural_comparison}): matched-ability quintiles, within-subject DIF (C\% $= 38.1\%$; cross-subject C\% is more conservative due to lower local dependence), and IRT $\theta$-conditioning ($r(\theta, \mathrm{total\ score}) = 0.9986$). Logistic regression detects an additional 17.7\% with non-uniform DIF ($|\beta_{\mathrm{interaction}}| \geq 0.5$), reaching a union of 47\% (\Cref{app:structural}). Ability-matched C\% converges to ${\sim}$28--29\% for both temporal and within-family comparisons despite vastly different unmatched rates (\Cref{app:structural}).
 
-
 \subsection{Detection Power under Controlled Injection}
 \label{sec:semisynthetic}
 
-\looseness=-1
-Cross-subject matching achieves $\Delta\mathrm{FPR} = 0.000$ across all five MMLU subjects (4/5 with $\Delta\mathrm{TPR} > 0.3$ at $p = 0.5$; \Cref{sec:injection}), while within-subject matching inflates FPR by ${+}0.186$ (\Cref{fig:matching}). The $\Delta\mathrm{FPR} \approx 0$ guarantee holds for $k \leq 5$ contaminated subjects ($\Delta\mathrm{FPR} < 0.007$); at $k{=}20$, $\Delta\mathrm{FPR}$ rises to $0.167$---still insufficient to account for the observed 31\% C\% (\Cref{tab:multi_subject_injection}). Difficulty-dependent injection yields $\Delta\mathrm{TPR} \approx 0.41$ at $p = 0.5$ (vs.\ $0.51$ uniform), bounding overestimation at ${\sim}$20\% (\Cref{app:method_details}).
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=\columnwidth]{fig_3_within_subject_matching.pdf}
-\caption{Cross-subject vs.\ within-subject matching for semi-synthetic DIF detection. Cross-subject matching eliminates FPR inflation ($\Delta\mathrm{FPR} = 0.000$) while preserving detection power ($\Delta\mathrm{TPR} > 0.3$ for 4/5 subjects at $p = 0.5$). Within-subject matching inflates FPR by ${+}0.186$ on average.}
-\label{fig:matching}
-\end{figure}
+\looseness=-2
+Cross-subject matching achieves $\Delta\mathrm{FPR} = 0.000$ across all five MMLU subjects (4/5 with $\Delta\mathrm{TPR} > 0.3$ at $p = 0.5$; \Cref{sec:injection}), while within-subject matching inflates FPR by ${+}0.186$ (\Cref{fig:matching}). The $\Delta\mathrm{FPR} \approx 0$ guarantee holds for $k \leq 5$ contaminated subjects ($\Delta\mathrm{FPR} < 0.007$); at $k{=}20$, $\Delta\mathrm{FPR}$ rises to $0.167$, still insufficient to account for the observed 31\% C\% (\Cref{tab:multi_subject_injection}). Difficulty-dependent injection yields $\Delta\mathrm{TPR} \approx 0.41$ at $p = 0.5$ (vs.\ $0.51$ uniform), bounding overestimation at ${\sim}$20\% (\Cref{app:method_details}).
 
 \subsection{Downstream Impact}
 \label{sec:downstream}
 
 \looseness=-2
-Stable-item ranks are preserved across all six benchmarks (mean $\rho = 0.997$, mean $\tau = 0.962$; flip rate $\leq 2.9\%$; \Cref{tab:cross_benchmark}). DIF-flagged items concentrate discriminative signal: DIF-ordered removal degrades $\rho$ faster than random removal across all six benchmarks (\Cref{fig:rho_degradation}; $z = -8$ to $-49$; \Cref{fig:downstream}). Removing C-flagged items disproportionately disadvantages 2024 models (cohort gap $= 96.2$ positions, $40\times$ random; $p < 0.001$); DIF-corrected scoring shifts accuracy by ${+}2.12$\,pp on average (\Cref{app:score_inflation,app:rank_reversal}).
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=\columnwidth]{fig_4_downstream_impact.pdf}
-\caption{Downstream impact of DIF-based item filtering on model rankings. Despite $\rho \approx 0.997$ overall, individual model families show systematic rank shifts when evaluated on stable items (non-C-flagged) only.}
-\label{fig:downstream}
-\end{figure}
+Stable-item ranks are preserved across all six benchmarks (mean $\rho = 0.997$, mean $\tau = 0.962$; flip rate $\leq 2.9\%$; \Cref{tab:cross_benchmark}). DIF-flagged items concentrate discriminative signal: DIF-ordered removal degrades $\rho$ faster than random removal across all six benchmarks (\Cref{fig:rho_degradation}; $z = -8$ to $-49$; \Cref{app:fig_downstream}). Removing C-flagged items disproportionately disadvantages 2024 models (cohort gap $= 96.2$ positions, $40\times$ random; $p < 0.001$); DIF-corrected scoring shifts accuracy by ${+}2.12$\,pp on average (\Cref{app:score_inflation,app:rank_reversal}).
 
 \subsection{Cross-Benchmark Validation}
 \label{sec:gsm8k}
 
 \looseness=-2
-Temporal DIF extends across all six METABENCH benchmarks (\Cref{tab:cross_benchmark}): C\% ranges from 17.9\% (HellaSwag~\citep{zellers2019hellaswag}) to 31.3\% (MMLU), with knowledge/reasoning benchmarks---including ARC (AI2 Reasoning Challenge)---consistently higher than procedural ones (C\% $= 26.9$--$31.3\%$ vs.\ $17.9$--$18.9\%$). These differences may partly reflect item difficulty distributions; we treat them as descriptive.
+Temporal DIF extends across all six METABENCH benchmarks (\Cref{tab:cross_benchmark}): C\% ranges from 17.9\% (HellaSwag~\citep{zellers2019hellaswag}) to 31.3\% (MMLU), with knowledge/reasoning benchmarks, including ARC (AI2 Reasoning Challenge), consistently higher than procedural ones (C\% $= 26.9$--$31.3\%$ vs.\ $17.9$--$18.9\%$). These differences may partly reflect item difficulty distributions; we treat them as descriptive.
 
 \begin{table}[t]
 \centering
